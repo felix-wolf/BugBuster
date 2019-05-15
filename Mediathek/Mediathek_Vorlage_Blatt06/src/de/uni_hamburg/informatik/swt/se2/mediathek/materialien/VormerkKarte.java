@@ -79,6 +79,11 @@ public class VormerkKarte
 		return _vormerker.size();
 	}
 	
+	/**
+	 * entfernt einen Kunden aus der Vormerkerliste
+	 * @require kunde != null
+	 * @param kunde
+	 */
 	public void removeVormerker(Kunde kunde)
 	{
 		_vormerker.remove(kunde);
