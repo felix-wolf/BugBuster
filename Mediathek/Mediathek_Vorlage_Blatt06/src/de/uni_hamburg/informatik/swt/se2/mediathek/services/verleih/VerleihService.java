@@ -229,10 +229,31 @@ public interface VerleihService extends ObservableService
      */
     Verleihkarte getVerleihkarteFuer(Medium medium);
     
+    /**
+     * Gibt die VormerkKarte für das angegebene Medium zurück oder null, wenn
+     * das Medium nicht vorgemerkt ist.
+     * 
+     * @param medium Ein Medium
+     * @return Die VormerkKarte für das angegebene Medium
+     */
     VormerkKarte getVormerkKarte(Medium medium);
     
+    /**
+     * Merkt ein Medium für einen Kunden vor. Existiert zu diesem Medium schon eine
+     * Verleihkarte wird der Kunde lediglich zu der Liste der Vormerker hinzugefügt,
+     * sonst wird eine neue Karte erstellt
+     * 
+     * @param kunde der Kunde, der das Medium vormerkt
+     * @param medium das Medium, welches vom Kunden vorgemerkt wird
+     */
     void merkeVor(Kunde kunde, Medium medium);
     
+    /**
+     * 
+     * @param medium
+     * @param kunde
+     * @return
+     */
     boolean istVormerkenMoeglich(Medium medium, Kunde kunde);
     
     void entferneVormerkung(Kunde kunde, Medium medium);
