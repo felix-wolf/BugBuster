@@ -136,10 +136,4 @@ public class VormerkKarteTest {
     }
     
     
-    
-    
-    
-    
-    
-    
 }

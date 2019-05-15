@@ -100,6 +100,6 @@ public class VormerkKarte
 		return _vormerker.contains(kunde);
 	}
 	
-	
+	//TESTKOMMENTAR
 	
 }
