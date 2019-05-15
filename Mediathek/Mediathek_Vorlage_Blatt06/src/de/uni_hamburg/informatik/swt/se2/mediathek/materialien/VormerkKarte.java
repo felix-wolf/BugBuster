@@ -81,6 +81,7 @@ public class VormerkKarte
 	
 	public void removeVormerker(Kunde kunde)
 	{
+		
 		_vormerker.remove(kunde);
 	}
 	

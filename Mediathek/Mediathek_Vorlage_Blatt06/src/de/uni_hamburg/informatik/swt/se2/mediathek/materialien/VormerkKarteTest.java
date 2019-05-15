@@ -13,15 +13,11 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServiceImpl;
 
-<<<<<<< HEAD
 /**
  * Diese Testklasse testet die VormerkKarte
  * @author Gruppe BugBuster
  *
  */
-=======
-
->>>>>>> c01644acd4b266d449f25c5d9420bfbae560a98b
 public class VormerkKarteTest {
 
 	private VormerkKarte _karte;
@@ -84,7 +80,37 @@ public class VormerkKarteTest {
     	assertEquals(3, _karte.getAnzahlVormerker());
     	
     	_karte.removeVormerker(_kunde1);
+    	assertEquals(2, _karte.getAnzahlVormerker());	
+    }
+    
+    @Test
+    public void testremoveVormerker()
+    {
+    	_karte = new VormerkKarte(_kunde1, _medium);
+    	assertEquals(1, _karte.getAnzahlVormerker());
+    	
+    	_karte.addVormerker(_kunde2);
     	assertEquals(2, _karte.getAnzahlVormerker());
     	
+    	_karte.addVormerker(_kunde3);
+    	assertEquals(3, _karte.getAnzahlVormerker());
+    	
+    	_karte.removeVormerker(_kunde1);
+    	assertEquals(2, _karte.getAnzahlVormerker());
+    	
+    	_karte.removeVormerker(_kunde2);
+    	assertEquals(1, _karte.getAnzahlVormerker());
+    	
+    	assertEquals(_kunde3, _karte.getVormerker(0));
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
