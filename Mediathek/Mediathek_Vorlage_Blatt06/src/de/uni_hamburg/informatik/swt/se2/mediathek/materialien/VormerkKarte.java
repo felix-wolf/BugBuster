@@ -6,15 +6,25 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 /**
  * Verleihkarten werden erstellt um zu verfolgen, für
  * welches Medium welche Kunden vorgemerkt haben
+ * 
+ * Sie beantwortet folgende Fragen: Welches Medium wurde vorgemerkt? Wie viele 
+ * Kunden haben es vorgemerkt?
+ * 
  * @author Gruppe BugBuster
- *
+ * @version SoSe 2019
  */
 public class VormerkKarte 
 {
-	
+	/**
+	 * Das Medium, welches vorgemerkt wird
+	 */
 	private final Medium _medium;
 	
+	/**
+	 * eine Liste von Kunden, welche das Medium vorgemerkt haben
+	 */
 	private ArrayList<Kunde> _vormerker; 
+	
 	/**
 	 * Initialisiert eine neue Vormerkkarte.
 	 * 
