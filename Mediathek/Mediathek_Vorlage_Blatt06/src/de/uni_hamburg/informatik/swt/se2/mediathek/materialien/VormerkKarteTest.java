@@ -12,11 +12,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServiceImpl;
 
-/**
- * Testet die VormerkKarte
- * @author 8schuber
- *
- */
+
 public class VormerkKarteTest {
 
 	private VormerkKarte _karte;
