@@ -6,8 +6,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 
 public class VormerkKarte 
 {
-	//sdiafhbsdalknbsadlkgjbn
-	//rhnkoko
+	
 	private final Medium _medium;
 	
 	private ArrayList<Kunde> _vormerker; 

@@ -1,0 +1,10 @@
+123456;Susi;Sonnenschein;Sonnenallee 20;22760;Hamburg
+123457;Kai;Konrad;Kannenweg 23;21868;Stade
+123458;Klaus;Müller;Müllerweg 1;22760;Hamburg
+123459;Julia;Schmidt;Julianenallee22;24103;Kiel
+123460;Katarina;Klum;Ottensener Strasse 10;22761;Hamburg
+123461;Anna;Kurnikowa;Osterweg 1;22670;Hamburg
+123462;John;Rambo;Fightstreet 99;60311;Frankfurt
+123463;Chuck;Norris;Supermannweg 100;80331;München
+123464;Lara;Croft;Abenteuerallee 33;24104;Kiel
+123465;John. J.;Ava;Wurtstrasse 23;58507;Köln
