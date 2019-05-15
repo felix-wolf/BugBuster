@@ -37,6 +37,7 @@ public class VerleihServiceImplTest
     private Kunde _kunde2;
     private Kunde _kunde3;
     private Kunde _kunde4;
+    private Medium neuesMedium;
     
 
     public VerleihServiceImplTest()
@@ -47,12 +48,18 @@ public class VerleihServiceImplTest
         _kunde = new Kunde(new Kundennummer(123456), "ich", "du");
 
         _vormerkkunde = new Kunde(new Kundennummer(666999), "paul", "panter");
+        _kunde1 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
+    	_kunde2 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
+    	_kunde3 = new Kunde(new Kundennummer(555555), "Claire", "Grube");
+    	_kunde4 = new Kunde(new Kundennummer(555666), "Christian", "Steifen");
 
+    	kundenstamm.fuegeKundenEin(_kunde2);
         kundenstamm.fuegeKundenEin(_kunde);
         kundenstamm.fuegeKundenEin(_vormerkkunde);
         MedienbestandService medienbestand = new MedienbestandServiceImpl(
                 new ArrayList<Medium>());
         Medium medium = new CD("CD1", "baz", "foo", 123);
+        
         medienbestand.fuegeMediumEin(medium);
         medium = new CD("CD2", "baz", "foo", 123);
         medienbestand.fuegeMediumEin(medium);
@@ -63,10 +70,8 @@ public class VerleihServiceImplTest
         _medienListe = medienbestand.getMedien();
         _service = new VerleihServiceImpl(kundenstamm, medienbestand,
                 new ArrayList<Verleihkarte>());
-        _kunde1 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
-    	_kunde2 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
-    	_kunde3 = new Kunde(new Kundennummer(555555), "Claire", "Grube");
-    	_kunde4 = new Kunde(new Kundennummer(555666), "Christian", "Steifen");
+        
+
     }
 
     @Test
@@ -130,13 +135,24 @@ public class VerleihServiceImplTest
         assertTrue(_service.getVerleihkarten()
             .isEmpty());
         
-        Medium medium = new DVD("Titanic", "kommentar", "Steve", 3);
-        Kunde kunde = new Kunde(new Kundennummer(444444), "test", "test");
-        _service.merkeVor(_vormerkkunde, medium);
-        _service.merkeVor(_kunde1, medium);
-        _service.merkeVor(_kunde2, medium);
-        _service.istVormerkenMoeglich(medium, _kunde2);
-
+    }
+    @Test
+    public void testVormerkeFunktionen() throws Exception
+    {
+        MedienbestandService medienbestand = new MedienbestandServiceImpl(new ArrayList<Medium>());
+        neuesMedium = new CD("Highway To Heaven", "kommentar", "ACDC", 50);
+        medienbestand.fuegeMediumEin(neuesMedium);
+        _service.merkeVor(_vormerkkunde, neuesMedium);
+        _service.merkeVor(_kunde1, neuesMedium);
+        _service.merkeVor(_kunde2, neuesMedium);
+        _service.istVormerkenMoeglich(neuesMedium, _kunde2);
+        List<Medium> medien = new ArrayList<>();
+        medien.add(neuesMedium);
+        System.out.println(medien);
+        System.out.println(medienbestand.enthaeltMedium(neuesMedium));
+        System.out.println(_service.istVerleihenMoeglich(_kunde2, medien));
+        _service.verleiheAn(_kunde2, medien, _datum);
+        assertFalse(_service.istVerliehenAn(_kunde2, neuesMedium));
     }
 
     @Test
