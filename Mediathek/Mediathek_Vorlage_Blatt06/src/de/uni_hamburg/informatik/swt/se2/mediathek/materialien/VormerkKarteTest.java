@@ -1,6 +1,7 @@
 package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -106,7 +107,33 @@ public class VormerkKarteTest {
     	assertEquals(_kunde3, _karte.getVormerker(0));
     }
     
+    @Test
+    public void testgetVormerker()
+    {
+    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte.addVormerker(_kunde2);
+    	_karte.addVormerker(_kunde3);
+    	
+    	assertEquals(_kunde1, _karte.getVormerker(0));
+    	assertEquals(_kunde2, _karte.getVormerker(1));
+    	assertEquals(_kunde3, _karte.getVormerker(2));
+    }
     
+    @Test
+    public void testistVorgemerktVon()
+    {
+    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte.addVormerker(_kunde2);
+    	_karte.addVormerker(_kunde3);
+    	
+    	assertTrue(_karte.istVorgemerktVon(_kunde1));
+    	assertTrue(_karte.istVorgemerktVon(_kunde2));
+    	assertTrue(_karte.istVorgemerktVon(_kunde3));
+    	assertFalse(_karte.istVorgemerktVon(_kunde4));
+    	
+    	_karte.removeVormerker(_kunde1);
+    	assertFalse(_karte.istVorgemerktVon(_kunde1));
+    }
     
     
     
