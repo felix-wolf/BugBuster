@@ -15,6 +15,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.fachwerte.Kundennummer;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Kunde;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Verleihkarte;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
+import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.DVD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ServiceObserver;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
@@ -32,6 +33,11 @@ public class VerleihServiceImplTest
     private VerleihService _service;
     private List<Medium> _medienListe;
     private Kunde _vormerkkunde;
+    private Kunde _kunde1;
+    private Kunde _kunde2;
+    private Kunde _kunde3;
+    private Kunde _kunde4;
+    
 
     public VerleihServiceImplTest()
     {
@@ -57,6 +63,10 @@ public class VerleihServiceImplTest
         _medienListe = medienbestand.getMedien();
         _service = new VerleihServiceImpl(kundenstamm, medienbestand,
                 new ArrayList<Verleihkarte>());
+        _kunde1 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
+    	_kunde2 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
+    	_kunde3 = new Kunde(new Kundennummer(555555), "Claire", "Grube");
+    	_kunde4 = new Kunde(new Kundennummer(555666), "Christian", "Steifen");
     }
 
     @Test
@@ -119,6 +129,14 @@ public class VerleihServiceImplTest
         assertTrue(_service.sindAlleNichtVerliehen(_medienListe));
         assertTrue(_service.getVerleihkarten()
             .isEmpty());
+        
+        Medium medium = new DVD("Titanic", "kommentar", "Steve", 3);
+        Kunde kunde = new Kunde(new Kundennummer(444444), "test", "test");
+        _service.merkeVor(_vormerkkunde, medium);
+        _service.merkeVor(_kunde1, medium);
+        _service.merkeVor(_kunde2, medium);
+        _service.istVormerkenMoeglich(medium, _kunde2);
+
     }
 
     @Test

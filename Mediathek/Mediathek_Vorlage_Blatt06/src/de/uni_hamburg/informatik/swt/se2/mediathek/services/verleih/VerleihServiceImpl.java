@@ -3,6 +3,7 @@ package de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -69,6 +70,7 @@ public class VerleihServiceImpl extends AbstractObservableService
         assert medienbestand != null : "Vorbedingung verletzt: medienbestand  != null";
         assert initialBestand != null : "Vorbedingung verletzt: initialBestand  != null";
         _verleihkarten = erzeugeVerleihkartenBestand(initialBestand);
+        _vormerkKarten = new HashMap<>();
         _kundenstamm = kundenstamm;
         _medienbestand = medienbestand;
         _protokollierer = new VerleihProtokollierer();
@@ -109,7 +111,14 @@ public class VerleihServiceImpl extends AbstractObservableService
                 kunde) : "Vorbedingung verletzt: kundeImBestand(kunde)";
         assert medienImBestand(
                 medien) : "Vorbedingung verletzt: medienImBestand(medien)";
-
+                
+        for (Medium medium: medien)
+        {                
+        	if (_vormerkKarten.containsKey(medium) && !kunde.equals(_vormerkKarten.get(medium).getVormerker(0)))
+        	{
+        			return false;
+        	}
+        }
         return sindAlleNichtVerliehen(medien);
     }
 
@@ -210,12 +219,18 @@ public class VerleihServiceImpl extends AbstractObservableService
         for (Medium medium : medien)
         {
         	
-            Verleihkarte verleihkarte = new Verleihkarte(kunde, medium,
-                    ausleihDatum);
+        		Verleihkarte verleihkarte = new Verleihkarte(kunde, medium,
+                        ausleihDatum);
 
-            _verleihkarten.put(medium, verleihkarte);
-            _protokollierer.protokolliere(
-                    VerleihProtokollierer.EREIGNIS_AUSLEIHE, verleihkarte);
+                _verleihkarten.put(medium, verleihkarte);
+                _protokollierer.protokolliere(
+                        VerleihProtokollierer.EREIGNIS_AUSLEIHE, verleihkarte);
+                
+                if (_vormerkKarten.containsKey(medium))
+                {
+                	entferneVormerkung(kunde, medium);
+                }
+            
         }
         // Was passiert wenn das Protokollieren mitten in der Schleife
         // schief geht? informiereUeberAenderung in einen finally Block?
@@ -339,15 +354,23 @@ public class VerleihServiceImpl extends AbstractObservableService
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
     	assert kunde != null : "Vorbedingung verletzt: kunde != null";
-    	assertTrue("Vorbedingung verletzt: Ist vorgemerkt von kunde", istVorgemerktVon(kunde, medium));
     	
+    	if (_vormerkKarten.get(medium).istVorgemerktVon(kunde))
+    	{
     	_vormerkKarten.get(medium).removeVormerker(kunde);
-
+    	}
     }
     
     @Override
     public boolean istVorgemerktVon(Kunde kunde, Medium medium)
     {
-    	return _vormerkKarten.get(medium).istVorgemerktVon(kunde);
+    	assert medium != null : "Vorbedingung verletzt: medium != null";
+    	assert kunde != null : "Vorbedingung verletzt: kunde != null";
+    	
+    	if (_vormerkKarten.containsKey(medium))
+    	{
+    		return _vormerkKarten.get(medium).istVorgemerktVon(kunde);
+    	}
+    	return false;
     }
 }
