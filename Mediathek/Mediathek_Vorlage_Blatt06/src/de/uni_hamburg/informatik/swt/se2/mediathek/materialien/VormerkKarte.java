@@ -3,11 +3,15 @@ package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 import java.util.ArrayList;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
-
+/**
+ * Verleihkarten werden erstellt um zu verfolgen, für
+ * welches Medium welche Kunden vorgemerkt haben
+ * @author Gruppe BugBuster
+ *
+ */
 public class VormerkKarte 
 {
-	//sdiafhbsdalknbsadlkgjbn
-	//rhnkoko
+	
 	private final Medium _medium;
 	
 	private ArrayList<Kunde> _vormerker; 

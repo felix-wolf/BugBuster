@@ -11,5 +11,3 @@ In diesem Repo soll alles gespeichert werden, was im Zuge der Laborphase II in S
 * goldene Regel: the Master branch is always deployable (in anderen Worten: keine Änderungen am Master branch vornehmen, außer fertige Teilprojekte pushen
 * als allererstes immer git pull, um auf dem aktuellsten Stand zu sein
 * nach Möglichkeit für neue Feature/Inhalte immer einen neuen Branch erstellen (git branch "newBranchName") und nach Fertigstellen mit dev mergen (git checkout dev, git merge featureBranchName)
-
-s<dgjnsgOSDVm
