@@ -357,6 +357,16 @@ public class VerleihServiceImpl extends AbstractObservableService
 
     }
     
+    /**
+     * Gibt zurück, ob das angegebene Medium vom angegebenen Kunden vorgemerkt ist
+     * 
+     * @param kunde ein Kunde
+     * @param medium ein Medium
+     * @return ob das Medium vom Kunden vorgemerkt ist
+     * @require kunde != null
+     * @require medium != null
+     * 
+     */
     public boolean istVorgemerktVon(Kunde kunde, Medium medium)
     {
     	return _vormerkKarten.get(medium).istVorgemerktVon(kunde);

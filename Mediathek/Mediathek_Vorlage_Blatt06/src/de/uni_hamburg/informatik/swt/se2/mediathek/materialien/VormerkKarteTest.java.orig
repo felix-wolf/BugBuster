@@ -13,13 +13,15 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServiceImpl;
 
-<<<<<<< HEAD
 /**
  * Diese Testklasse testet die VormerkKarte
  * @author Gruppe BugBuster
  *
  */
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0bd569e8f0aed5a0e503ca4cdbe3f8d6ef99f705
 public class VormerkKarteTest {
 
 	private VormerkKarte _karte;
