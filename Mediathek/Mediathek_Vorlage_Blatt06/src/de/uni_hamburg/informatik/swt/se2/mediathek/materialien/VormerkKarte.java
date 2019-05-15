@@ -50,14 +50,13 @@ public class VormerkKarte
 	 * @param kunde
 	 * 
 	 * @require kunde != null
-	 * @require getAnzahlVormerker < 3
 	 */
 	public void addVormerker(Kunde kunde)
 	{
 		assert kunde != null: "Vorbedingung verltzt: Kunde != null";
-		assert getAnzahlVormerker() < 3: "Vorbedingung verletzt: Anzahl Vormerker < 3.";
 		
-		_vormerker.add(kunde);
+			_vormerker.add(kunde);
+		
 	}
 	
 	/**
