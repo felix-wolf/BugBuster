@@ -141,7 +141,6 @@ public class VerleihServiceImplTest
     {
         MedienbestandService medienbestand = new MedienbestandServiceImpl(new ArrayList<Medium>());
         neuesMedium = new CD("Highway To Heaven", "kommentar", "ACDC", 50);
-        medienbestand.fuegeMediumEin(neuesMedium);
         _service.merkeVor(_vormerkkunde, neuesMedium);
         _service.merkeVor(_kunde1, neuesMedium);
         _service.merkeVor(_kunde2, neuesMedium);
@@ -150,6 +149,7 @@ public class VerleihServiceImplTest
         medien.add(neuesMedium);
         System.out.println(medien);
         System.out.println(medienbestand.enthaeltMedium(neuesMedium));
+        medienbestand.fuegeMediumEin(neuesMedium);
         System.out.println(_service.istVerleihenMoeglich(_kunde2, medien));
         _service.verleiheAn(_kunde2, medien, _datum);
         assertFalse(_service.istVerliehenAn(_kunde2, neuesMedium));
@@ -168,19 +168,16 @@ public class VerleihServiceImplTest
                 ereignisse[0] = true;
             }
         };
-        _service.verleiheAn(_kunde,
-                Collections.singletonList(_medienListe.get(0)), _datum);
+        _service.verleiheAn(_kunde, Collections.singletonList(_medienListe.get(0)), _datum);
         assertFalse(ereignisse[0]);
 
         _service.registriereBeobachter(beobachter);
-        _service.verleiheAn(_kunde,
-                Collections.singletonList(_medienListe.get(1)), _datum);
+        _service.verleiheAn(_kunde, Collections.singletonList(_medienListe.get(1)), _datum);
         assertTrue(ereignisse[0]);
 
         _service.entferneBeobachter(beobachter);
         ereignisse[0] = false;
-        _service.verleiheAn(_kunde,
-                Collections.singletonList(_medienListe.get(2)), _datum);
+        _service.verleiheAn(_kunde, Collections.singletonList(_medienListe.get(2)), _datum);
         assertFalse(ereignisse[0]);
     }
 
