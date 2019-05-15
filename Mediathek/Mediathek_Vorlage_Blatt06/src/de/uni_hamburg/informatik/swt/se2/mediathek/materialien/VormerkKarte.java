@@ -63,7 +63,7 @@ public class VormerkKarte
 	 */
 	public void addVormerker(Kunde kunde)
 	{
-		assert kunde != null: "Vorbedingung verltzt: Kunde != null";
+		assert kunde != null: "Vorbedingung verletzt: Kunde != null";
 		
 			_vormerker.add(kunde);
 		
@@ -86,17 +86,38 @@ public class VormerkKarte
 	 */
 	public void removeVormerker(Kunde kunde)
 	{
+		assert kunde != null : "Vorbedingung Verletzt: kunde != null";
 		
 		_vormerker.remove(kunde);
 	}
 	
+	/**
+	 * Diese Methode gibt den Vormerker am Index index zurück
+	 * 
+	 * @param index
+	 * @return der Kunde am Index index
+	 * @require index >= 0
+	 * @require index <= 2
+	 */
 	public Kunde getVormerker(int index)
 	{
+		assert index >= 0 : "Vorbedingung Verletzt: index >= 0";
+		assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
+		
 		return _vormerker.get(index);
 	}
 	
+	/**
+	 * Diese Methode gibt zurück ob das Medium von kunde vorgemerkt ist
+	 * 
+	 * @param kunde
+	 * @return wahr wenn kunde vorgemerkt ist, sonst falsch
+	 * @require kunde != null
+	 */
 	public boolean istVorgemerktVon(Kunde kunde)
 	{
+		assert kunde != null : "Vorbedingung Verletzt: kunde != null";
+		
 		return _vormerker.contains(kunde);
 	}
 	
