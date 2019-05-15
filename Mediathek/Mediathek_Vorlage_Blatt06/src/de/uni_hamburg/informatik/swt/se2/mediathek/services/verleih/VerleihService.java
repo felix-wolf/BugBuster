@@ -249,15 +249,37 @@ public interface VerleihService extends ObservableService
     void merkeVor(Kunde kunde, Medium medium);
     
     /**
+     * Gibt zurück, ob das Vormerken für den Kunden und das Medium möglich ist
+     * schlägt fehl, wenn der Kunde das Medium schon vorgemerkt hat oder schon mehr als
+     * 3 das Medium vorgemerkt haben
      * 
-     * @param medium
-     * @param kunde
-     * @return
+     * @param medium das Medium
+     * @param kunde der Kunde
+     * @require medium != null
+     * @require kunde != null
+     * 
      */
     boolean istVormerkenMoeglich(Medium medium, Kunde kunde);
     
+    /**
+     * Entfernt eine Vormerkung
+     * 
+     * @require kunde != null
+     * @require medium != null
+     * @require istVorgemerktVon(kunde) == true
+     */
     void entferneVormerkung(Kunde kunde, Medium medium);
     
+    /**
+     * Gibt zurück, ob das angegebene Medium vom angegebenen Kunden vorgemerkt ist
+     * 
+     * @param kunde ein Kunde
+     * @param medium ein Medium
+     * @return ob das Medium vom Kunden vorgemerkt ist
+     * @require kunde != null
+     * @require medium != null
+     * 
+     */
     boolean istVorgemerktVon(Kunde kunde, Medium medium);
     
     

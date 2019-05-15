@@ -302,20 +302,13 @@ public class VerleihServiceImpl extends AbstractObservableService
         }
         return result;
     }
-
+    @Override
     public VormerkKarte getVormerkKarte(Medium medium)
     {
     	return _vormerkKarten.get(medium);
     }
     
-    /**
-     * Diese Methode merkt ein Medium für einen Kunden vor.
-     * 
-     * 
-     * @require medium != null
-     * @require kunde != null
-     * @require istVormerkenMoeglich == true
-     */
+    @Override
     public void merkeVor(Kunde kunde, Medium medium)
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
@@ -335,18 +328,13 @@ public class VerleihServiceImpl extends AbstractObservableService
     	
     }
     
+    @Override
     public boolean istVormerkenMoeglich(Medium medium, Kunde kunde)
     {
     	return !istVorgemerktVon(kunde, medium) && _vormerkKarten.get(medium).getAnzahlVormerker() < 3;
     }
     
-    /**
-     * Entfernt eine Vormerkung
-     * 
-     * @require kunde != null
-     * @require medium != null
-     * @require istVorgemerktVon(kunde) == true
-     */
+    @Override
     public void entferneVormerkung(Kunde kunde, Medium medium)
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
@@ -357,16 +345,7 @@ public class VerleihServiceImpl extends AbstractObservableService
 
     }
     
-    /**
-     * Gibt zurück, ob das angegebene Medium vom angegebenen Kunden vorgemerkt ist
-     * 
-     * @param kunde ein Kunde
-     * @param medium ein Medium
-     * @return ob das Medium vom Kunden vorgemerkt ist
-     * @require kunde != null
-     * @require medium != null
-     * 
-     */
+    @Override
     public boolean istVorgemerktVon(Kunde kunde, Medium medium)
     {
     	return _vormerkKarten.get(medium).istVorgemerktVon(kunde);
