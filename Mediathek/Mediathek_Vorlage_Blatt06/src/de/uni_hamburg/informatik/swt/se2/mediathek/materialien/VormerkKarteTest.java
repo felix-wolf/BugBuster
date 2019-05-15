@@ -134,12 +134,4 @@ public class VormerkKarteTest {
     	_karte.removeVormerker(_kunde1);
     	assertFalse(_karte.istVorgemerktVon(_kunde1));
     }
-    
-    
-    
-    
-    
-    
-    
-    
 }
