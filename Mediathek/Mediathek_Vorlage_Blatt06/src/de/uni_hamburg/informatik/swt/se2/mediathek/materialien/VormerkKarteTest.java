@@ -4,16 +4,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
-
 import org.junit.Test;
 
-import de.uni_hamburg.informatik.swt.se2.mediathek.fachwerte.Datum;
 import de.uni_hamburg.informatik.swt.se2.mediathek.fachwerte.Kundennummer;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.CD;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
-import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServiceImpl;
-
 
 /**
  * Diese Testklasse testet die VormerkKarte
