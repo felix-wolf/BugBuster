@@ -5,7 +5,7 @@ import java.util.List;
 import de.uni_hamburg.informatik.swt.se2.mediathek.fachwerte.Datum;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Kunde;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Verleihkarte;
-import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VormerkKarte;
+import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Vormerkkarte;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.ObservableService;
 
@@ -236,7 +236,7 @@ public interface VerleihService extends ObservableService
      * @param medium Ein Medium
      * @return Die VormerkKarte für das angegebene Medium
      */
-    VormerkKarte getVormerkKarte(Medium medium);
+    Vormerkkarte getVormerkkarte(Medium medium);
     
     /**
      * Merkt ein Medium für einen Kunden vor. Existiert zu diesem Medium schon eine
@@ -291,5 +291,12 @@ public interface VerleihService extends ObservableService
      * 
      */
     List<Kunde> getVormerkerVon(Medium medium);
-
+    
+    /**
+     * Gibt zurück, ob es zu dem angegebenen Medium bereits eine Vormerkkarte gibt.
+     * 
+     * @return ob es schon eine Vormerkkarte gibt
+     * @require medium != null
+     */
+    boolean existiertVormerkkarte(Medium medium);
 }

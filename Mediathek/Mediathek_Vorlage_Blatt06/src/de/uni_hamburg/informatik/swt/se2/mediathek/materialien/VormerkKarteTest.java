@@ -15,10 +15,9 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
  * @author Gruppe BugBuster
  *
  */
-
 public class VormerkKarteTest {
 
-	private VormerkKarte _karte;
+	private Vormerkkarte _karte;
 	private Kunde _kunde1;
 	private Kunde _kunde2;
 	private Kunde _kunde3;
@@ -39,14 +38,14 @@ public class VormerkKarteTest {
     @Test
     public void testgetMedium()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	assertTrue(_karte.getMedium().equals(_medium));
     }
     
     @Test
     public void testKonstruktor()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	assertEquals(_kunde1, _karte.getVormerker(0));
     	assertEquals(1, _karte.getAnzahlVormerker());
     	assertTrue(_karte.istVorgemerktVon(_kunde1));
@@ -55,7 +54,7 @@ public class VormerkKarteTest {
     @Test
     public void testaddVormerker()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	_karte.addVormerker(_kunde2);
     	_karte.addVormerker(_kunde3);
     	
@@ -68,7 +67,7 @@ public class VormerkKarteTest {
     @Test
     public void testgetAnzahlVormerker()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	assertEquals(1, _karte.getAnzahlVormerker());
     	
     	_karte.addVormerker(_kunde2);
@@ -84,7 +83,7 @@ public class VormerkKarteTest {
     @Test
     public void testremoveVormerker()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	assertEquals(1, _karte.getAnzahlVormerker());
     	
     	_karte.addVormerker(_kunde2);
@@ -105,7 +104,7 @@ public class VormerkKarteTest {
     @Test
     public void testgetVormerker()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	_karte.addVormerker(_kunde2);
     	_karte.addVormerker(_kunde3);
     	
@@ -117,10 +116,10 @@ public class VormerkKarteTest {
     @Test
     public void testistVorgemerktVon()
     {
-    	_karte = new VormerkKarte(_kunde1, _medium);
+    	_karte = new Vormerkkarte(_kunde1, _medium);
     	_karte.addVormerker(_kunde2);
     	_karte.addVormerker(_kunde3);
-    	
+    	_karte.addVormerker(_kunde4);
     	assertTrue(_karte.istVorgemerktVon(_kunde1));
     	assertTrue(_karte.istVorgemerktVon(_kunde2));
     	assertTrue(_karte.istVorgemerktVon(_kunde3));

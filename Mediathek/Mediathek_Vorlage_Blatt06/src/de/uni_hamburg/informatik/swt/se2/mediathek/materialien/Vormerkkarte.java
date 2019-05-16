@@ -14,7 +14,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
  * @author Gruppe BugBuster
  * @version SoSe 2019
  */
-public class VormerkKarte 
+public class Vormerkkarte 
 {
 	/**
 	 * Das Medium, welches vorgemerkt wird
@@ -36,10 +36,11 @@ public class VormerkKarte
 	 * @require medium != null
 	 * 
 	 */
-	public VormerkKarte(Kunde kunde, Medium medium)
+	public Vormerkkarte(Kunde kunde, Medium medium)
 	{
 		assert medium != null : "Vorbedingung verletzt: medium != null";
 		assert kunde != null : "Vorbedingung verletzt: kunde != null";
+		
 		_vormerker = new ArrayList<>();
 		_vormerker.add(kunde);
 		_medium = medium;

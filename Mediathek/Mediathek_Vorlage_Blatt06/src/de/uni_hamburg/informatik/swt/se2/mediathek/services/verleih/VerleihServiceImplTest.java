@@ -56,7 +56,6 @@ public class VerleihServiceImplTest
         kundenstamm.fuegeKundenEin(_kunde);
         kundenstamm.fuegeKundenEin(_vormerkkunde);
         medienbestand = new MedienbestandServiceImpl(new ArrayList<Medium>());
-        //MedienbestandService medienbestand = new MedienbestandServiceImpl(new ArrayList<Medium>());
         Medium medium = new CD("CD1", "baz", "foo", 123);
         medienbestand.fuegeMediumEin(medium);
         medium = new CD("CD2", "baz", "foo", 123);
@@ -152,7 +151,7 @@ public class VerleihServiceImplTest
         _service.verleiheAn(_vormerkkunde, _medienListe, _datum);
         
         assertTrue(_service.istVormerkenMoeglich(neuesMedium, _kunde));
-        assertEquals(_service.getVormerkKarte(neuesMedium).getVormerker(0), _kunde1);
+        assertEquals(_service.getVormerkkarte(neuesMedium).getVormerker(0), _kunde1);
         assertTrue(_service.istVorgemerktVon(_kunde1, neuesMedium));
         assertFalse(_service.istVorgemerktVon(_vormerkkunde, neuesMedium));
         
@@ -161,12 +160,15 @@ public class VerleihServiceImplTest
         assertFalse(_service.istVorgemerktVon(_kunde1, neuesMedium));
         assertTrue(_service.istVormerkenMoeglich(neuesMedium, _kunde1));
         assertFalse(_service.istVormerkenMoeglich(neuesMedium, _kunde2));
-        assertEquals(_service.getVormerkKarte(neuesMedium).getVormerker(0), _kunde2);
+        assertEquals(_service.getVormerkkarte(neuesMedium).getVormerker(0), _kunde2);
         assertTrue(_service.getVormerkerVon(neuesMedium).contains(_kunde2));
         assertTrue(_service.istVormerkenMoeglich(medium2, _kunde2));
         _service.merkeVor(_vormerkkunde, medium2);
-        assertEquals(_service.getVormerkKarte(medium2).getMedium(), (medium2));  
+        assertEquals(_service.getVormerkkarte(medium2).getMedium(), (medium2));
         
+        _service.entferneVormerkung(_kunde2, neuesMedium);
+        _service.entferneVormerkung(_vormerkkunde, neuesMedium);
+        assertEquals(null, _service.getVormerkkarte(neuesMedium));
     }
 
     @Test
