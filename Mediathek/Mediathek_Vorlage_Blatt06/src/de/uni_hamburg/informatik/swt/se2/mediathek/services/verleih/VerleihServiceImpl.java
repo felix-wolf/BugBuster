@@ -125,8 +125,7 @@ public class VerleihServiceImpl extends AbstractObservableService
     public void nimmZurueck(List<Medium> medien, Datum rueckgabeDatum)
             throws ProtokollierException
     {
-        assert sindAlleVerliehen(
-                medien) : "Vorbedingung verletzt: sindAlleVerliehen(medien)";
+        assert sindAlleVerliehen(medien) : "Vorbedingung verletzt: sindAlleVerliehen(medien)";
         assert rueckgabeDatum != null : "Vorbedingung verletzt: rueckgabeDatum != null";
 
         for (Medium medium : medien)
@@ -247,10 +246,8 @@ public class VerleihServiceImpl extends AbstractObservableService
         assert !medien.isEmpty() : "Vorbedingung verletzt: !medien.isEmpty()";
         
         boolean result = true;
-        System.out.println(medien);
         for (Medium medium : medien)
         {
-        	System.out.println(medium);
             if (!mediumImBestand(medium))
             {
                 result = false;
@@ -369,5 +366,16 @@ public class VerleihServiceImpl extends AbstractObservableService
     		return _vormerkKarten.get(medium).istVorgemerktVon(kunde);
     	}
     	return false;
+    }
+    @Override
+    public List<Kunde> getVormerkerVon(Medium medium)
+    {
+    	assert medium != null : "Vorbedingung verletzt: medium != null";
+    	
+    	if (_vormerkKarten.containsKey(medium))
+    	{
+    		return _vormerkKarten.get(medium).getAlleVormerker();
+    	}
+    	return new ArrayList<Kunde>();
     }
 }

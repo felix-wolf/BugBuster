@@ -1,6 +1,7 @@
 package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 /**
@@ -105,6 +106,16 @@ public class VormerkKarte
 		assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
 		
 		return _vormerker.get(index);
+	}
+	
+	/**
+	 * Gibt eine Liste aller Vormerker zurück
+	 * 
+	 * @return die Liste der Vormerker
+	 */
+	public List<Kunde> getAlleVormerker()
+	{
+		return _vormerker;
 	}
 	
 	/**

@@ -282,6 +282,14 @@ public interface VerleihService extends ObservableService
      */
     boolean istVorgemerktVon(Kunde kunde, Medium medium);
     
-    
+    /**
+     * Gibt eine Liste aller Vormerker für das spezifische Medium zurück
+     * 
+     * @param medium das Medium
+     * @return die Liste der Vormerker
+     * @require medium != null
+     * 
+     */
+    List<Kunde> getVormerkerVon(Medium medium);
 
 }
