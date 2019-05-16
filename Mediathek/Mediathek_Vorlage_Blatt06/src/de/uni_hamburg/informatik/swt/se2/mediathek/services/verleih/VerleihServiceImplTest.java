@@ -164,7 +164,9 @@ public class VerleihServiceImplTest
         assertEquals(_service.getVormerkKarte(neuesMedium).getVormerker(0), _kunde2);
         assertTrue(_service.getVormerkerVon(neuesMedium).contains(_kunde2));
         assertTrue(_service.istVormerkenMoeglich(medium2, _kunde2));
-        //assertEquals(_service.getVormerkKarte(medium2).getMedium(), (medium2));
+        _service.merkeVor(_vormerkkunde, medium2);
+        assertEquals(_service.getVormerkKarte(medium2).getMedium(), (medium2));  
+        
     }
 
     @Test
