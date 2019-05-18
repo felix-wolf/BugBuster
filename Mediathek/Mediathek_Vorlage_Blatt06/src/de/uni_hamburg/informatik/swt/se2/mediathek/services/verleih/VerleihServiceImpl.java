@@ -421,7 +421,7 @@ public class VerleihServiceImpl extends AbstractObservableService
         return result;
     }
 
-    //Mới thêm
+    //Neu
     @Override
     public Vormerkkarte getVormerkkarteFuer(Medium medium)
     {
