@@ -33,7 +33,6 @@ public class Vormerkkarte
      * @param medium Das Medium, welches vorgemerkt wird
      * 
      * @require kunde != null
-     * @require medium != null
      * 
      */
     public Vormerkkarte(Kunde vormerker, Medium medium)
@@ -43,7 +42,6 @@ public class Vormerkkarte
 
         _medium = medium;
         _vormerkern = new ArrayList<Kunde>();
-        _vormerkern.add(0, vormerker);
     }
 
     /**
@@ -95,7 +93,7 @@ public class Vormerkkarte
      */
     public int gibAnzahlVormerker()
     {
-        return _vormerkern.size() - 1;
+        return _vormerkern.size();
     }
 
     /**
@@ -104,7 +102,10 @@ public class Vormerkkarte
      */
     public Kunde getErsteVormerker()
     {
-        return _vormerkern.get(0);
+        if (gibAnzahlVormerker() == 0)
+            return null;
+        else
+            return _vormerkern.get(0);
     }
 
     /**
@@ -145,7 +146,7 @@ public class Vormerkkarte
      */
     public boolean istDerDritteVormerkerSchonBesetzt()
     {
-        if (_vormerkern.size() <= 3)
+        if (_vormerkern.size() < 3)
         {
             return false;
         }

@@ -15,7 +15,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
  * @author Gruppe BugBuster
  *
  */
-public class VormerkkarteTest
+public class VormerkKarteTest
 {
 
     private Vormerkkarte _karte;
@@ -25,7 +25,7 @@ public class VormerkkarteTest
     private Kunde _kunde4;
     private Medium _medium;
 
-    public VormerkkarteTest()
+    public VormerkKarteTest()
     {
         _kunde1 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
         _kunde2 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
