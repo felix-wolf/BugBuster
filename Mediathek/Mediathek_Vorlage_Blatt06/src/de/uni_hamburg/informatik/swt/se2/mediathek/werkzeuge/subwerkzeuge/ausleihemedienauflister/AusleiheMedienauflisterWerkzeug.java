@@ -85,7 +85,10 @@ public class AusleiheMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // Ist dies korrekt implementiert, erscheint in der Ausleiheansicht
             // der Name des Vormerkers, an den ein Medium ausgeliehen werden
             // darf, gemäß Anforderung d).
-            Kunde ersterVormerker = null;
+
+            //Neu implementiert
+            Kunde ersterVormerker = _verleihService.getVormerkkarteFuer(medium)
+                .getErsteVormerker();
 
             medienFormatierer.add(new AusleiheMedienFormatierer(medium,
                     istVerliehen, ersterVormerker));

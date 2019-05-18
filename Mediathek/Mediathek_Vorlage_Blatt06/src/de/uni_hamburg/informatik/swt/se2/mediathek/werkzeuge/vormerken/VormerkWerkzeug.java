@@ -83,7 +83,7 @@ public class VormerkWerkzeug
         // Subwerkzeuge erstellen
         _kundenAuflisterWerkzeug = new KundenauflisterWerkzeug(kundenstamm);
         _medienAuflisterWerkzeug = new VormerkMedienauflisterWerkzeug(
-                medienbestand, verleihService);
+                medienbestand, verleihService); //Cái này để show ra Medien và cả Vormerkern
         _medienDetailAnzeigerWerkzeug = new MedienDetailAnzeigerWerkzeug();
         _kundenDetailAnzeigerWerkzeug = new KundenDetailAnzeigerWerkzeug();
 
@@ -212,9 +212,14 @@ public class VormerkWerkzeug
         // TODO für Aufgabenblatt 6 (nicht löschen): Prüfung muss noch eingebaut
         // werden. Ist dies korrekt imlpementiert, wird der Vormerk-Button gemäß
         // der Anforderungen a), b), c) und e) aktiviert.
-        boolean vormerkenMoeglich = (kunde != null) && !medien.isEmpty();
 
-        return vormerkenMoeglich;
+        //a: Medium kann nur max von 3 Kunden vorgemerkt werden
+
+        //DONE nhưng cần check lại
+
+        return (kunde != null) && !medien.isEmpty()
+                && _verleihService.istVormerkenMoeglich(kunde, medien);
+
     }
 
     /**
@@ -229,6 +234,17 @@ public class VormerkWerkzeug
             .getSelectedMedien();
         Kunde selectedKunde = _kundenAuflisterWerkzeug.getSelectedKunde();
         // TODO für Aufgabenblatt 6 (nicht löschen): Vormerken einbauen
+
+        //Mới thêm vào
+        for (Medium medium : selectedMedien)
+        {
+            _verleihService.merkenvor(selectedKunde, medium);
+            aktualisiereVormerkButton();
+
+            //            System.out.println(_verleihService.getVormerkkarteFuer(medium)
+            //                .getErsteVormerker()
+            //                .getFormatiertenString());
+        }
 
     }
 

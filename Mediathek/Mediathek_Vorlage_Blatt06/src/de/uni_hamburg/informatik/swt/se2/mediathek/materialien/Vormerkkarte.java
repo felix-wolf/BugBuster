@@ -1,12 +1,11 @@
 package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 
 /**
- * Verleihkarten werden erstellt um zu verfolgen, für
+ * Vormerkkarte werden erstellt um zu verfolgen, für
  * welches Medium welche Kunden vorgemerkt haben
  * 
  * Sie beantwortet folgende Fragen: Welches Medium wurde vorgemerkt? Wie viele 
@@ -37,20 +36,26 @@ public class Vormerkkarte
      * @require medium != null
      * 
      */
-    public Vormerkkarte(Kunde kunde, Medium medium)
+    public Vormerkkarte(Kunde vormerker, Medium medium)
     {
+        //assert vormerker != null : "Vorbedingung verletzt: vormerker != null";
         assert medium != null : "Vorbedingung verletzt: medium != null";
-        assert kunde != null : "Vorbedingung verletzt: kunde != null";
 
-        _vormerkern = new ArrayList<>();
-        _vormerkern.add(kunde);
         _medium = medium;
+        _vormerkern = new ArrayList<Kunde>();
+        _vormerkern.add(0, vormerker);
     }
 
     /**
-     * Gibt das Medium der Vormerkkarte zurück
-     * 
-     * @return das Medium der Vormerkkarte
+     * entfernt ersten Kunden aus der Vormerkerliste
+     */
+    public void RemoveErsteVormerk()
+    {
+        _vormerkern.remove(0);
+    }
+
+    /**
+     * Điền vô
      */
     public Medium getMedium()
     {
@@ -64,11 +69,22 @@ public class Vormerkkarte
      * 
      * @require kunde != null
      */
-    public void addVormerker(Kunde kunde)
+    public void AddVormerker(Kunde kunde)
     {
-        assert kunde != null : "Vorbedingung verletzt: Kunde != null";
+        if (gibAnzahlVormerker() == 2)
+        {
+            _vormerkern.add(2, kunde);
+        }
 
-        _vormerkern.add(kunde);
+        if (gibAnzahlVormerker() == 1)
+        {
+            _vormerkern.add(1, kunde);
+        }
+
+        if (gibAnzahlVormerker() == 0)
+        {
+            _vormerkern.add(0, kunde);
+        }
 
     }
 
@@ -77,61 +93,64 @@ public class Vormerkkarte
      * 
      * @return die Anzahl der Vormerker
      */
-    public int getAnzahlVormerker()
+    public int gibAnzahlVormerker()
     {
-        return _vormerkern.size();
+        return _vormerkern.size() - 1;
     }
 
     /**
-     * entfernt einen Kunden aus der Vormerkerliste
-     * @require kunde != null
-     * @param kunde
+     * Gibt Kunde in der 1. Stelle von Vormerkerkarte
+     * @return der erste Vormerker
      */
-    public void removeVormerker(Kunde kunde)
+    public Kunde getErsteVormerker()
     {
-        assert kunde != null : "Vorbedingung Verletzt: kunde != null";
-
-        _vormerkern.remove(kunde);
+        return _vormerkern.get(0);
     }
 
     /**
-     * Diese Methode gibt den Vormerker am Index index zurück
-     * 
-     * @param index
-     * @return der Kunde am Index index
-     * @require index >= 0
-     * @require index <= 2
+     * Gibt Kunde in der 2. Stelle von Vormerkerkarte
+     * @return der zweite Vormerker
      */
-    public Kunde getVormerker(int index)
+    public Kunde getZweiteVormerker()
     {
-        assert index >= 0 : "Vorbedingung Verletzt: index >= 0";
-        assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
-
-        return _vormerkern.get(index);
+        return _vormerkern.get(1);
     }
 
     /**
-     * Gibt eine Liste aller Vormerker zurück
-     * 
-     * @return die Liste der Vormerker
+     * Gibt Kunde in der 3. Stelle von Vormerkerkarte
+     * @return der dritte Vormerker
      */
-    public List<Kunde> getAlleVormerker()
+    public Kunde getDritteVormerker()
     {
-        return _vormerkern;
+        return _vormerkern.get(2);
     }
 
     /**
-     * Diese Methode gibt zurück ob das Medium von kunde vorgemerkt ist
-     * 
-     * @param kunde
-     * @return wahr wenn kunde vorgemerkt ist, sonst falsch
-     * @require kunde != null
+     * Prüfen, ob der Kunde ein Vormerker ist
+     * @param: Der geprüfte Kunde
      */
-    public boolean istVorgemerktVon(Kunde kunde)
+    public boolean istDerKundeVormerker(Kunde kunde)
     {
-        assert kunde != null : "Vorbedingung Verletzt: kunde != null";
+        if (_vormerkern.indexOf(kunde) == -1)
+        {
+            return false;
+        }
+        else
+            return true;
+    }
 
-        return _vormerkern.contains(kunde);
+    /**
+     * Prüfen, ob der dritte Platz zum Vormerken schon besetzt ist
+     * @return : true, wenn es noch Platz zum vormerken gibt
+     */
+    public boolean istDerDritteVormerkerSchonBesetzt()
+    {
+        if (_vormerkern.size() <= 3)
+        {
+            return false;
+        }
+        else
+            return true;
     }
 
 }
