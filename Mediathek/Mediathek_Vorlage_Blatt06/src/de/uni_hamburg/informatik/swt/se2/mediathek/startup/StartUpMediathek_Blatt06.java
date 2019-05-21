@@ -4,6 +4,7 @@ import java.io.File;
 
 import javax.swing.SwingUtilities;
 
+
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammServiceImpl;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.medienbestand.MedienbestandService;
@@ -14,6 +15,8 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServi
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih.VerleihServiceImpl;
 import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.hauptwerkzeug.MediathekWerkzeug;
 
+
+
 /**
  * Startet die Hauptanwendung mit grafischer Oberfläche.
  * 
@@ -22,6 +25,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.werkzeuge.hauptwerkzeug.Media
  */
 public class StartUpMediathek_Blatt06
 {
+	
 
     private static final File KUNDEN_DATEI = new File(
             "./bestand/kundenstamm.txt");

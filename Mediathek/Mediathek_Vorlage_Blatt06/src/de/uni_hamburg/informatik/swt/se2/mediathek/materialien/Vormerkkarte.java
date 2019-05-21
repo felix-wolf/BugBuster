@@ -103,8 +103,8 @@ public class Vormerkkarte
 	 */
 	public Kunde getVormerker(int index)
 	{
-		assert index >= 0 : "Vorbedingung Verletzt: index >= 0";
-		assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
+//		assert index >= 0 : "Vorbedingung Verletzt: index >= 0";
+//		assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
 		
 		return _vormerker.get(index);
 	}
