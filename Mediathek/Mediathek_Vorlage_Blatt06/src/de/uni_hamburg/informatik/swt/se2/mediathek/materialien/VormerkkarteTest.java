@@ -15,7 +15,7 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
  * @author Gruppe BugBuster
  *
  */
-public class VormerkKarteTest {
+public class VormerkkarteTest {
 
 	private Vormerkkarte _karte;
 	private Kunde _kunde1;
@@ -25,7 +25,7 @@ public class VormerkKarteTest {
     private Medium _medium;
 
     
-    public VormerkKarteTest()
+    public VormerkkarteTest()
     {
     	_kunde1 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
     	_kunde2 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
@@ -119,10 +119,11 @@ public class VormerkKarteTest {
     	_karte = new Vormerkkarte(_kunde1, _medium);
     	_karte.addVormerker(_kunde2);
     	_karte.addVormerker(_kunde3);
-    	_karte.addVormerker(_kunde4);
+    	//_karte.addVormerker(_kunde4);
     	assertTrue(_karte.istVorgemerktVon(_kunde1));
     	assertTrue(_karte.istVorgemerktVon(_kunde2));
     	assertTrue(_karte.istVorgemerktVon(_kunde3));
+    	System.out.println(_karte.getAlleVormerker());
     	assertFalse(_karte.istVorgemerktVon(_kunde4));
     	
     	_karte.removeVormerker(_kunde1);
