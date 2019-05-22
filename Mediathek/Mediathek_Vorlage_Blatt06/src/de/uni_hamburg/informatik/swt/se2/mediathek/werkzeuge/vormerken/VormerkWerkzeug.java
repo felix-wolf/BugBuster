@@ -214,7 +214,7 @@ public class VormerkWerkzeug
         // der Anforderungen a), b), c) und e) aktiviert.
         
         for (Medium medium : medien) {
-        	if (!_verleihService.istVormerkenMoeglich(medium, kunde))
+        	if (!_verleihService.istVormerkenMoeglich(kunde, medium))
         	{
         		return false;
         	}

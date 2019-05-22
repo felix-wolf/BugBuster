@@ -11,6 +11,9 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
  * Sie beantwortet folgende Fragen: Welches Medium wurde vorgemerkt? Wie viele 
  * Kunden haben es vorgemerkt?
  * 
+ * Eine Vormerkkarte wird erst erstellt, wenn sie gebraucht wird.
+ * Eine Vormerkkarte wird gelöscht, wenn kein Kunde das Medium mehr vorgemerkt hat
+ * 
  * @author Gruppe BugBuster
  * @version SoSe 2019
  */
@@ -34,7 +37,6 @@ public class Vormerkkarte
 	 * 
 	 * @require kunde != null
 	 * @require medium != null
-	 * 
 	 */
 	public Vormerkkarte(Kunde kunde, Medium medium)
 	{
@@ -98,26 +100,12 @@ public class Vormerkkarte
 	 * 
 	 * @param index
 	 * @return der Kunde am Index index
-	 * @require index >= 0
-	 * @require index <= 2
 	 */
 	public Kunde getVormerker(int index)
 	{
-		assert index >= 0 : "Vorbedingung Verletzt: index >= 0";
-		assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
-		
 		return _vormerker.get(index);
 	}
 	
-	/**
-	 * Gibt eine Liste aller Vormerker zurück
-	 * 
-	 * @return die Liste der Vormerker
-	 */
-	public List<Kunde> getAlleVormerker()
-	{
-		return _vormerker;
-	}
 	
 	/**
 	 * Diese Methode gibt zurück ob das Medium von kunde vorgemerkt ist

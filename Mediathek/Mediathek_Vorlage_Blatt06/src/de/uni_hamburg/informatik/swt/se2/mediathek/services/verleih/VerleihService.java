@@ -233,6 +233,7 @@ public interface VerleihService extends ObservableService
      * Gibt die VormerkKarte für das angegebene Medium zurück oder null, wenn
      * das Medium nicht vorgemerkt ist.
      * 
+     * @require medium != null
      * @param medium Ein Medium
      * @return Die VormerkKarte für das angegebene Medium
      */
@@ -252,21 +253,21 @@ public interface VerleihService extends ObservableService
      * Gibt zurück, ob das Vormerken für den Kunden und das Medium möglich ist
      * schlägt fehl, wenn der Kunde das Medium schon vorgemerkt hat oder schon mehr als
      * 3 das Medium vorgemerkt haben
-     * 
-     * @param medium das Medium
      * @param kunde der Kunde
+     * @param medium das Medium
+     * 
      * @require medium != null
      * @require kunde != null
      * 
      */
-    boolean istVormerkenMoeglich(Medium medium, Kunde kunde);
+    boolean istVormerkenMoeglich(Kunde kunde, Medium medium);
     
     /**
      * Entfernt eine Vormerkung
      * 
+     * @require existiertVormerkkarte(medium) == true
      * @require kunde != null
      * @require medium != null
-     * @require istVorgemerktVon(kunde) == true
      */
     void entferneVormerkung(Kunde kunde, Medium medium);
     
@@ -282,15 +283,6 @@ public interface VerleihService extends ObservableService
      */
     boolean istVorgemerktVon(Kunde kunde, Medium medium);
     
-    /**
-     * Gibt eine Liste aller Vormerker für das spezifische Medium zurück
-     * 
-     * @param medium das Medium
-     * @return die Liste der Vormerker
-     * @require medium != null
-     * 
-     */
-    List<Kunde> getVormerkerVon(Medium medium);
     
     /**
      * Gibt zurück, ob es zu dem angegebenen Medium bereits eine Vormerkkarte gibt.
