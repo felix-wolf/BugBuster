@@ -351,21 +351,57 @@ public class VerleihServiceImpl extends AbstractObservableService
     	}
     	return true;
     }
+    @Override
+    public int getAnzahlVormerker(Medium medium)
+    {
+    	assert medium != null : "Vorbedingung verletzt: medium != null";
+
+    	return _vormerkkarten.get(medium).getAnzahlVormerker();
+    }
+
+    
+    @Override
+    public boolean istVormerkenMoeglich(Kunde kunde, List<Medium> medien)
+    {
+    	assert medien != null : "Vorbedingung verletzt: medien != null";
+    	assert kunde != null : "Vorbedingung verletzt: kunde != null";
+
+    	for (Medium medium : medien)
+    	{
+    		if (!istVormerkenMoeglich(kunde, medium))
+    		{
+    			return false;
+   			}
+    	}
+    	return true;
+    }
     
     @Override
     public void entferneVormerkung(Kunde kunde, Medium medium)
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
     	assert kunde != null : "Vorbedingung verletzt: kunde != null";
-    	assertTrue("Vormerkkarte existiert nicht", existiertVormerkkarte(medium));
+    	assert existiertVormerkkarte(medium) : "existiertVormerkkarte(medium)";
     	
-    	_vormerkkarten.get(medium).removeVormerker(kunde);
+    	if (existiertVormerkkarte(medium) && istVorgemerktVon(kunde, medium))
+    	{
+    		_vormerkkarten.get(medium).removeVormerker(kunde);
+    	}
     	
     	if (_vormerkkarten.get(medium).getAnzahlVormerker() == 0)
     	{
     		_vormerkkarten.remove(medium);
-    	}
-    	
+    	}	
+    }
+    
+    @Override
+    public Kunde getVormerker(Medium medium, int index)
+    {
+    	_vormerkkarten.get(medium);
+		assert index <= 0 && index < Vormerkkarte.MaxAnzahlVormerker: 
+    		"Vorbedingung verletzt: index <= 0 && index < _vormerkkarten.get(medium).MaxAnzahlVormerker";
+		
+		return _vormerkkarten.get(medium).getVormerker(index);
     }
     
     @Override

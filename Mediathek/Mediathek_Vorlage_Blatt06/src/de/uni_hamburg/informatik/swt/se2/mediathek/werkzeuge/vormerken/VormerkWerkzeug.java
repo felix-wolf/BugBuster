@@ -165,6 +165,14 @@ public class VormerkWerkzeug
     }
 
     /**
+     * 
+     */
+    private void storniereVormerkung()
+    {
+    	_vormerkUI.getVormerkenButton().setText("Stornieren");
+    }
+    
+    /**
      * Registiert die Aktion, die ausgeführt wird, wenn ein Kunde ausgewählt
      * wird.
      */
@@ -213,13 +221,7 @@ public class VormerkWerkzeug
         // werden. Ist dies korrekt imlpementiert, wird der Vormerk-Button gemäß
         // der Anforderungen a), b), c) und e) aktiviert.
         
-        for (Medium medium : medien) {
-        	if (!_verleihService.istVormerkenMoeglich(kunde, medium))
-        	{
-        		return false;
-        	}
-        }
-        return (kunde != null) && !medien.isEmpty();
+        return _verleihService.istVormerkenMoeglich(kunde, medien) && (kunde != null) && !medien.isEmpty();
     }
 
     /**
@@ -271,9 +273,38 @@ public class VormerkWerkzeug
      */
     private void aktualisiereVormerkButton()
     {
+//    	boolean wert = true;
+//    	for (Medium medium : _medienAuflisterWerkzeug.getSelectedMedien())
+//    	{
+//    		if (!_verleihService.istVorgemerktVon(_kundenAuflisterWerkzeug.getSelectedKunde(), medium))
+//    		{
+//    			wert = false;
+//    		}
+//    	}
+//    	
+//    	if (istVormerkenMoeglich())
+//    	{
+//    		 _vormerkUI.getVormerkenButton()
+//             .setEnabled(true);
+//    		_vormerkUI.getVormerkenButton().setText("vormerken");
+//    	}
+//    	else if (wert)
+//    	{
+//    		_vormerkUI.getVormerkenButton().setText("stornieren");
+//    	}
+//    	else
+//    	{
+//    		_vormerkUI.getVormerkenButton()
+//            .setEnabled(false);
+//			_vormerkUI.getVormerkenButton().setText("vormerken");
+//    	}
+//    	
+//    	
+    	
         boolean istVormerkenMoeglich = istVormerkenMoeglich();
         _vormerkUI.getVormerkenButton()
             .setEnabled(istVormerkenMoeglich);
+        
     }
 
     /**

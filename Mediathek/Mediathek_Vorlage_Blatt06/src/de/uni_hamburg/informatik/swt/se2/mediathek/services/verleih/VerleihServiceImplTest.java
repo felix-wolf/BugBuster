@@ -135,6 +135,14 @@ public class VerleihServiceImplTest
         assertTrue(_service.sindAlleNichtVerliehen(_medienListe));
         assertTrue(_service.getVerleihkarten()
             .isEmpty());
+        
+        // Prüfe, ob verleihen und vormerken richtig interagieren
+       List<Medium> medien = new ArrayList<>();
+       medien.add(neuesMedium);
+        _service.merkeVor(_kunde, neuesMedium);
+        assertTrue(_service.istVerleihenMoeglich(_kunde, medien));
+        assertFalse(_service.istVerleihenMoeglich(_vormerkkunde1, medien));
+
  }
     
     @Test

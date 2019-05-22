@@ -263,6 +263,18 @@ public interface VerleihService extends ObservableService
     boolean istVormerkenMoeglich(Kunde kunde, Medium medium);
     
     /**
+     * Gibt zurück, ob das Vormerken für den Kunden und die Medien möglich ist.
+     * schlägt fehl, wenn der Kunde die Medien schon vorgemerkt hat oder schon mehr als
+     * 3 Kunden eins der Medien vorgemerkt haben
+     * 
+     * @param kunde der Kunde
+     * @param medien die Liste von Medien
+     * @require kunde != null
+     * @require medien != null
+     * @return ob das Vormerken moeglich ist
+     */
+    boolean istVormerkenMoeglich(Kunde kunde, List<Medium> medien);
+    /**
      * Entfernt eine Vormerkung
      * 
      * @require existiertVormerkkarte(medium) == true
@@ -270,6 +282,15 @@ public interface VerleihService extends ObservableService
      * @require medium != null
      */
     void entferneVormerkung(Kunde kunde, Medium medium);
+    
+    /**
+     * gibt die Anzahl der Vormerker an der Vormerkkarte zurück
+     * 
+     * @param medium das Medium der Vormerkkarte
+     * @return die Anzahl der Vormerker
+     * @require medium != null
+     */
+    int getAnzahlVormerker(Medium medium);
     
     /**
      * Gibt zurück, ob das angegebene Medium vom angegebenen Kunden vorgemerkt ist
@@ -291,4 +312,13 @@ public interface VerleihService extends ObservableService
      * @require medium != null
      */
     boolean existiertVormerkkarte(Medium medium);
+    
+    
+    /**
+     * Gibt den Vormerker an einem Index zurück
+     * 
+     * @require 0 <= index < Vormerkkarte.MaxAnzahlVormerker
+     * @ensure dass ein Vormerker zurückgegeben wird
+     */
+    Kunde getVormerker(Medium medium, int index);
 }

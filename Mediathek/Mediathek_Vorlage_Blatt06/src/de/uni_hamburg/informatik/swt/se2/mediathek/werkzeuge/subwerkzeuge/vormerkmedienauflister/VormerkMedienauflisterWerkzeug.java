@@ -77,6 +77,7 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
     {
         List<Medium> medienListe = _medienbestand.getMedien();
         List<VormerkMedienFormatierer> medienFormatierer = new ArrayList<VormerkMedienFormatierer>();
+        
         for (Medium medium : medienListe)
         {
             // TODO für Aufgabenblatt 6 (nicht löschen): Die
@@ -84,24 +85,25 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // Entleiher und möglichen Vormerkern ausgestattet werden.
             // Ist dies korrekt implementiert, erscheinen in der Vormerkansicht
             // die Namen des Entleihers und der möglichen 3 Vormerker.
+ 
         	
         	Kunde entleiher = null;
             Kunde[] vormerkerListe = new Kunde[3];
 
         	if (_verleihService.istVerliehen(medium))
         	{
-        		entleiher = _verleihService.getVerleihkarteFuer(medium).getEntleiher();	
+        		entleiher = _verleihService.getEntleiherFuer(medium);
         	}
         	int anzahlVormerker = 0;
         	if (_verleihService.existiertVormerkkarte(medium))
         	{
-        		anzahlVormerker = _verleihService.getVormerkkarte(medium).getAnzahlVormerker();
+        		anzahlVormerker = _verleihService.getAnzahlVormerker(medium);
         	}
         	
         	
         	for (int i = 0; i < anzahlVormerker; i++)
         	{
-        		vormerkerListe[i] = _verleihService.getVormerkkarte(medium).getVormerker(i);
+        		vormerkerListe[i] = _verleihService.getVormerker(medium, i);
         	}
 
             medienFormatierer.add(new VormerkMedienFormatierer(medium,

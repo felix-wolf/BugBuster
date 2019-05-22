@@ -1,7 +1,6 @@
 package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 /**
@@ -30,6 +29,11 @@ public class Vormerkkarte
 	private ArrayList<Kunde> _vormerker; 
 	
 	/**
+	 * 
+	 */
+	public static final int MaxAnzahlVormerker = 3;
+	
+	/**
 	 * Initialisiert eine neue Vormerkkarte.
 	 * 
 	 * @param kunde Der Kunde der vormerkt
@@ -44,7 +48,7 @@ public class Vormerkkarte
 		assert kunde != null : "Vorbedingung verletzt: kunde != null";
 		
 		_vormerker = new ArrayList<>();
-		_vormerker.add(kunde);
+		addVormerker(kunde);
 		_medium = medium;
 	}
 	
@@ -62,14 +66,16 @@ public class Vormerkkarte
 	 * Fügt einen Kunden zur Vormerkerliste hinzu.
 	 * 
 	 * @param kunde
-	 * 
 	 * @require kunde != null
+	 * @require !istVorgemerktVon(Kunde)
+	 * @ensure istVorgemerktVon(Kunde)
 	 */
 	public void addVormerker(Kunde kunde)
 	{
+		assert getAnzahlVormerker() < MaxAnzahlVormerker : "Vorbededingung verletzt: getAnzahlVormerker() < MaxAnzahlVormerker";
 		assert kunde != null: "Vorbedingung verletzt: Kunde != null";
 		
-			_vormerker.add(kunde);
+		_vormerker.add(kunde);
 		
 	}
 	
@@ -85,12 +91,16 @@ public class Vormerkkarte
 	
 	/**
 	 * entfernt einen Kunden aus der Vormerkerliste
+	 * 
 	 * @require kunde != null
+	 * @require istVorgemerktVon(Kunde)
+	 * @ensure !istVorgemerktVon(Kunde)
 	 * @param kunde
 	 */
 	public void removeVormerker(Kunde kunde)
 	{
-		assert kunde != null : "Vorbedingung Verletzt: kunde != null";
+		assert kunde != null : "Vorbedingung verletzt: kunde != null";
+		assert istVorgemerktVon(kunde) : "Vorbedingung verletzt: istVorgemerktVon(Kunde) == true";
 		
 		_vormerker.remove(kunde);
 	}
@@ -98,11 +108,15 @@ public class Vormerkkarte
 	/**
 	 * Diese Methode gibt den Vormerker am Index index zurück
 	 * 
+	 * @require 0 <= index < Vormerkkarte.MaxAnzahlVormerker
+	 * @ensure kunde != null
 	 * @param index
 	 * @return der Kunde am Index index
 	 */
 	public Kunde getVormerker(int index)
 	{
+		assert 0 <= index && index < MaxAnzahlVormerker : "Vorbedingung verletzt: 0 <= index && index < MaxAnzahlVormerker"
+				+ "(index nicht gueltig)";
 		return _vormerker.get(index);
 	}
 	
@@ -111,7 +125,7 @@ public class Vormerkkarte
 	 * Diese Methode gibt zurück ob das Medium von kunde vorgemerkt ist
 	 * 
 	 * @param kunde
-	 * @return wahr wenn kunde vorgemerkt ist, sonst falsch
+	 * @return wahr, wenn kunde vorgemerkt ist, sonst falsch
 	 * @require kunde != null
 	 */
 	public boolean istVorgemerktVon(Kunde kunde)
