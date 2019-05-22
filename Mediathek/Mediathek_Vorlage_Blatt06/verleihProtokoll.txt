@@ -1,0 +1,26 @@
+Wed May 22 09:19:35 CEST 2019: Ausleihe
+DVD:
+    Titel: James Bond - Ein Quantum Trost
+    Kommentar: Ein Quantum Trost setzt da an, wo Casino Royale endet
+    Regisseur: Marc Forster
+    Laufzeit: 110
+am 22.5.2019 verliehen an
+    Kundennummer: 123458
+    Name: Klaus Müller
+    Telefon: unbekannt
+    Anschrift:
+    Müllerweg 1
+    22760 Hamburg
+Wed May 22 09:20:43 CEST 2019: Ausleihe
+DVD:
+    Titel: The Dark Knight
+    Kommentar: Die Fortsetzung von Batman Begins
+    Regisseur: Christopher Nolan
+    Laufzeit: 130
+am 22.5.2019 verliehen an
+    Kundennummer: 123456
+    Name: Susi Sonnenschein
+    Telefon: unbekannt
+    Anschrift:
+    Sonnenallee 20
+    22760 Hamburg
