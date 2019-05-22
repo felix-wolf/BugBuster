@@ -115,6 +115,7 @@ public class Vormerkkarte
 	 */
 	public Kunde getVormerker(int index)
 	{
+
 		assert 0 <= index && index < MaxAnzahlVormerker : "Vorbedingung verletzt: 0 <= index && index < MaxAnzahlVormerker"
 				+ "(index nicht gueltig)";
 		return _vormerker.get(index);

@@ -1,3 +1,3486 @@
+<<<<<<< HEAD
+Wed May 15 23:02:26 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:02:26 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:02:26 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:02:26 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:02:26 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:02:26 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:02:26 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:03:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:34 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:34 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:34 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:34 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:34 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:04:34 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:05:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Wed May 15 23:07:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:26:53 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:27:35 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:29:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:30:47 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:33:08 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:30 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:34:57 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:35:46 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:22 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:37:43 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:11 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:38:38 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:39:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:40:15 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:41:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:42:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:03 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:43:58 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:44:49 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:45:50 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:47:13 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:57:02 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 10:59:36 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:00:01 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:23 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:24 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:01:29 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:19:35 CEST 2019: Ausleihe
 DVD:
     Titel: James Bond - Ein Quantum Trost
@@ -38,6 +3521,7 @@ am 21.3.2019 verliehen an
     Sonnenallee 20
     22760 Hamburg
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -49,7 +3533,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -61,7 +3549,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Rückgabe
+=======
 Wed May 22 09:35:53 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -73,7 +3565,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Rückgabe
+=======
 Wed May 22 09:35:53 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -85,7 +3581,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -97,7 +3597,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -109,7 +3613,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -121,7 +3629,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -133,7 +3645,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -145,7 +3661,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -157,7 +3677,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -169,7 +3693,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -181,7 +3709,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:03:24 CEST 2019: Ausleihe
+=======
 Wed May 22 09:35:53 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -193,6 +3725,9 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:46:32 CEST 2019: Ausleihe
 DVD:
     Titel: James Bond - Ein Quantum Trost
@@ -220,6 +3755,7 @@ am 22.5.2019 verliehen an
     Osterweg 1
     22670 Hamburg
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -231,7 +3767,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -243,7 +3783,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Rückgabe
+=======
 Wed May 22 09:50:36 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -255,7 +3799,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Rückgabe
+=======
 Wed May 22 09:50:36 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -267,7 +3815,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -279,7 +3831,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -291,7 +3847,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -303,7 +3863,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -315,7 +3879,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -327,7 +3895,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -339,7 +3911,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -351,7 +3927,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -363,7 +3943,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:05:14 CEST 2019: Ausleihe
+=======
 Wed May 22 09:50:36 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -375,7 +3959,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:19 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -387,7 +3975,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -399,7 +3991,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Rückgabe
+=======
 Wed May 22 09:52:11 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -411,7 +4007,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Rückgabe
+=======
 Wed May 22 09:52:11 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -423,7 +4023,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -435,7 +4039,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -447,7 +4055,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -459,7 +4071,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -471,7 +4087,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -483,7 +4103,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -495,7 +4119,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -507,7 +4135,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -519,7 +4151,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:20 CEST 2019: Ausleihe
+=======
 Wed May 22 09:52:11 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -531,7 +4167,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
 Wed May 22 09:59:16 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -543,7 +4183,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
 Wed May 22 09:59:16 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -555,7 +4199,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Rückgabe
+=======
 Wed May 22 09:59:16 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -567,7 +4215,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Rückgabe
+=======
 Wed May 22 09:59:16 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -579,7 +4231,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
 Wed May 22 09:59:16 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -591,7 +4247,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
 Wed May 22 09:59:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -603,7 +4263,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
 Wed May 22 09:59:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -615,25 +4279,48 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
 Wed May 22 09:59:40 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
     Anschrift:
     unbekannt
 Wed May 22 09:59:40 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -642,10 +4329,21 @@ am 3.4.2009 verliehen an
 Wed May 22 09:59:40 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -654,10 +4352,45 @@ am 3.4.2009 verliehen an
 Wed May 22 09:59:40 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 11:06:33 CEST 2019: Ausleihe
+DVD:
+    Titel: titanic
+    Kommentar: kommentar
+    Regisseur: Steve
+    Laufzeit: 6
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -678,6 +4411,7 @@ am 3.4.2009 verliehen an
 Wed May 22 09:59:40 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -687,9 +4421,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 09:59:40 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -699,7 +4439,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Rückgabe
+=======
 Wed May 22 10:00:50 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -711,7 +4455,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Rückgabe
+=======
 Wed May 22 10:00:50 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -723,7 +4471,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+=======
 Wed May 22 10:00:50 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -735,7 +4487,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+=======
 Wed May 22 10:00:50 CEST 2019: Rückgabe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -747,9 +4503,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 10:00:50 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -759,13 +4521,29 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:00:50 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -774,10 +4552,21 @@ am 3.4.2009 verliehen an
 Wed May 22 10:00:50 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -786,10 +4575,21 @@ am 3.4.2009 verliehen an
 Wed May 22 10:01:31 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: CD4
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -798,10 +4598,43 @@ am 3.4.2009 verliehen an
 Wed May 22 10:01:31 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
+<<<<<<< HEAD
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+CD:
+    Titel: Highway To Heaven
+    Kommentar: kommentar
+    Interpret: ACDC
+    Spiellänge: 50
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:14:39 CEST 2019: Ausleihe
+DVD:
+    Titel: titanic
+    Kommentar: kommentar
+    Regisseur: Steve
+    Laufzeit: 6
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
     Kundennummer: 123456
     Name: ich du
     Telefon: unbekannt
@@ -832,6 +4665,7 @@ am 3.4.2009 verliehen an
     Anschrift:
     unbekannt
 Wed May 22 10:01:31 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -843,7 +4677,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:01:31 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -855,9 +4693,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:01:31 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -867,9 +4711,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -879,9 +4729,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -891,9 +4747,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:02:34 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -903,9 +4765,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 10:02:34 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -915,7 +4783,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -927,7 +4799,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -939,7 +4815,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -951,7 +4831,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -963,7 +4847,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -975,7 +4863,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:15:32 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -987,7 +4879,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -999,7 +4895,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1011,9 +4911,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:02:34 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1023,9 +4929,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1035,9 +4947,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1047,9 +4965,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:05:20 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1059,9 +4983,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 10:05:20 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1071,7 +5001,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1083,7 +5017,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1095,7 +5033,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -1107,7 +5049,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -1119,7 +5065,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -1131,7 +5081,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:06 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -1143,7 +5097,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1155,7 +5113,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1167,9 +5129,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:05:20 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1179,9 +5147,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1191,9 +5165,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1203,9 +5183,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:06:18 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1215,9 +5201,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 10:06:18 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1227,7 +5219,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1239,7 +5235,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1251,7 +5251,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -1263,7 +5267,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -1275,7 +5283,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -1287,7 +5299,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 12:17:25 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -1299,7 +5315,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1311,7 +5331,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1323,9 +5347,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:06:18 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1335,9 +5365,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1347,9 +5383,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1359,9 +5401,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:07:04 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1371,9 +5419,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 10:07:04 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1383,7 +5437,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1395,7 +5453,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1407,7 +5469,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -1419,7 +5485,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -1431,7 +5501,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -1443,7 +5517,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:09:44 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -1455,7 +5533,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1467,7 +5549,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1479,9 +5565,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:07:04 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1491,9 +5583,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1503,9 +5601,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1515,9 +5619,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:08:12 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1527,9 +5637,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 10:08:12 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1539,7 +5655,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1551,7 +5671,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1563,7 +5687,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -1575,7 +5703,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -1587,7 +5719,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -1599,7 +5735,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:15:05 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -1611,7 +5751,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1623,7 +5767,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1635,103 +5783,149 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:08:12 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
+Wed May 22 10:10:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
+Wed May 22 10:10:17 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
+Wed May 22 10:10:17 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
+Wed May 22 10:10:17 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 123456
+    Name: ich du
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
+Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+CD:
+    Titel: CD1
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
+Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
+CD:
+    Titel: CD2
+    Kommentar: baz
+    Interpret: foo
+    Spiellänge: 123
+am 3.4.2009 verliehen an
+    Kundennummer: 666999
+    Name: paul panter
+    Telefon: unbekannt
+    Anschrift:
+    unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
+Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
 am 3.4.2009 verliehen an
-    Kundennummer: 123456
-    Name: ich du
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Ausleihe
-CD:
-    Titel: CD1
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
-    Kundennummer: 123456
-    Name: ich du
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Ausleihe
-CD:
-    Titel: CD2
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
-    Kundennummer: 123456
-    Name: ich du
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Rückgabe
-CD:
-    Titel: CD1
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
-    Kundennummer: 123456
-    Name: ich du
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Rückgabe
-CD:
-    Titel: CD2
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
-    Kundennummer: 123456
-    Name: ich du
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Ausleihe
-CD:
-    Titel: CD1
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
     Kundennummer: 666999
     Name: paul panter
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
 Wed May 22 10:10:17 CEST 2019: Ausleihe
-CD:
-    Titel: CD2
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
-    Kundennummer: 666999
-    Name: paul panter
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Ausleihe
-CD:
-    Titel: CD3
-    Kommentar: baz
-    Interpret: foo
-    Spiellänge: 123
-am 3.4.2009 verliehen an
-    Kundennummer: 666999
-    Name: paul panter
-    Telefon: unbekannt
-    Anschrift:
-    unbekannt
-Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -1743,7 +5937,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
 Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -1755,7 +5953,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 16:16:14 CEST 2019: Ausleihe
+=======
 Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -1767,7 +5969,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1779,7 +5985,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 10:10:17 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1791,9 +6001,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Rückgabe
+CD:
+    Titel: CD1
+=======
 Wed May 22 10:10:17 CEST 2019: Ausleihe
 CD:
     Titel: CD3
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1803,6 +6019,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Rückgabe
+CD:
+    Titel: CD2
+=======
 Wed May 22 10:11:16 CEST 2019: Ausleihe
 KonsolenVideospiel:
     Titel: FIFA 09
@@ -1831,6 +6052,7 @@ am 22.5.2019 verliehen an
 Wed May 22 11:49:28 CEST 2019: Ausleihe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1840,9 +6062,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+CD:
+    Titel: CD1
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1852,9 +6080,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+CD:
+    Titel: CD2
+=======
 Wed May 22 11:49:28 CEST 2019: Rückgabe
 CD:
     Titel: CD1
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1864,9 +6098,15 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+CD:
+    Titel: CD3
+=======
 Wed May 22 11:49:28 CEST 2019: Rückgabe
 CD:
     Titel: CD2
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
     Kommentar: baz
     Interpret: foo
     Spiellänge: 123
@@ -1876,7 +6116,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD1
     Kommentar: baz
@@ -1888,7 +6132,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD2
     Kommentar: baz
@@ -1900,7 +6148,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD3
     Kommentar: baz
@@ -1912,7 +6164,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: CD4
     Kommentar: baz
@@ -1924,7 +6180,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 CD:
     Titel: Highway To Heaven
     Kommentar: kommentar
@@ -1936,7 +6196,11 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+Thu May 16 17:55:59 CEST 2019: Ausleihe
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531
 DVD:
     Titel: titanic
     Kommentar: kommentar
@@ -1948,6 +6212,8 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+<<<<<<< HEAD
+=======
 Wed May 22 11:49:28 CEST 2019: Ausleihe
 CD:
     Titel: CD1
@@ -1984,3 +6250,4 @@ am 3.4.2009 verliehen an
     Telefon: unbekannt
     Anschrift:
     unbekannt
+>>>>>>> fba553fcdb4e463e414374afe2935d2ce7d0b531

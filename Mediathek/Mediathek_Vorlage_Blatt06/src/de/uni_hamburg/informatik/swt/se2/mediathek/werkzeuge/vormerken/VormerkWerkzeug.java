@@ -222,6 +222,7 @@ public class VormerkWerkzeug
         // der Anforderungen a), b), c) und e) aktiviert.
         
         return _verleihService.istVormerkenMoeglich(kunde, medien) && (kunde != null) && !medien.isEmpty();
+
     }
 
     /**
