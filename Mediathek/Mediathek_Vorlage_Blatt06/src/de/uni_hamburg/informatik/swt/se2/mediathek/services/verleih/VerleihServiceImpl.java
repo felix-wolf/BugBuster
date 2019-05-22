@@ -319,7 +319,7 @@ public class VerleihServiceImpl extends AbstractObservableService
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
     	assert kunde != null : "Vorbedingung verletzt: kunde != null";
-    	assertTrue("Vorbedingung verletzt: vormerken nicht möglich", istVormerkenMoeglich(kunde, medium));
+    	assert istVormerkenMoeglich(kunde, medium) : "Vorbedingung verletzt: vormerken nicht möglich";
     
     	if (existiertVormerkkarte(medium))
     	{
