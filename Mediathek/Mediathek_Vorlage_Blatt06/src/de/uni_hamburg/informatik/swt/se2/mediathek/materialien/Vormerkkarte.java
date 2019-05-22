@@ -1,7 +1,6 @@
 package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 /**
@@ -10,6 +9,9 @@ import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
  * 
  * Sie beantwortet folgende Fragen: Welches Medium wurde vorgemerkt? Wie viele 
  * Kunden haben es vorgemerkt?
+ * 
+ * Eine Vormerkkarte wird erst erstellt, wenn sie gebraucht wird.
+ * Eine Vormerkkarte wird gelöscht, wenn kein Kunde das Medium mehr vorgemerkt hat
  * 
  * @author Gruppe BugBuster
  * @version SoSe 2019
@@ -27,6 +29,11 @@ public class Vormerkkarte
 	private ArrayList<Kunde> _vormerker; 
 	
 	/**
+	 * 
+	 */
+	public static final int MaxAnzahlVormerker = 3;
+	
+	/**
 	 * Initialisiert eine neue Vormerkkarte.
 	 * 
 	 * @param kunde Der Kunde der vormerkt
@@ -34,7 +41,6 @@ public class Vormerkkarte
 	 * 
 	 * @require kunde != null
 	 * @require medium != null
-	 * 
 	 */
 	public Vormerkkarte(Kunde kunde, Medium medium)
 	{
@@ -42,7 +48,7 @@ public class Vormerkkarte
 		assert kunde != null : "Vorbedingung verletzt: kunde != null";
 		
 		_vormerker = new ArrayList<>();
-		_vormerker.add(kunde);
+		addVormerker(kunde);
 		_medium = medium;
 	}
 	
@@ -60,14 +66,16 @@ public class Vormerkkarte
 	 * Fügt einen Kunden zur Vormerkerliste hinzu.
 	 * 
 	 * @param kunde
-	 * 
 	 * @require kunde != null
+	 * @require !istVorgemerktVon(Kunde)
+	 * @ensure istVorgemerktVon(Kunde)
 	 */
 	public void addVormerker(Kunde kunde)
 	{
+		assert getAnzahlVormerker() < MaxAnzahlVormerker : "Vorbededingung verletzt: getAnzahlVormerker() < MaxAnzahlVormerker";
 		assert kunde != null: "Vorbedingung verletzt: Kunde != null";
 		
-			_vormerker.add(kunde);
+		_vormerker.add(kunde);
 		
 	}
 	
@@ -83,12 +91,16 @@ public class Vormerkkarte
 	
 	/**
 	 * entfernt einen Kunden aus der Vormerkerliste
+	 * 
 	 * @require kunde != null
+	 * @require istVorgemerktVon(Kunde)
+	 * @ensure !istVorgemerktVon(Kunde)
 	 * @param kunde
 	 */
 	public void removeVormerker(Kunde kunde)
 	{
-		assert kunde != null : "Vorbedingung Verletzt: kunde != null";
+		assert kunde != null : "Vorbedingung verletzt: kunde != null";
+		assert istVorgemerktVon(kunde) : "Vorbedingung verletzt: istVorgemerktVon(Kunde) == true";
 		
 		_vormerker.remove(kunde);
 	}
@@ -96,34 +108,25 @@ public class Vormerkkarte
 	/**
 	 * Diese Methode gibt den Vormerker am Index index zurück
 	 * 
+	 * @require 0 <= index < Vormerkkarte.MaxAnzahlVormerker
+	 * @ensure kunde != null
 	 * @param index
 	 * @return der Kunde am Index index
-	 * @require index >= 0
-	 * @require index <= 2
 	 */
 	public Kunde getVormerker(int index)
 	{
-//		assert index >= 0 : "Vorbedingung Verletzt: index >= 0";
-//		assert index <= 2 : "Vorbedingung Verletzt: index <= 2";
-		
+
+		assert 0 <= index && index < MaxAnzahlVormerker : "Vorbedingung verletzt: 0 <= index && index < MaxAnzahlVormerker"
+				+ "(index nicht gueltig)";
 		return _vormerker.get(index);
 	}
 	
-	/**
-	 * Gibt eine Liste aller Vormerker zurück
-	 * 
-	 * @return die Liste der Vormerker
-	 */
-	public List<Kunde> getAlleVormerker()
-	{
-		return _vormerker;
-	}
 	
 	/**
 	 * Diese Methode gibt zurück ob das Medium von kunde vorgemerkt ist
 	 * 
 	 * @param kunde
-	 * @return wahr wenn kunde vorgemerkt ist, sonst falsch
+	 * @return wahr, wenn kunde vorgemerkt ist, sonst falsch
 	 * @require kunde != null
 	 */
 	public boolean istVorgemerktVon(Kunde kunde)

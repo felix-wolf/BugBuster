@@ -3,6 +3,7 @@ package de.uni_hamburg.informatik.swt.se2.mediathek.services.verleih;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assume.assumeTrue;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,9 +33,9 @@ public class VerleihServiceImplTest
     private Kunde _kunde;
     private VerleihService _service;
     private List<Medium> _medienListe;
-    private Kunde _vormerkkunde;
-    private Kunde _kunde1;
-    private Kunde _kunde2;
+    private Kunde _vormerkkunde1;
+    private Kunde _vormerkkunde2;
+    private Kunde _vormerkkunde3;
 
     private Medium neuesMedium;
     private Medium medium2;
@@ -48,13 +49,13 @@ public class VerleihServiceImplTest
                 new ArrayList<Kunde>());
         _kunde = new Kunde(new Kundennummer(123456), "ich", "du");
 
-        _vormerkkunde = new Kunde(new Kundennummer(666999), "paul", "panter");
-        _kunde1 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
-    	_kunde2 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
+        _vormerkkunde1 = new Kunde(new Kundennummer(666999), "paul", "panter");
+        _vormerkkunde2 = new Kunde(new Kundennummer(123456), "Gernhart", "Reinholzen");
+    	_vormerkkunde3 = new Kunde(new Kundennummer(444444), "Volker", "Racho");
 
-    	kundenstamm.fuegeKundenEin(_kunde2);
+    	kundenstamm.fuegeKundenEin(_vormerkkunde3);
         kundenstamm.fuegeKundenEin(_kunde);
-        kundenstamm.fuegeKundenEin(_vormerkkunde);
+        kundenstamm.fuegeKundenEin(_vormerkkunde1);
         medienbestand = new MedienbestandServiceImpl(new ArrayList<Medium>());
         Medium medium = new CD("CD1", "baz", "foo", 123);
         medienbestand.fuegeMediumEin(medium);
@@ -134,41 +135,68 @@ public class VerleihServiceImplTest
         assertTrue(_service.sindAlleNichtVerliehen(_medienListe));
         assertTrue(_service.getVerleihkarten()
             .isEmpty());
+        
+        // Prüfe, ob verleihen und vormerken richtig interagieren
+       List<Medium> medien = new ArrayList<>();
+       medien.add(neuesMedium);
+        _service.merkeVor(_kunde, neuesMedium);
+        assertTrue(_service.istVerleihenMoeglich(_kunde, medien));
+        assertFalse(_service.istVerleihenMoeglich(_vormerkkunde1, medien));
+
  }
     
     @Test
-    public void testVormerkeFunktionen() throws Exception
+    public void testMerkeVor() throws Exception
     {
     
-        _service.merkeVor(_vormerkkunde, neuesMedium);
-        _service.merkeVor(_kunde1, neuesMedium);
-        _service.merkeVor(_kunde2, neuesMedium);
+        _service.merkeVor(_vormerkkunde1, neuesMedium);
+        _service.merkeVor(_vormerkkunde2, neuesMedium);
+        _service.merkeVor(_vormerkkunde3, neuesMedium);
         
-        assertFalse(_service.istVormerkenMoeglich(neuesMedium, _kunde2));
-        assertFalse(_service.istVerleihenMoeglich(_kunde2, _medienListe));
-        assertTrue(_service.istVerleihenMoeglich(_vormerkkunde, _medienListe));
+        assertTrue(_service.istVorgemerktVon(_vormerkkunde2, neuesMedium));
+        assertTrue(_service.istVorgemerktVon(_vormerkkunde1, neuesMedium));
+        assertFalse(_service.istVorgemerktVon(_vormerkkunde1, medium2));
+        assertFalse(_service.istVerleihenMoeglich(_vormerkkunde3, _medienListe));
+        assertTrue(_service.istVerleihenMoeglich(_vormerkkunde1, _medienListe));
         
-        _service.verleiheAn(_vormerkkunde, _medienListe, _datum);
-        
-        assertTrue(_service.istVormerkenMoeglich(neuesMedium, _kunde));
-        assertEquals(_service.getVormerkkarte(neuesMedium).getVormerker(0), _kunde1);
-        assertTrue(_service.istVorgemerktVon(_kunde1, neuesMedium));
-        assertFalse(_service.istVorgemerktVon(_vormerkkunde, neuesMedium));
-        
-        _service.entferneVormerkung(_kunde1, neuesMedium);
-        
-        assertFalse(_service.istVorgemerktVon(_kunde1, neuesMedium));
-        assertTrue(_service.istVormerkenMoeglich(neuesMedium, _kunde1));
-        assertFalse(_service.istVormerkenMoeglich(neuesMedium, _kunde2));
-        assertEquals(_service.getVormerkkarte(neuesMedium).getVormerker(0), _kunde2);
-        assertTrue(_service.getVormerkerVon(neuesMedium).contains(_kunde2));
-        assertTrue(_service.istVormerkenMoeglich(medium2, _kunde2));
-        _service.merkeVor(_vormerkkunde, medium2);
-        assertEquals(_service.getVormerkkarte(medium2).getMedium(), (medium2));
-        
-        _service.entferneVormerkung(_kunde2, neuesMedium);
-        _service.entferneVormerkung(_vormerkkunde, neuesMedium);
+    }
+    @Test
+    public void testEntferneVormerkung() 
+    {
+    	_service.merkeVor(_vormerkkunde1, neuesMedium);
+        _service.merkeVor(_vormerkkunde2, neuesMedium);
+        _service.merkeVor(_vormerkkunde3, neuesMedium);
+         
+        _service.entferneVormerkung(_vormerkkunde2, neuesMedium);
+        assertFalse(_service.istVorgemerktVon(_vormerkkunde2, neuesMedium));
+        assertTrue(_service.istVormerkenMoeglich(_vormerkkunde2, neuesMedium));
+        _service.entferneVormerkung(_vormerkkunde3, neuesMedium);
+        _service.entferneVormerkung(_vormerkkunde1, neuesMedium);
         assertEquals(null, _service.getVormerkkarte(neuesMedium));
+
+    }
+    @Test
+    public void testExistiertVormerkkarte()
+    {
+        assertEquals(null, _service.getVormerkkarte(neuesMedium));
+        assertFalse(_service.existiertVormerkkarte(neuesMedium));
+        _service.merkeVor(_vormerkkunde1, neuesMedium);
+        assertTrue(_service.existiertVormerkkarte(neuesMedium));
+    }
+    
+    @Test
+    public void testIstVormerkenMoeglich() throws Exception
+    {
+    	_service.merkeVor(_vormerkkunde1, neuesMedium);
+        _service.merkeVor(_vormerkkunde2, neuesMedium);
+        _service.merkeVor(_vormerkkunde3, neuesMedium);
+        
+        assertFalse(_service.istVormerkenMoeglich(_vormerkkunde3, neuesMedium));
+        _service.verleiheAn(_vormerkkunde1, _medienListe, _datum);
+        assertTrue(_service.istVormerkenMoeglich(_kunde, neuesMedium));
+        assertEquals(_service.getVormerkkarte(neuesMedium).getVormerker(0), _vormerkkunde2);
+        
+        
     }
 
     @Test

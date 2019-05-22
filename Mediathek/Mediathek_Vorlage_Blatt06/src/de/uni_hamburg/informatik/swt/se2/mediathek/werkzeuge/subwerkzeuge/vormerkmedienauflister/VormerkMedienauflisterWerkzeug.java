@@ -77,6 +77,7 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
     {
         List<Medium> medienListe = _medienbestand.getMedien();
         List<VormerkMedienFormatierer> medienFormatierer = new ArrayList<VormerkMedienFormatierer>();
+        
         for (Medium medium : medienListe)
         {
             // TODO für Aufgabenblatt 6 (nicht löschen): Die
@@ -84,17 +85,28 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // Entleiher und möglichen Vormerkern ausgestattet werden.
             // Ist dies korrekt implementiert, erscheinen in der Vormerkansicht
             // die Namen des Entleihers und der möglichen 3 Vormerker.
-//            Kunde entleiher = null;
-//            Kunde vormerker1 = null;
-//            Kunde vormerker2 = null;
-//            Kunde vormerker3 = null;
+
+        	Kunde entleiher = null;
+            Kunde[] vormerkerListe = new Kunde[3];
+
+        	if (_verleihService.istVerliehen(medium))
+        	{
+        		entleiher = _verleihService.getEntleiherFuer(medium);
+        	}
+        	int anzahlVormerker = 0;
+        	if (_verleihService.existiertVormerkkarte(medium))
+        	{
+        		anzahlVormerker = _verleihService.getAnzahlVormerker(medium);
+        	}
         	
-        	Kunde entleiher = _verleihService.getVerleihkarteFuer(medium).getEntleiher();
-            Kunde vormerker1 = _verleihService.getVormerkkarte(medium).getVormerker(0);
-            Kunde vormerker2 = _verleihService.getVormerkkarte(medium).getVormerker(1);
-            Kunde vormerker3 = _verleihService.getVormerkkarte(medium).getVormerker(2);
+        	
+        	for (int i = 0; i < anzahlVormerker; i++)
+        	{
+        		vormerkerListe[i] = _verleihService.getVormerker(medium, i);
+        	}
+
             medienFormatierer.add(new VormerkMedienFormatierer(medium,
-                    entleiher, vormerker1, vormerker2, vormerker3));
+                    entleiher, vormerkerListe[0], vormerkerListe[1], vormerkerListe[2]));
         }
         _ui.getMedienAuflisterTableModel()
             .setMedien(medienFormatierer);

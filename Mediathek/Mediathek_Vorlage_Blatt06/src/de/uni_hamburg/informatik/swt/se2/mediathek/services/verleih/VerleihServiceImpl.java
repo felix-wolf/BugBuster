@@ -215,9 +215,9 @@ public class VerleihServiceImpl extends AbstractObservableService
             _verleihkarten.put(medium, verleihkarte);
             _protokollierer.protokolliere(VerleihProtokollierer.EREIGNIS_AUSLEIHE, verleihkarte);
             
-            if (existiertVormerkkarte(medium)) 
+            if (existiertVormerkkarte(medium))
             {
-               	entferneVormerkung(kunde, medium);           	
+            	entferneVormerkung(kunde, medium);   
             }
         }
         // Was passiert wenn das Protokollieren mitten in der Schleife
@@ -309,6 +309,8 @@ public class VerleihServiceImpl extends AbstractObservableService
     @Override
     public Vormerkkarte getVormerkkarte(Medium medium)
     {
+    	assert medium != null : "Vorbedingung verletzt: medium != null";
+
     	return _vormerkkarten.get(medium);
     }
     
@@ -317,7 +319,7 @@ public class VerleihServiceImpl extends AbstractObservableService
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
     	assert kunde != null : "Vorbedingung verletzt: kunde != null";
-    	assertTrue("Vorbedingung verletzt: vormerken nicht möglich", istVormerkenMoeglich(medium, kunde));
+    	assertTrue("Vorbedingung verletzt: vormerken nicht möglich", istVormerkenMoeglich(kunde, medium));
     
     	if (existiertVormerkkarte(medium))
     	{
@@ -328,21 +330,48 @@ public class VerleihServiceImpl extends AbstractObservableService
     		Vormerkkarte _karte = new Vormerkkarte(kunde, medium);
         	_vormerkkarten.put(medium, _karte);
     	}
+    	
+    	informiereUeberAenderung();
     }
     
     @Override
     public boolean existiertVormerkkarte(Medium medium)
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
+    	
     	return _vormerkkarten.containsKey(medium);
     }
     
     @Override
-    public boolean istVormerkenMoeglich(Medium medium, Kunde kunde)
+    public boolean istVormerkenMoeglich(Kunde kunde, Medium medium)
     {
     	if (existiertVormerkkarte(medium))
     	{
     		return !istVorgemerktVon(kunde, medium) && _vormerkkarten.get(medium).getAnzahlVormerker() < 3;
+    	}
+    	return true;
+    }
+    @Override
+    public int getAnzahlVormerker(Medium medium)
+    {
+    	assert medium != null : "Vorbedingung verletzt: medium != null";
+
+    	return _vormerkkarten.get(medium).getAnzahlVormerker();
+    }
+
+    
+    @Override
+    public boolean istVormerkenMoeglich(Kunde kunde, List<Medium> medien)
+    {
+    	assert medien != null : "Vorbedingung verletzt: medien != null";
+    	assert kunde != null : "Vorbedingung verletzt: kunde != null";
+
+    	for (Medium medium : medien)
+    	{
+    		if (!istVormerkenMoeglich(kunde, medium))
+    		{
+    			return false;
+   			}
     	}
     	return true;
     }
@@ -352,16 +381,27 @@ public class VerleihServiceImpl extends AbstractObservableService
     {
     	assert medium != null : "Vorbedingung verletzt: medium != null";
     	assert kunde != null : "Vorbedingung verletzt: kunde != null";
+    	assert existiertVormerkkarte(medium) : "existiertVormerkkarte(medium)";
     	
-    	if (istVorgemerktVon(kunde, medium))
+    	if (existiertVormerkkarte(medium) && istVorgemerktVon(kunde, medium))
     	{
     		_vormerkkarten.get(medium).removeVormerker(kunde);
-    	
-    		if (_vormerkkarten.get(medium).getAnzahlVormerker() == 0)
-    		{
-    			_vormerkkarten.remove(medium);
-    		}
     	}
+    	
+    	if (_vormerkkarten.get(medium).getAnzahlVormerker() == 0)
+    	{
+    		_vormerkkarten.remove(medium);
+    	}	
+    }
+    
+    @Override
+    public Kunde getVormerker(Medium medium, int index)
+    {
+    	_vormerkkarten.get(medium);
+		assert index <= 0 && index < Vormerkkarte.MaxAnzahlVormerker: 
+    		"Vorbedingung verletzt: index <= 0 && index < _vormerkkarten.get(medium).MaxAnzahlVormerker";
+		
+		return _vormerkkarten.get(medium).getVormerker(index);
     }
     
     @Override
@@ -376,15 +416,5 @@ public class VerleihServiceImpl extends AbstractObservableService
     	}
     	return false;
     }
-    @Override
-    public List<Kunde> getVormerkerVon(Medium medium)
-    {
-    	assert medium != null : "Vorbedingung verletzt: medium != null";
-    	
-    	if (existiertVormerkkarte(medium))
-    	{
-    		return _vormerkkarten.get(medium).getAlleVormerker();
-    	}
-    	return new ArrayList<Kunde>();
-    }
+    
 }

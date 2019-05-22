@@ -119,11 +119,9 @@ public class VormerkkarteTest {
     	_karte = new Vormerkkarte(_kunde1, _medium);
     	_karte.addVormerker(_kunde2);
     	_karte.addVormerker(_kunde3);
-    	//_karte.addVormerker(_kunde4);
     	assertTrue(_karte.istVorgemerktVon(_kunde1));
     	assertTrue(_karte.istVorgemerktVon(_kunde2));
     	assertTrue(_karte.istVorgemerktVon(_kunde3));
-    	System.out.println(_karte.getAlleVormerker());
     	assertFalse(_karte.istVorgemerktVon(_kunde4));
     	
     	_karte.removeVormerker(_kunde1);
