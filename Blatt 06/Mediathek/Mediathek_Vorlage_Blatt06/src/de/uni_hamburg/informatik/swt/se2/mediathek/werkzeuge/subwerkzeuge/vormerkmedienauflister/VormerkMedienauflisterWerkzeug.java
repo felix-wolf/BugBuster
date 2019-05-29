@@ -86,6 +86,7 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // Ist dies korrekt implementiert, erscheinen in der Vormerkansicht
             // die Namen des Entleihers und der möglichen 3 Vormerker.
 
+<<<<<<< HEAD:Blatt 06/Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/subwerkzeuge/vormerkmedienauflister/VormerkMedienauflisterWerkzeug.java
         	Kunde entleiher = null;
             Kunde[] vormerkerListe = new Kunde[3];
 
@@ -104,6 +105,38 @@ public class VormerkMedienauflisterWerkzeug extends ObservableSubWerkzeug
         	{
         		vormerkerListe[i] = _verleihService.getVormerker(medium, i);
         	}
+=======
+            //DONE 1 phần :Phần này mới thêm để hiện entleiher ở cửa sổ Vormerken
+            Kunde entleiher = null;
+            if (_verleihService.istVerliehen(medium))
+            {
+                entleiher = _verleihService.getVerleihkarteFuer(medium)
+                    .getEntleiher();
+            }
+            Kunde vormerker1 = null;
+            if (_verleihService.getVormerkkarteFuer(medium)
+                .gibAnzahlVormerker() > 0)
+            {
+                vormerker1 = _verleihService.getVormerkkarteFuer(medium)
+                    .getErsteVormerker();
+            }
+
+            Kunde vormerker2 = null;
+            if (_verleihService.getVormerkkarteFuer(medium)
+                .gibAnzahlVormerker() > 1)
+            {
+                vormerker2 = _verleihService.getVormerkkarteFuer(medium)
+                    .getZweiteVormerker();
+            }
+
+            Kunde vormerker3 = null;
+            if (_verleihService.getVormerkkarteFuer(medium)
+                .gibAnzahlVormerker() > 2)
+            {
+                vormerker3 = _verleihService.getVormerkkarteFuer(medium)
+                    .getDritteVormerker();
+            }
+>>>>>>> Clone-dev-von-QuocHuy:Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/subwerkzeuge/vormerkmedienauflister/VormerkMedienauflisterWerkzeug.java
 
             medienFormatierer.add(new VormerkMedienFormatierer(medium,
                     entleiher, vormerkerListe[0], vormerkerListe[1], vormerkerListe[2]));

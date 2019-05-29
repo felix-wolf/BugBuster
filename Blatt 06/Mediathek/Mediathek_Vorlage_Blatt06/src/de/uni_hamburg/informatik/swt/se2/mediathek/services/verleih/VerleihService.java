@@ -248,10 +248,10 @@ public interface VerleihService extends ObservableService
      * @param medium das Medium, welches vom Kunden vorgemerkt wird
      */
     void merkeVor(Kunde kunde, Medium medium);
-    
+
     /**
-     * Gibt zurück, ob das Vormerken für den Kunden und das Medium möglich ist
-     * schlägt fehl, wenn der Kunde das Medium schon vorgemerkt hat oder schon mehr als
+     * Gibt zurück, ob das Vormerken für den Kunden und die Medien möglich ist
+     * schlägt fehl, wenn der Kunde ein Medium von den Medien schon vorgemerkt hat oder schon mehr als
      * 3 das Medium vorgemerkt haben
      * @param kunde der Kunde
      * @param medium das Medium
@@ -260,6 +260,7 @@ public interface VerleihService extends ObservableService
      * @require kunde != null
      * 
      */
+
     boolean istVormerkenMoeglich(Kunde kunde, Medium medium);
     
     /**
@@ -299,18 +300,18 @@ public interface VerleihService extends ObservableService
      * @param medium ein Medium
      * @return ob das Medium vom Kunden vorgemerkt ist
      * @require kunde != null
-     * @require medium != null
      * 
      */
     boolean istVorgemerktVon(Kunde kunde, Medium medium);
     
-    
+   
     /**
-     * Gibt zurück, ob es zu dem angegebenen Medium bereits eine Vormerkkarte gibt.
+     * Gibt zurück, die Vormerkkarte vom Medium
      * 
-     * @return ob es schon eine Vormerkkarte gibt
+     * @return die Vormerkkarte vom Medium
      * @require medium != null
      */
+
     boolean existiertVormerkkarte(Medium medium);
     
     

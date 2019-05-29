@@ -86,12 +86,18 @@ public class AusleiheMedienauflisterWerkzeug extends ObservableSubWerkzeug
             // der Name des Vormerkers, an den ein Medium ausgeliehen werden
             // darf, gemäß Anforderung d).
 
+<<<<<<< HEAD:Blatt 06/Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/subwerkzeuge/ausleihemedienauflister/AusleiheMedienauflisterWerkzeug.java
             Kunde ersterVormerker = null;
             
             if (_verleihService.existiertVormerkkarte(medium))
             {
             	ersterVormerker = _verleihService.getVormerker(medium, 0);
             }
+=======
+            //Neu implementiert
+            Kunde ersterVormerker = _verleihService.getVormerkkarteFuer(medium)
+                .getErsteVormerker();
+>>>>>>> Clone-dev-von-QuocHuy:Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/subwerkzeuge/ausleihemedienauflister/AusleiheMedienauflisterWerkzeug.java
 
             medienFormatierer.add(new AusleiheMedienFormatierer(medium,
                     istVerliehen, ersterVormerker));

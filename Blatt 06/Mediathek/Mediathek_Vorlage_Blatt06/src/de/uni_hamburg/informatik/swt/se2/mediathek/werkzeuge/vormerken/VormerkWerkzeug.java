@@ -83,7 +83,7 @@ public class VormerkWerkzeug
         // Subwerkzeuge erstellen
         _kundenAuflisterWerkzeug = new KundenauflisterWerkzeug(kundenstamm);
         _medienAuflisterWerkzeug = new VormerkMedienauflisterWerkzeug(
-                medienbestand, verleihService);
+                medienbestand, verleihService); //Cái này để show ra Medien và cả Vormerkern
         _medienDetailAnzeigerWerkzeug = new MedienDetailAnzeigerWerkzeug();
         _kundenDetailAnzeigerWerkzeug = new KundenDetailAnzeigerWerkzeug();
 
@@ -220,9 +220,20 @@ public class VormerkWerkzeug
         // TODO für Aufgabenblatt 6 (nicht löschen): Prüfung muss noch eingebaut
         // werden. Ist dies korrekt imlpementiert, wird der Vormerk-Button gemäß
         // der Anforderungen a), b), c) und e) aktiviert.
+<<<<<<< HEAD:Blatt 06/Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/vormerken/VormerkWerkzeug.java
         
         return _verleihService.istVormerkenMoeglich(kunde, medien) && (kunde != null) && !medien.isEmpty();
 
+=======
+
+        //a: Medium kann nur max von 3 Kunden vorgemerkt werden
+
+        //DONE nhưng cần check lại
+
+        return (kunde != null) && !medien.isEmpty()
+                && _verleihService.istVormerkenMoeglich(kunde, medien);
+
+>>>>>>> Clone-dev-von-QuocHuy:Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/vormerken/VormerkWerkzeug.java
     }
 
     /**
@@ -238,10 +249,24 @@ public class VormerkWerkzeug
         Kunde selectedKunde = _kundenAuflisterWerkzeug.getSelectedKunde();
         // TODO für Aufgabenblatt 6 (nicht löschen): Vormerken einbauen
 
+<<<<<<< HEAD:Blatt 06/Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/vormerken/VormerkWerkzeug.java
         for (Medium medium : selectedMedien)
         {
             _verleihService.merkeVor(selectedKunde, medium);
         }
+=======
+        //Mới thêm vào
+        for (Medium medium : selectedMedien)
+        {
+            _verleihService.merkenvor(selectedKunde, medium);
+            aktualisiereVormerkButton();
+
+            //            System.out.println(_verleihService.getVormerkkarteFuer(medium)
+            //                .getErsteVormerker()
+            //                .getFormatiertenString());
+        }
+
+>>>>>>> Clone-dev-von-QuocHuy:Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/werkzeuge/vormerken/VormerkWerkzeug.java
     }
 
     /**

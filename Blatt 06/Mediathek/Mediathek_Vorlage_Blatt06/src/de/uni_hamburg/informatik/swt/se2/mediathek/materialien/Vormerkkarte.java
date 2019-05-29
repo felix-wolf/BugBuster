@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Blatt 06/Mediathek/Mediathek_Vorlage_Blatt06/src/de/uni_hamburg/informatik/swt/se2/mediathek/materialien/Vormerkkarte.java
 package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
 
 import java.util.ArrayList;
@@ -138,3 +139,4 @@ public class Vormerkkarte
 	
 	
 }
+
