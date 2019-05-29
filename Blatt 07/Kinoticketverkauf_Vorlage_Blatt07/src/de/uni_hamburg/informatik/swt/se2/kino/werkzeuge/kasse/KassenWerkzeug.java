@@ -19,7 +19,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.vorstellungsauswaehler.V
  * @author SE2-Team
  * @version SoSe 2018
  */
-public class KassenWerkzeug
+public class KassenWerkzeug //BEOBACHTBAR
 {
     // Das Material dieses Werkzeugs
     private Kino _kino;
