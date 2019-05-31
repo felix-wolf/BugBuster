@@ -7,6 +7,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Datum;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Kino;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Tagesplan;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Vorstellung;
+import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachter;
 import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.datumsauswaehler.DatumAuswaehlWerkzeug;
 import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.platzverkauf.PlatzVerkaufsWerkzeug;
 import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.vorstellungsauswaehler.VorstellungsAuswaehlWerkzeug;
@@ -19,7 +20,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.vorstellungsauswaehler.V
  * @author SE2-Team
  * @version SoSe 2018
  */
-public class KassenWerkzeug //BEOBACHTBAR
+public class KassenWerkzeug implements Beobachter
 {
     // Das Material dieses Werkzeugs
     private Kino _kino;
@@ -50,6 +51,9 @@ public class KassenWerkzeug //BEOBACHTBAR
         _datumAuswaehlWerkzeug = new DatumAuswaehlWerkzeug();
         _vorstellungAuswaehlWerkzeug = new VorstellungsAuswaehlWerkzeug();
 
+        // TODO Neu implementiert: Hinzufügen KassenWerkzeug als Beobachter für 2 Beobachbaren da oben
+        registriereBeobachterFuerSubwerkzeuge();
+
         // UI erstellen (mit eingebetteten UIs der direkten Subwerkzeuge)
         _ui = new KassenWerkzeugUI(_platzVerkaufsWerkzeug.getUIPanel(),
                 _datumAuswaehlWerkzeug.getUIPanel(),
@@ -67,14 +71,15 @@ public class KassenWerkzeug //BEOBACHTBAR
      */
     private void registriereUIAktionen()
     {
-        _ui.getBeendenButton().addActionListener(new ActionListener()
-        {
-            @Override
-            public void actionPerformed(ActionEvent e)
+        _ui.getBeendenButton()
+            .addActionListener(new ActionListener()
             {
-                reagiereAufBeendenButton();
-            }
-        });
+                @Override
+                public void actionPerformed(ActionEvent e)
+                {
+                    reagiereAufBeendenButton();
+                }
+            });
     }
 
     /**
@@ -119,4 +124,37 @@ public class KassenWerkzeug //BEOBACHTBAR
     {
         return _vorstellungAuswaehlWerkzeug.getAusgewaehlteVorstellung();
     }
+
+    // Neu implementiert
+    @Override
+    public void beachteAenderung()
+    {
+        setzeAusgewaehlteVorstellung();
+        setzeTagesplanFuerAusgewaehltesDatum();
+    }
+
+    private void registriereBeobachterFuerSubwerkzeuge()
+    {
+
+        _vorstellungAuswaehlWerkzeug.registerBeobachter(new Beobachter()
+        {
+            @Override
+            public void beachteAenderung()
+            {
+                setzeAusgewaehlteVorstellung();
+            }
+        });
+        _datumAuswaehlWerkzeug.registerBeobachter(new Beobachter()
+        {
+
+            @Override
+            public void beachteAenderung()
+            {
+                setzeTagesplanFuerAusgewaehltesDatum();
+
+            }
+        });
+
+    }
+
 }

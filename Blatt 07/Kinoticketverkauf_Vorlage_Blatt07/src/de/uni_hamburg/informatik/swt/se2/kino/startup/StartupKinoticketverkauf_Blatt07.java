@@ -26,13 +26,14 @@ public class StartupKinoticketverkauf_Blatt07
      */
     public static void main(String[] args)
     {
-    	pruefeObAssertionsAktiviert();
+        pruefeObAssertionsAktiviert();
         final Kino kino = erzeugeKinoMitBeispieldaten();
         SwingUtilities.invokeLater(new Runnable()
         {
             public void run()
             {
                 new KassenWerkzeug(kino);
+
             }
         });
     }
@@ -42,8 +43,8 @@ public class StartupKinoticketverkauf_Blatt07
      */
     private static Kino erzeugeKinoMitBeispieldaten()
     {
-        final Kinosaal[] saele = { new Kinosaal("Saal 1", 20, 25),
-                new Kinosaal("Saal 2", 16, 20), new Kinosaal("Saal 3", 10, 16) };
+        final Kinosaal[] saele = {new Kinosaal("Saal 1", 20, 25), // 20 Reihe und 25 Plätze pro Reihe
+                new Kinosaal("Saal 2", 16, 20), new Kinosaal("Saal 3", 10, 16)};
 
         // Filme: Top-5 Deutschland laut kino.de in der Kalenderwoche 20, 2011.
         Film[] filme = {
@@ -52,7 +53,7 @@ public class StartupKinoticketverkauf_Blatt07
                 new Film("Fast & Furious Five", 130, FSK.FSK12, true),
                 new Film("Rio", 96, FSK.FSK0, false),
                 new Film("Wasser für die Elefanten", 120, FSK.FSK12, false),
-                new Film("Thor", 115, FSK.FSK12, false) };
+                new Film("Thor", 115, FSK.FSK12, false)};
 
         Uhrzeit nachmittag = new Uhrzeit(17, 30);
         Uhrzeit abend = new Uhrzeit(20, 0);
@@ -82,7 +83,8 @@ public class StartupKinoticketverkauf_Blatt07
                 new Vorstellung(saele[1], filme[2], nachmittag, abend, d2, 995),
                 new Vorstellung(saele[1], filme[4], abend, nacht, d2, 895),
 
-                new Vorstellung(saele[2], filme[3], nachmittag, abend, d2, 1095),
+                new Vorstellung(saele[2], filme[3], nachmittag, abend, d2,
+                        1095),
                 new Vorstellung(saele[2], filme[1], spaet, nacht, d2, 995),
 
                 // Übermorgen
@@ -93,21 +95,23 @@ public class StartupKinoticketverkauf_Blatt07
                 new Vorstellung(saele[1], filme[0], abend, nacht, d3, 895),
 
                 new Vorstellung(saele[2], filme[3], abend, spaet, d3, 1095),
-                new Vorstellung(saele[2], filme[4], spaet, nacht, d3, 995) };
+                new Vorstellung(saele[2], filme[4], spaet, nacht, d3, 995)};
 
         return new Kino(saele, vorstellungen);
     }
-    /**
-	 * prueft, ob -ea als Default VM Argument hinterlegt ist
-	 */
-	private static void pruefeObAssertionsAktiviert() {
 
-		boolean sindAssertionsAktiv = false;
-		assert sindAssertionsAktiv = true;
-		if(!sindAssertionsAktiv)
-		{
-			System.err.println("Assertions sind nicht eingeschaltet!\n"
-					+ " Schalte sie ein, indem du unter Window -> Preferences-> Java -> installed JREs das genutzte JRE anwähltst, auf Edit klickst und bei Default VM Arguments \"-ea\" einträgst.");
-		}
-	}
+    /**
+     * prueft, ob -ea als Default VM Argument hinterlegt ist
+     */
+    private static void pruefeObAssertionsAktiviert()
+    {
+
+        boolean sindAssertionsAktiv = false;
+        assert sindAssertionsAktiv = true;
+        if (!sindAssertionsAktiv)
+        {
+            System.err.println("Assertions sind nicht eingeschaltet!\n"
+                    + " Schalte sie ein, indem du unter Window -> Preferences-> Java -> installed JREs das genutzte JRE anwähltst, auf Edit klickst und bei Default VM Arguments \"-ea\" einträgst.");
+        }
+    }
 }

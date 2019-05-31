@@ -8,6 +8,7 @@ import javax.swing.event.ListSelectionListener;
 
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Tagesplan;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Vorstellung;
+import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachbar;
 
 /**
  * Mit diesem Werkzeug kann der Benutzer oder die Benutzerin eine Vorstellung
@@ -16,7 +17,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.materialien.Vorstellung;
  * Dieses Werkzeug ist ein eingebettetes Subwerkzeug. Es benachrichtigt seine
  * Beobachter, wenn sich die ausgewählte Vorstellung geändert hat.
  */
-public class VorstellungsAuswaehlWerkzeug
+public class VorstellungsAuswaehlWerkzeug extends Beobachbar
 {
     private VorstellungsAuswaehlWerkzeugUI _ui;
 
@@ -37,7 +38,8 @@ public class VorstellungsAuswaehlWerkzeug
      */
     private void vorstellungWurdeAusgewaehlt()
     {
-
+        //TODO Neu implementiert
+        meldeAenderung();
     }
 
     /**
@@ -59,7 +61,8 @@ public class VorstellungsAuswaehlWerkzeug
     {
         Vorstellung result = null;
         VorstellungsFormatierer adapter = (VorstellungsFormatierer) _ui
-                .getVorstellungAuswahlList().getSelectedValue();
+            .getVorstellungAuswahlList()
+            .getSelectedValue();
         if (adapter != null)
         {
             result = adapter.getVorstellung();
@@ -89,13 +92,16 @@ public class VorstellungsAuswaehlWerkzeug
             List<Vorstellung> vorstellungen)
     {
         VorstellungsFormatierer[] varray = new VorstellungsFormatierer[vorstellungen
-                .size()];
+            .size()];
         for (int i = 0; i < vorstellungen.size(); i++)
         {
             varray[i] = new VorstellungsFormatierer(vorstellungen.get(i));
         }
-        _ui.getVorstellungAuswahlList().setListData(varray);
-        _ui.getVorstellungAuswahlList().setSelectedIndex(0);
+        _ui.getVorstellungAuswahlList()
+            .setListData(varray);
+        _ui.getVorstellungAuswahlList()
+            .setSelectedIndex(0);
+
     }
 
     /**
@@ -105,17 +111,18 @@ public class VorstellungsAuswaehlWerkzeug
      */
     private void registriereUIAktionen()
     {
-        _ui.getVorstellungAuswahlList().addListSelectionListener(
-                new ListSelectionListener()
+        _ui.getVorstellungAuswahlList()
+            .addListSelectionListener(new ListSelectionListener()
+            {
+                @Override
+                public void valueChanged(ListSelectionEvent event)
                 {
-                    @Override
-                    public void valueChanged(ListSelectionEvent event)
+                    if (!event.getValueIsAdjusting())
                     {
-                        if (!event.getValueIsAdjusting())
-                        {
-                            vorstellungWurdeAusgewaehlt();
-                        }
+                        vorstellungWurdeAusgewaehlt();
                     }
-                });
+                }
+            });
     }
+
 }
