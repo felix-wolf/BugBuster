@@ -1,0 +1,31 @@
+2.4.2019;123457;CD;Greatest Hits Vol. 1 & Vol. 2;2 wundervolle Scheiben;Billy Joel;140
+ ; ;CD;Garden State;Soundtrack;Various;56
+2.4.2019;123457;KonsolenVideospiel;Dr. Kawashimas Gehirn Jogging; Wie fit ist ihr Gehirn?;Nintendo DS
+ ; ;DVD;Pirates of the Caribbean - Am Ende der Welt;Abenteuer des Cpt. Jack Sparrow;Gore Verbinski;160
+ ; ;CD;One of the Boys;Das ist das neue Album von Katy Perry One of the Boys inklusive der Hitsingles Hot N Cold und I Kissed A Girl.;Katy Perry;70
+ ; ;CD;Wincing the Night Away;Die fleißigsten Slacker der Indie-Szene ;the Shins;69
+ ; ;DVD;Kung Fu Panda;Die Legende von einem Drachenkrieger;John Stevenson;115
+ ; ;DVD;James Bond - Ein Quantum Trost;Ein Quantum Trost setzt da an, wo Casino Royale endet;Marc Forster;110
+ ; ;CD;Disturbia;gut;Rihanna;90
+21.3.2019;123456;DVD;Kung Fu Panda;Die Legende von einem Drachenkrieger;John Stevenson;115
+26.3.2019;123460;KonsolenVideospiel;Resident Evil 5;Chris Redfield, der bekannte Titelheld aus Resident Evil, ist dem Bösen rund um den Globus auf den Fersen;Xbox 360
+ ; ;PCVideospiel;World of Warcraft;Der Aufstieg des Lichkönigs; Mac OS X
+30.3.2019;123456;CD;Hard candy;besser;Madonna;65
+ ; ;DVD;Hellboy;Red - der dämonische Held aus der Unterwelt;Guillermo Del Toro;110
+ ; ;PCVideospiel;Battlefield 2;Laden und entsichern, Soldat!;Windows Vista/XP
+ ; ;DVD;Pirates of the Caribbean - Am Ende der Welt;Abenteuer des Cpt. Jack Sparrow;Gore Verbinski;160
+ ; ;CD;Breakaway;Nachfolger vom Album Tankful;Kelly Clarkson;87
+ ; ;DVD;James Bond - Ein Quantum Trost;Ein Quantum Trost setzt da an, wo Casino Royale endet;Marc Forster;110
+ ; ;DVD;The Dark Knight;Die Fortsetzung von Batman Begins;Christopher Nolan;130
+ ; ;KonsolenVideospiel;FIFA 09;Geh in FIFA 09 auf den Platz und spiel professionellen Fußball, so wie du ihn dir vorstellst.;Playstation 3
+ ; ;KonsolenVideospiel;Mario Kart; Neue Strecken, neue Rennfahrer, neue Fahrzeuge und 12-Spieler-Rennen; Wii
+ ; ;PCVideospiel;Company of Heroes;Tales of Valor;Windows Vista/XP
+ ; ;PCVideospiel;Grand Theft Auto IV;Uncut;Windows Vista/XP
+ ; ;Videospiel;FIFA 09;Geh in FIFA 09 auf den Platz und spiel professionellen Fußball, so wie du ihn dir vorstellst.;Playstation 3
+ ; ;Videospiel;Mario Kart; Neue Strecken, neue Rennfahrer, neue Fahrzeuge und 12-Spieler-Rennen; Wii
+ ; ;Videospiel;Company of Heroes;Tales of Valor;Windows Vista/XP
+ ; ;Videospiel;Grand Theft Auto IV;Uncut;Windows Vista/XP
+ ; ;Videospiel;Battlefield 2;Laden und entsichern, Soldat!;Windows Vista/XP
+26.3.2019;123460;Videospiel;Resident Evil 5;Chris Redfield, der bekannte Titelheld aus Resident Evil, ist dem Bösen rund um den Globus auf den Fersen;Xbox 360
+ ; ;Videospiel;World of Warcraft;Der Aufstieg des Lichkönigs; Mac OS X
+2.4.2019;123457;Videospiel;Dr. Kawashimas Gehirn Jogging; Wie fit ist ihr Gehirn?;Nintendo DS
