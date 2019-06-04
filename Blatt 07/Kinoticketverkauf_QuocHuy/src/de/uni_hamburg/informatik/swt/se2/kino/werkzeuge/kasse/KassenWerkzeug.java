@@ -127,10 +127,21 @@ public class KassenWerkzeug implements Beobachter
 
     // Neu implementiert
     @Override
-    public void beachteAenderung()
+    public void beachteAenderung(String artDerAenderung)
     {
-        setzeAusgewaehlteVorstellung();
-        setzeTagesplanFuerAusgewaehltesDatum();
+        switch (artDerAenderung)
+        {
+        case "vorstellung":
+            setzeAusgewaehlteVorstellung();
+            break;
+
+        case "tagesplan":
+            setzeTagesplanFuerAusgewaehltesDatum();
+            break;
+
+        default:
+            break;
+        }
     }
 
     /**
@@ -138,26 +149,8 @@ public class KassenWerkzeug implements Beobachter
      */
     private void registriereBeobachterFuerSubwerkzeuge()
     {
-
-        _vorstellungAuswaehlWerkzeug.registerBeobachter(new Beobachter()
-        {
-            @Override
-            public void beachteAenderung()
-            {
-                setzeAusgewaehlteVorstellung();
-            }
-        });
-        _datumAuswaehlWerkzeug.registerBeobachter(new Beobachter()
-        {
-
-            @Override
-            public void beachteAenderung()
-            {
-                setzeTagesplanFuerAusgewaehltesDatum();
-
-            }
-        });
-
+        _vorstellungAuswaehlWerkzeug.fuegeBeobachterHinzu(this);
+        _datumAuswaehlWerkzeug.fuegeBeobachterHinzu(this);
     }
 
 }

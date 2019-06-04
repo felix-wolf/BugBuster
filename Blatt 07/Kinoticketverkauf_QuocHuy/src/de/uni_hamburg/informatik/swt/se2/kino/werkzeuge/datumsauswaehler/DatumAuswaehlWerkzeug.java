@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Datum;
-import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachbar;
+import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachtbar;
 
 /**
  * Mit diesem Werkzeug kann ein Datum ausgewählt werden.
@@ -17,7 +17,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachbar;
  * @author SE2-Team
  * @version SoSe 2018
  */
-public class DatumAuswaehlWerkzeug extends Beobachbar
+public class DatumAuswaehlWerkzeug extends Beobachtbar
 {
     private DatumAuswaehlWerkzeugUI _ui;
     private Datum _ausgewaehltesDatum;
@@ -32,6 +32,7 @@ public class DatumAuswaehlWerkzeug extends Beobachbar
         _ui = new DatumAuswaehlWerkzeugUI(
                 _ausgewaehltesDatum.getFormatiertenString());
         registriereUIAktionen();
+
     }
 
     /**
@@ -44,7 +45,7 @@ public class DatumAuswaehlWerkzeug extends Beobachbar
             .setText(_ausgewaehltesDatum.getFormatiertenString());
 
         // TODO Neu implementiert
-        meldeAenderung();
+        meldeAenderung("tagesplan");
     }
 
     /**
@@ -57,7 +58,7 @@ public class DatumAuswaehlWerkzeug extends Beobachbar
             .setText(_ausgewaehltesDatum.getFormatiertenString());
 
         // TODO Neu implementiert
-        meldeAenderung();
+        meldeAenderung("tagesplan");
     }
 
     /**

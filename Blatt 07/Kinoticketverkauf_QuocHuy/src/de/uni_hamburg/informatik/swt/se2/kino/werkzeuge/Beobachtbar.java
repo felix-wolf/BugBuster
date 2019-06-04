@@ -1,6 +1,6 @@
 package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge;
 
-import static org.junit.Assert.assertTrue;
+import java.util.ArrayList;
 
 /**
  * Basisklasse für Subwerkzeuge, die ihr Kontextwerkzeug bei Änderungen
@@ -19,9 +19,10 @@ import static org.junit.Assert.assertTrue;
  * @author Bugbuster
  * @version SoSe 2019
  */
-public abstract class Beobachbar
+public abstract class Beobachtbar
 {
-    public Beobachter _beobachter; //In diesen Programm gibt es nur einen Beobachter
+
+    public ArrayList<Beobachter> _beobachter = new ArrayList<Beobachter>();
 
     /**
      * Methode, einen neuen Beobachter zu registrieren
@@ -29,24 +30,12 @@ public abstract class Beobachbar
      * @require beobachter != null
      * @param beobachter : der neue Beobachter
      */
-    public void registerBeobachter(Beobachter beobachter)
+    public void fuegeBeobachterHinzu(Beobachter beobachter)
     {
-        assertTrue("_beobachter ist noch nicht registriert",
-                _beobachter == null);
+        assert _beobachter != null : "_beobachter ist noch nicht registriert";
 
-        _beobachter = beobachter;
+        _beobachter.add(beobachter);
 
-    }
-
-    // Das kann gelöscht werden, wird nicht benutzt
-    /**
-     * Gib den Beobachter zurück
-     * K
-     * @return der registrierte Beobachter
-     */
-    public Beobachter getBeobachter()
-    {
-        return _beobachter;
     }
 
     /**
@@ -55,11 +44,15 @@ public abstract class Beobachbar
      * 
      * Diese Methode muss von der erbenden Klasse immer dann aufgerufen werden,
      * wenn eine Änderung geschehen ist, die für Beobachter interessant ist.
+     * 
      */
-    public void meldeAenderung()
+    public void meldeAenderung(String artDerAenderung)
     {
         //Hier gibt es noch Fehler
-        //assertTrue("_beobachter ist noch nicht registriert",_beobachter == null);
-        _beobachter.beachteAenderung();
+        assert _beobachter != null : "_beobachter ist noch nicht registriert";
+        for (Beobachter beobachter : _beobachter)
+        {
+            beobachter.beachteAenderung(artDerAenderung);
+        }
     }
 }

@@ -8,7 +8,7 @@ import javax.swing.event.ListSelectionListener;
 
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Tagesplan;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Vorstellung;
-import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachbar;
+import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachtbar;
 
 /**
  * Mit diesem Werkzeug kann der Benutzer oder die Benutzerin eine Vorstellung
@@ -17,7 +17,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.Beobachbar;
  * Dieses Werkzeug ist ein eingebettetes Subwerkzeug. Es benachrichtigt seine
  * Beobachter, wenn sich die ausgewählte Vorstellung geändert hat.
  */
-public class VorstellungsAuswaehlWerkzeug extends Beobachbar
+public class VorstellungsAuswaehlWerkzeug extends Beobachtbar
 {
     private VorstellungsAuswaehlWerkzeugUI _ui;
 
@@ -31,6 +31,7 @@ public class VorstellungsAuswaehlWerkzeug extends Beobachbar
     {
         _ui = new VorstellungsAuswaehlWerkzeugUI();
         registriereUIAktionen();
+
     }
 
     /**
@@ -39,7 +40,7 @@ public class VorstellungsAuswaehlWerkzeug extends Beobachbar
     private void vorstellungWurdeAusgewaehlt()
     {
         //TODO Neu implementiert
-        meldeAenderung();
+        meldeAenderung("vorstellung");
     }
 
     /**
