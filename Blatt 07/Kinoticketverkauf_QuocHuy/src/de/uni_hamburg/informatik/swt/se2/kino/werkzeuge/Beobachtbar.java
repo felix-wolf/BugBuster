@@ -25,10 +25,11 @@ public abstract class Beobachtbar
     public ArrayList<Beobachter> _beobachter = new ArrayList<Beobachter>();
 
     /**
-     * Methode, einen neuen Beobachter zu registrieren
+     * Fuegt einen neuen Beobachter zu _beobachter hinzu
      * 
      * @require beobachter != null
      * @param beobachter : der neue Beobachter
+     * @ensure _beobachter.contains(beobachter)
      */
     public void fuegeBeobachterHinzu(Beobachter beobachter)
     {
@@ -39,17 +40,21 @@ public abstract class Beobachtbar
     }
 
     /**
-     * Informiert an diesem Subwerkzeug registriertem Beobachter über eine
+     * Informiert die an diesem Subwerkzeug registrierten Beobachter über eine
      * Änderung.
      * 
      * Diese Methode muss von der erbenden Klasse immer dann aufgerufen werden,
      * wenn eine Änderung geschehen ist, die für Beobachter interessant ist.
      * 
+     * @param artDerAenderung die Art der Aenderung
+     * @require artDerAenderung != null
+     * @require _beobachter != null
      */
     public void meldeAenderung(String artDerAenderung)
     {
-        //Hier gibt es noch Fehler
-        assert _beobachter != null : "_beobachter ist noch nicht registriert";
+        assert _beobachter != null : "Vorbedingung verletzt: _beobachter != null";
+        assert artDerAenderung != null : "Vorbedingung verletzt: artDerAenderung != null";
+        
         for (Beobachter beobachter : _beobachter)
         {
             beobachter.beachteAenderung(artDerAenderung);

@@ -125,10 +125,11 @@ public class KassenWerkzeug implements Beobachter
         return _vorstellungAuswaehlWerkzeug.getAusgewaehlteVorstellung();
     }
 
-    // Neu implementiert
     @Override
     public void beachteAenderung(String artDerAenderung)
     {
+    	assert artDerAenderung != null : "Vorbedingung verletzt: artDerAenderung != null";
+    	
         switch (artDerAenderung)
         {
         case "vorstellung":

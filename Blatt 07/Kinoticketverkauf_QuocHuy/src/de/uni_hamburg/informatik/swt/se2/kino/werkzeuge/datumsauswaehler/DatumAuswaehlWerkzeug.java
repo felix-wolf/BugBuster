@@ -57,7 +57,6 @@ public class DatumAuswaehlWerkzeug extends Beobachtbar
         _ui.getDatumLabel()
             .setText(_ausgewaehltesDatum.getFormatiertenString());
 
-        // TODO Neu implementiert
         meldeAenderung("tagesplan");
     }
 

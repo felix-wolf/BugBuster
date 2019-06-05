@@ -16,6 +16,8 @@ public interface Beobachter
      * 
      * Implementierende Klassen müssen in dieser Operation auf die Aenderung
      * reagieren.
+     * 
+     * @require artDerAenderung != null
      */
     public void beachteAenderung(String artDerAenderung);
 
