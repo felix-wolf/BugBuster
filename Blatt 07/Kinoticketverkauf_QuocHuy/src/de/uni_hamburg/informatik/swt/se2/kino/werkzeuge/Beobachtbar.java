@@ -1,6 +1,7 @@
 package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge;
 
-import java.util.ArrayList;
+
+import java.util.HashSet;
 
 /**
  * Basisklasse für Subwerkzeuge, die ihr Kontextwerkzeug bei Änderungen
@@ -22,7 +23,7 @@ import java.util.ArrayList;
 public abstract class Beobachtbar
 {
 
-    private ArrayList<Beobachter> _beobachter = new ArrayList<Beobachter>();
+    private HashSet<Beobachter> _beobachter = new HashSet<Beobachter>();
 
     /**
      * Fuegt einen neuen Beobachter zu _beobachter hinzu
