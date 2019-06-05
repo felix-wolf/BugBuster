@@ -22,14 +22,14 @@ import java.util.ArrayList;
 public abstract class Beobachtbar
 {
 
-    public ArrayList<Beobachter> _beobachter = new ArrayList<Beobachter>();
+    private ArrayList<Beobachter> _beobachter = new ArrayList<Beobachter>();
 
     /**
      * Fuegt einen neuen Beobachter zu _beobachter hinzu
      * 
      * @require beobachter != null
      * @param beobachter : der neue Beobachter
-     * @ensure _beobachter.contains(beobachter)
+     * @ensure beobachter wurde hinzugefügt
      */
     public void fuegeBeobachterHinzu(Beobachter beobachter)
     {
