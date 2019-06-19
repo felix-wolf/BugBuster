@@ -1,0 +1,9 @@
+Werkzeuge bestehen aus:
+
+Werkzeug-Klasse
+- vermittelt zwischen grafischer Schnittstelle der UI-Klasse und den fachlichen Klassen
+
+
+
+UI-Klasse
+- erzeugt und verwaltet die GUI-Komponenten der grafischen Schnittstelle, steuert Layout
