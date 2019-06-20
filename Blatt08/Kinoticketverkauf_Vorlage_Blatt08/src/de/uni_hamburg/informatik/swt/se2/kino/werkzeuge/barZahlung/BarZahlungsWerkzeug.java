@@ -72,7 +72,7 @@ public class BarZahlungsWerkzeug
 	}
 	
 	//wird nicht benutzt?
-	protected boolean istBezahlenMoeglich() 
+	private boolean istBezahlenMoeglich() 
 	{
 		if(berechneRestbetrag(_betrag) >= 0)
 		{
@@ -85,7 +85,7 @@ public class BarZahlungsWerkzeug
 	}
 
 	
-	protected void reagiereAufEinzahlung(KeyEvent e) 
+	private void reagiereAufEinzahlung(KeyEvent e) 
 	{
 		//TODO: Auf Enter reagieren
 		//TODO: getKeyCode ersetzen durch Textfeldinhalt
@@ -117,7 +117,7 @@ public class BarZahlungsWerkzeug
 	}
 	
 	
-	private boolean istBezahlt()
+	public boolean istBezahlt()
 	{
 		return _bezahlStatus;
 	}
