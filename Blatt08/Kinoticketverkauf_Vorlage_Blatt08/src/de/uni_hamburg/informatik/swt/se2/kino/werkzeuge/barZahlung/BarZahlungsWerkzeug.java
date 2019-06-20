@@ -2,8 +2,9 @@ package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent; 
-import java.awt.event.KeyListener; 
+//import java.awt.event.KeyEvent; 
+//import java.awt.event.KeyListener; 
+
 //TODO: Kommentare
 public class BarZahlungsWerkzeug 
 {
@@ -17,15 +18,15 @@ public class BarZahlungsWerkzeug
 	public BarZahlungsWerkzeug(int preis)
 	{
 		_preis = preis;
-		_betrag = 0;
 		_bezahlStatus = false;
 		
 		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI();
+		
 		_barZahlungsWerkzeugUI.getBetragLabel().setText(
 				_preis + " Eurocent");
 		
-		//evtl ok button disablen, weiss nicht ob in der ui zuerst enabled oder disabled
-		//TODO: OK-Button disablen
+		_barZahlungsWerkzeugUI.getOkButton().setEnabled(false);
+		
 		registriereUIAktionen();
 	}
 
@@ -60,27 +61,50 @@ public class BarZahlungsWerkzeug
 			}
 			
 		});
-		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener()
-                {
-					@Override
-					public void keyPressed(KeyEvent e) {
-						
-					}
-
-					@Override
-					public void keyReleased(KeyEvent e) {
-						
-					}
-
-					@Override
-					public void keyTyped(KeyEvent e) {
-						
+		
+//		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener()
+//                {
+//					@Override
+//					public void keyPressed(KeyEvent e) {
+//						
+//					}
+//
+//					@Override
+//					public void keyReleased(KeyEvent e) {
+//						
+//					}
+//
+//					@Override
+//					public void keyTyped(KeyEvent e) {
+//						
 //						reagiereAufEinzahlung(e);
-					}
-                });
+//					}
+//                });
 	}
 	
-	//wird nicht benutzt?
+	
+	private void reagiereAufEinzahlung() throws Exception
+	{
+		//TODO: getKeyCode ersetzen durch Textfeldinhalt
+		
+		String inhalt = _barZahlungsWerkzeugUI.getBarZahlungsTextfield().getText();
+		
+		try {
+		    _betrag = Integer.parseInt(inhalt);
+		  } catch (NumberFormatException e) {
+			throw new Exception("Digga gib mal Zahl vernünftig ein...");
+		  }
+		
+		
+//		_betrag = Integer.parseInt(inhalt);
+		
+
+		_barZahlungsWerkzeugUI.getOkButton().setEnabled(istBezahlenMoeglich());
+		
+		aktualisiereRestbetragAnzeige(_betrag);
+	}
+	
+	
 	private boolean istBezahlenMoeglich() 
 	{
 		if(berechneRestbetrag(_betrag) >= 0)
@@ -91,34 +115,6 @@ public class BarZahlungsWerkzeug
 		{
 			return false;
 		}
-	}
-
-	
-	private void reagiereAufEinzahlung() throws Exception
-	{
-		//TODO: Auf Enter reagieren
-		//TODO: getKeyCode ersetzen durch Textfeldinhalt
-		
-		String inhalt = _barZahlungsWerkzeugUI.getBarZahlungsTextfield().getText();
-		try {
-		    _betrag = Integer.parseInt(inhalt);
-		  } catch (NumberFormatException e) {
-			throw Exception();
-		  }
-		_betrag = Integer.parseInt(inhalt);
-		
-//		if(e.getKeyCode() >= 48 && e.getKeyCode() <= 57)
-//		{
-//			_betrag = _betrag * 10 + (e.getKeyCode() - 48);
-//		}
-//		else if(e.getKeyCode() == 8)
-//		{
-//			_betrag = _betrag / 10;
-//		}
-
-		_barZahlungsWerkzeugUI.getOkButton().setEnabled(berechneRestbetrag(_betrag) >= 0);
-		
-		aktualisiereRestbetragAnzeige(_betrag);
 	}
 	
 	
