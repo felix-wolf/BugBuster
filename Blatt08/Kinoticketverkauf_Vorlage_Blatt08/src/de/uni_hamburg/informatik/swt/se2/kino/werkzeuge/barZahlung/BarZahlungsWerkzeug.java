@@ -51,6 +51,15 @@ public class BarZahlungsWerkzeug
             }
         });
 		
+		_barZahlungsWerkzeugUI.getBezahltTextfield().addActionListener(new ActionListener()
+		{
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				reagiereAufEinzahlung();
+			}
+			
+		});
 		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener()
                 {
 					@Override
@@ -66,7 +75,7 @@ public class BarZahlungsWerkzeug
 					@Override
 					public void keyTyped(KeyEvent e) {
 						
-						reagiereAufEinzahlung(e);
+//						reagiereAufEinzahlung(e);
 					}
                 });
 	}
@@ -85,18 +94,27 @@ public class BarZahlungsWerkzeug
 	}
 
 	
-	private void reagiereAufEinzahlung(KeyEvent e) 
+	private void reagiereAufEinzahlung() throws Exception
 	{
 		//TODO: Auf Enter reagieren
 		//TODO: getKeyCode ersetzen durch Textfeldinhalt
-		if(e.getKeyCode() >= 48 && e.getKeyCode() <= 57)
-		{
-			_betrag = _betrag * 10 + (e.getKeyCode() - 48);
-		}
-		else if(e.getKeyCode() == 8)
-		{
-			_betrag = _betrag / 10;
-		}
+		
+		String inhalt = _barZahlungsWerkzeugUI.getBarZahlungsTextfield().getText();
+		try {
+		    _betrag = Integer.parseInt(inhalt);
+		  } catch (NumberFormatException e) {
+			throw Exception();
+		  }
+		_betrag = Integer.parseInt(inhalt);
+		
+//		if(e.getKeyCode() >= 48 && e.getKeyCode() <= 57)
+//		{
+//			_betrag = _betrag * 10 + (e.getKeyCode() - 48);
+//		}
+//		else if(e.getKeyCode() == 8)
+//		{
+//			_betrag = _betrag / 10;
+//		}
 
 		_barZahlungsWerkzeugUI.getOkButton().setEnabled(berechneRestbetrag(_betrag) >= 0);
 		
