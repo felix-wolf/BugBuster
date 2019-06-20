@@ -1,10 +1,10 @@
-package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barzahlung;
+package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent; 
 import java.awt.event.KeyListener; 
-
+//TODO: Kommentare
 public class BarZahlungsWerkzeug 
 {
 	private int _preis;
@@ -24,8 +24,8 @@ public class BarZahlungsWerkzeug
 		_barZahlungsWerkzeugUI.getBetragLabel().setText(
 				_preis + " Eurocent");
 		
-		//evtl ok button disablen, weiß nicht ob in der ui zuerst enabled oder disabled
-		
+		//evtl ok button disablen, weiss nicht ob in der ui zuerst enabled oder disabled
+		//TODO: OK-Button disablen
 		registriereUIAktionen();
 	}
 
@@ -65,6 +65,7 @@ public class BarZahlungsWerkzeug
 
 					@Override
 					public void keyTyped(KeyEvent e) {
+						
 						reagiereAufEinzahlung(e);
 					}
                 });
@@ -86,6 +87,8 @@ public class BarZahlungsWerkzeug
 	
 	protected void reagiereAufEinzahlung(KeyEvent e) 
 	{
+		//TODO: Auf Enter reagieren
+		//TODO: getKeyCode ersetzen durch Textfeldinhalt
 		if(e.getKeyCode() >= 48 && e.getKeyCode() <= 57)
 		{
 			_betrag = _betrag * 10 + (e.getKeyCode() - 48);
