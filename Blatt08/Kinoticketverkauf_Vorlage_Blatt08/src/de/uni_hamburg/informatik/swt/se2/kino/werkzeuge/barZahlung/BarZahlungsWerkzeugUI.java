@@ -10,7 +10,7 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class BarZahlungsWerkzeugUI (int betrag){
+public class BarZahlungsWerkzeugUI {
 
 	private JDialog _dialog;
 	private GridLayout _gridlayout;
@@ -30,7 +30,7 @@ public class BarZahlungsWerkzeugUI (int betrag){
 	
 	private boolean _okGeklickt = false;
 	
-	public BarZahlungsWerkzeugUI() {
+	public BarZahlungsWerkzeugUI(int betrag) {
 	//	_hauptfenster = new JFrame();
 	//	_dialog = new JDialog(_hauptfenster, true);
 		_dialog = new JDialog();
@@ -46,7 +46,7 @@ public class BarZahlungsWerkzeugUI (int betrag){
 	}
 
 	private void createFields(int betrag) {
-		_betragTextLabel = new	Jlabel("Gesamtbetrag:");
+		_betragTextLabel = new	JLabel("Gesamtbetrag:");
 		_betragLabel = new JLabel();
 		
 		_betragLabel.setText(String.valueOf(betrag));
