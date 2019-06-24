@@ -92,7 +92,13 @@ public class PlatzVerkaufsWerkzeug
      */
     private void fuehreBarzahlungDurch()
     {
+    	//new
+    	BarZahlungsWerkzeug barZahlungswerkzeug new BarZahlungsWerkzeug(_vorstellung.getPreisFuerPlaetze(plaetze));
+    	
+    	if (barZahlungswerkzeug.istBezahlt())
+    	{
         verkaufePlaetze(_vorstellung);
+    	}
     }
 
     /**
