@@ -57,7 +57,12 @@ public class BarZahlungsWerkzeug
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				reagiereAufEinzahlung();
+				try {
+					reagiereAufEinzahlung();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 			
 		});
@@ -87,12 +92,12 @@ public class BarZahlungsWerkzeug
 	{
 		//TODO: getKeyCode ersetzen durch Textfeldinhalt
 		
-		String inhalt = _barZahlungsWerkzeugUI.getBarZahlungsTextfield().getText();
+		String inhalt = _barZahlungsWerkzeugUI.getBezahltTextfield().getText();
 		
 		try {
 		    _betrag = Integer.parseInt(inhalt);
 		  } catch (NumberFormatException e) {
-			throw new Exception("Digga gib mal Zahl vernünftig ein...");
+			throw new Exception("Digga gib mal Zahl vernï¿½nftig ein...");
 		  }
 		
 		
