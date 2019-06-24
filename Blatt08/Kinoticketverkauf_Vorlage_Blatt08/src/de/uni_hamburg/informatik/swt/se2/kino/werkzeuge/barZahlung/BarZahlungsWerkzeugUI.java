@@ -1,6 +1,12 @@
 package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung;
 
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
@@ -21,7 +27,8 @@ public class BarZahlungsWerkzeugUI {
 	private JLabel _restLabel;
 	
 	private JLabel _bezahltLabel;
-	private JFormattedTextField _bezahltTextfield ;
+	private JTextField _bezahltTextfield ;
+//	private JFormattedTextField _bezahltTextfield ;
 	
 	private boolean _okGeklickt = false;
 	
@@ -36,8 +43,10 @@ public class BarZahlungsWerkzeugUI {
 		createButtons();		
 		_dialog.pack();
 		_dialog.setVisible(true);
+		
 	}
-
+	
+	
 	public JLabel getBetragLabel() {
 		return _betragLabel;
 	}
@@ -71,7 +80,7 @@ public class BarZahlungsWerkzeugUI {
 		_restLabel.setText("0");
 		
 		_bezahltLabel = new JLabel("Bezahlt:");
-		_bezahltTextfield = new JFormattedTextField();
+		_bezahltTextfield = new JTextField();
 		
 		_dialog.add(_betragTextLabel);
 		_dialog.add(_betragLabel);

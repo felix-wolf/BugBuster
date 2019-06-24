@@ -54,14 +54,15 @@ public class BarZahlungsWerkzeug
 		
 		_barZahlungsWerkzeugUI.getBezahltTextfield().addActionListener(new ActionListener()
 		{
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
 					reagiereAufEinzahlung();
+					System.out.println("test");
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
+					System.out.println("test");
 				}
 			}
 			
