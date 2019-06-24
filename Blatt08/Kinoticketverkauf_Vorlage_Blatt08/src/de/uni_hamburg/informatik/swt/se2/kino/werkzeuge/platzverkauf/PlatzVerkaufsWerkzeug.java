@@ -93,6 +93,7 @@ public class PlatzVerkaufsWerkzeug
     private void fuehreBarzahlungDurch()
     {
     	//new
+        Set<Platz> plaetze = _ui.getPlatzplan().getAusgewaehltePlaetze();
     	BarZahlungsWerkzeug barZahlungswerkzeug new BarZahlungsWerkzeug(_vorstellung.getPreisFuerPlaetze(plaetze));
     	
     	if (barZahlungswerkzeug.istBezahlt())
