@@ -4,6 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 //import java.awt.event.KeyEvent; 
 //import java.awt.event.KeyListener; 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.JOptionPane;
 
 //TODO: Kommentare
 public class BarZahlungsWerkzeug 
@@ -23,8 +27,7 @@ public class BarZahlungsWerkzeug
 		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI(_preis);
 		
 		_barZahlungsWerkzeugUI.getBetragLabel().setText(
-				_preis + " Eurocent");
-		
+				_preis + " Eurocent");		
 		_barZahlungsWerkzeugUI.getOkButton().setEnabled(false);
 		
 		registriereUIAktionen();
@@ -51,7 +54,28 @@ public class BarZahlungsWerkzeug
             		_barZahlungsWerkzeugUI.getDialog().dispose();
             }
         });
-		
+//		System.out.println("test");
+//		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener() {
+//		
+//			
+//			@Override
+//			public void keyTyped(KeyEvent e) {
+//				System.out.println("test");
+//				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+//					System.out.println("test");
+//				}
+//			}
+//			
+//			@Override
+//			public void keyReleased(KeyEvent e) {
+//				System.out.println("test");				
+//			}
+//			
+//			@Override
+//			public void keyPressed(KeyEvent e) {
+//				System.out.println("test");				
+//			}
+//		});
 		_barZahlungsWerkzeugUI.getBezahltTextfield().addActionListener(new ActionListener()
 		{
 			@Override
@@ -83,7 +107,7 @@ public class BarZahlungsWerkzeug
 //					@Override
 //					public void keyTyped(KeyEvent e) {
 //						
-//						reagiereAufEinzahlung(e);
+////						reagiereAufEinzahlung(e);
 //					}
 //                });
 	}
@@ -98,12 +122,9 @@ public class BarZahlungsWerkzeug
 		try {
 		    _betrag = Integer.parseInt(inhalt);
 		  } catch (NumberFormatException e) {
+			  JOptionPane.showMessageDialog(null, "Digga, gib die Zahl vernünftig ein...");
 			throw new Exception("Digga gib mal Zahl vern�nftig ein...");
 		  }
-		
-		
-//		_betrag = Integer.parseInt(inhalt);
-		
 
 		_barZahlungsWerkzeugUI.getOkButton().setEnabled(istBezahlenMoeglich());
 		
