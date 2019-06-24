@@ -1,21 +1,15 @@
 package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung;
 
 import java.awt.GridLayout;
-import java.text.NumberFormat;
-import java.util.Locale;
-
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class BarZahlungsWerkzeugUI {
 
 	private JDialog _dialog;
-	private GridLayout _gridlayout;
-	private JFrame _hauptfenster;
 	
 	private JButton _okButton;
 	private JButton _abbrechenButton;
@@ -29,20 +23,17 @@ public class BarZahlungsWerkzeugUI {
 	private JLabel _bezahltLabel;
 	private JFormattedTextField _bezahltTextfield ;
 	
-	//private boolean _okGeklickt = false;
+	private boolean _okGeklickt = false;
 	
-	public BarZahlungsWerkzeugUI() {
-	//	_hauptfenster = new JFrame();
-	//	_dialog = new JDialog(_hauptfenster, true);
+	public BarZahlungsWerkzeugUI(int betrag) {
 		_dialog = new JDialog();
 		_dialog.setModal(true);
 		_dialog.setTitle("Barzahlung");
-		_dialog.setLayout(new GridLayout(3, 2, 20, 20));
+		_dialog.setLayout(new GridLayout(4, 2, 20, 20));
+		_dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		
-		createButtons();
-		createFields();
-		//createFields(betrag);
-		
+		createFields(betrag);
+		createButtons();		
 		_dialog.pack();
 		_dialog.setVisible(true);
 	}
@@ -71,11 +62,9 @@ public class BarZahlungsWerkzeugUI {
 		return _restLabel;
 	}
 
-	private void createFields() {
+	private void createFields(int betrag) {
 		_betragTextLabel = new	JLabel("Gesamtbetrag:");
 		_betragLabel = new JLabel();
-		
-		//_betragLabel.setText(String.valueOf(betrag));
 		
 		_restTextLabel = new JLabel("Restbetrag:");
 		_restLabel = new JLabel();
@@ -84,49 +73,64 @@ public class BarZahlungsWerkzeugUI {
 		_bezahltLabel = new JLabel("Bezahlt:");
 		_bezahltTextfield = new JFormattedTextField();
 		
-		_dialog.add(_bezahltTextfield, 0,0);
-		_dialog.add(_bezahltTextfield, 0,1);
-		_dialog.add(_betragTextLabel, 1,0);
-		_dialog.add(_betragLabel, 1,1);
-		_dialog.add(_restTextLabel,2,0);
-		_dialog.add(_restLabel,2,1);
+		_dialog.add(_betragTextLabel);
+		_dialog.add(_betragLabel);
+		
+		_dialog.add(_bezahltLabel);
+		_dialog.add(_bezahltTextfield);
+		
+		_dialog.add(_restTextLabel);
+		_dialog.add(_restLabel);
+		
+		_betragLabel.setText(String.valueOf(betrag));
+		
+		
 		
 	}
 	
-//	private void createFields(int betrag) {
-//		_betragTextLabel = new	JLabel("Gesamtbetrag:");
-//		_betragLabel = new JLabel();
-//		
-//		_betragLabel.setText(String.valueOf(betrag));
-//		
-//		_restTextLabel = new JLabel("Restbetrag:");
-//		_restLabel = new JLabel();
-//		_restLabel.setText("0");
-//		
-//		_bezahltLabel = new JLabel("Bezahlt:");
-//		_bezahltTextfield = new JFormattedTextField();
-//		
-//		_dialog.add(_bezahltTextfield, 0,0);
-//		_dialog.add(_restLabel,2,1);
-//		_dialog.add(_bezahltTextfield, 0,1);
-//		_dialog.add(_betragTextLabel, 1,0);
-//		_dialog.add(_betragLabel, 1,1);
-//		_dialog.add(_restTextLabel,2,0);
-//		
-//	}
+
 
 	private void createButtons() {
 		_okButton = new JButton("OK");
 		_okButton.setEnabled(false);
 		_abbrechenButton = new JButton("Abbrechen");
+		_abbrechenButton.addActionListener(event -> _dialog.dispose());
+		_dialog.add(_abbrechenButton);
+		_dialog.add(_okButton);
 		
-		_dialog.add(_okButton, 1, 0);
-		_dialog.add(_abbrechenButton, 1, 1);
 		
 		_okButton.addActionListener(event -> {
-			//_okGeklickt = true;
+			_okGeklickt = true;
 			_dialog.setVisible(false);
+		
 	});
 
+	
+		
 	}
+	
+	public boolean okButtonGedrückt() {
+		return _okGeklickt;
+	}
+//	private void createFields(int betrag) {
+//	_betragTextLabel = new	JLabel("Gesamtbetrag:");
+//	_betragLabel = new JLabel();
+//	
+//	_betragLabel.setText(String.valueOf(betrag));
+//	
+//	_restTextLabel = new JLabel("Restbetrag:");
+//	_restLabel = new JLabel();
+//	_restLabel.setText("0");
+//	
+//	_bezahltLabel = new JLabel("Bezahlt:");
+//	_bezahltTextfield = new JFormattedTextField();
+//	
+//	_dialog.add(_bezahltTextfield, 0,0);
+//	_dialog.add(_restLabel,2,1);
+//	_dialog.add(_bezahltTextfield, 0,1);
+//	_dialog.add(_betragTextLabel, 1,0);
+//	_dialog.add(_betragLabel, 1,1);
+//	_dialog.add(_restTextLabel,2,0);
+//	
+//}
 }

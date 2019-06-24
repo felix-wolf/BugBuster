@@ -20,7 +20,7 @@ public class BarZahlungsWerkzeug
 		_preis = preis;
 		_bezahlStatus = false;
 		
-		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI();
+		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI(_preis);
 		
 		_barZahlungsWerkzeugUI.getBetragLabel().setText(
 				_preis + " Eurocent");
@@ -138,6 +138,6 @@ public class BarZahlungsWerkzeug
 	
 	public boolean istBezahlt()
 	{
-		return _bezahlStatus;
+		return _barZahlungsWerkzeugUI.okButtonGedrückt();
 	}
 }
