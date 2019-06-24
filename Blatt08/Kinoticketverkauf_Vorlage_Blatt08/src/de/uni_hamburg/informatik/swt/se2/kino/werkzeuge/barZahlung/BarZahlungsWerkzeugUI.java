@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.text.DecimalFormat;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -27,7 +28,7 @@ public class BarZahlungsWerkzeugUI {
 	private JLabel _restLabel;
 
 	private JLabel _bezahltLabel;
-	private JTextField _bezahltTextfield ;
+	private JFormattedTextField _bezahltTextfield ;
 	//	private JFormattedTextField _bezahltTextfield ;
 
 	private boolean _okGeklickt = false;
@@ -79,7 +80,8 @@ public class BarZahlungsWerkzeugUI {
 		_restLabel.setText("0");
 
 		_bezahltLabel = new JLabel("Bezahlt:");
-		_bezahltTextfield = new JTextField();
+		DecimalFormat dec = new DecimalFormat();
+		_bezahltTextfield = new JFormattedTextField(dec);
 
 		_dialog.add(_betragTextLabel);
 		_dialog.add(_betragLabel);
@@ -98,6 +100,7 @@ public class BarZahlungsWerkzeugUI {
 	private void createButtons() {
 		_okButton = new JButton("OK");
 		_okButton.setEnabled(false);
+		
 		_abbrechenButton = new JButton("Abbrechen");
 		_abbrechenButton.addActionListener(event -> _dialog.dispose());
 		_dialog.add(_abbrechenButton);
@@ -108,6 +111,13 @@ public class BarZahlungsWerkzeugUI {
 			_dialog.setVisible(false);
 
 		});
+	}
+	
+	public void zeigeFenster() {
+		_dialog.setVisible(true);	}
+	
+	public void schliesseFenster() {
+		_dialog.dispose();
 	}
 
 	public boolean okButtonGedrückt() {
@@ -134,4 +144,10 @@ public class BarZahlungsWerkzeugUI {
 	//	_dialog.add(_restTextLabel,2,0);
 	//	
 	//}
+
+
+	public long getBezahlt() {
+		long bezahlt = (long) _bezahltTextfield.getValue();
+		return bezahlt; 
+	}
 }

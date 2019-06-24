@@ -26,9 +26,12 @@ public class BarZahlungsWerkzeug
 		
 		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI(_preis);
 		
-		_barZahlungsWerkzeugUI.getBetragLabel().setText(
-				_preis + " Eurocent");		
-		_barZahlungsWerkzeugUI.getOkButton().setEnabled(false);
+		//gehört in UI, ist schon in UI?
+		//_barZahlungsWerkzeugUI.getBetragLabel().setText(
+		//		_preis + " Eurocent");	 
+		
+		//gehört in UI. ist schon?
+		//_barZahlungsWerkzeugUI.getOkButton().setEnabled(false);
 		
 		registriereUIAktionen();
 	}
@@ -42,7 +45,7 @@ public class BarZahlungsWerkzeug
             public void actionPerformed(ActionEvent e)
             {
                    	_bezahlStatus = true;
-                   	_barZahlungsWerkzeugUI.getDialog().dispose();
+                   	_barZahlungsWerkzeugUI.schliesseFenster();
             }
         });
 		
@@ -51,7 +54,7 @@ public class BarZahlungsWerkzeug
             @Override
             public void actionPerformed(ActionEvent e)
             {
-            		_barZahlungsWerkzeugUI.getDialog().dispose();
+            		_barZahlungsWerkzeugUI.schliesseFenster();
             }
         });
 //		System.out.println("test");
@@ -116,16 +119,19 @@ public class BarZahlungsWerkzeug
 	private void reagiereAufEinzahlung() throws Exception
 	{
 		//TODO: getKeyCode ersetzen durch Textfeldinhalt
+		//Bei formattedTextfield: getValue()!!
 		
-		String inhalt = _barZahlungsWerkzeugUI.getBezahltTextfield().getText();
+		int inhalt = (int)_barZahlungsWerkzeugUI.getBezahlt();
 		
 		try {
-		    _betrag = Integer.parseInt(inhalt);
+		    _betrag = inhalt;
 		  } catch (NumberFormatException e) {
 			  JOptionPane.showMessageDialog(null, "Digga, gib die Zahl vernünftig ein...");
 			throw new Exception("Digga gib mal Zahl vern�nftig ein...");
 		  }
+		
 
+		//TODO Hierfür funktion in UI!
 		_barZahlungsWerkzeugUI.getOkButton().setEnabled(istBezahlenMoeglich());
 		
 		aktualisiereRestbetragAnzeige(_betrag);
