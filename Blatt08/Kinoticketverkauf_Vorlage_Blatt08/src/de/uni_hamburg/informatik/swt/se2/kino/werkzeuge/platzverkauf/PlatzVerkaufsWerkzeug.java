@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Platz;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Kinosaal;
 import de.uni_hamburg.informatik.swt.se2.kino.materialien.Vorstellung;
+import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.SubwerkzeugObserver;
+import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung.BarZahlungsWerkzeug;
 
 /**
  * Mit diesem Werkzeug können Plätze verkauft und storniert werden. Es arbeitet
@@ -21,7 +23,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.materialien.Vorstellung;
  * @author SE2-Team
  * @version SoSe 2016
  */
-public class PlatzVerkaufsWerkzeug
+public class PlatzVerkaufsWerkzeug implements SubwerkzeugObserver   //NEU: als ein Obseever
 {
     // Die aktuelle Vorstellung, deren Plätze angezeigt werden. Kann null sein.
     private Vorstellung _vorstellung;
@@ -88,11 +90,14 @@ public class PlatzVerkaufsWerkzeug
     }
 
     /**
-     * Startet die Barzahlung.
+     * Startet die Barzahlung. (Verkaufen wird hier nicht durchgeführt)
      */
     private void fuehreBarzahlungDurch()
     {
-        verkaufePlaetze(_vorstellung);
+    	//new Quoc Huy
+    	Set<Platz> plaetze = _ui.getPlatzplan().getAusgewaehltePlaetze();
+    	BarZahlungsWerkzeug barZahlungswerkzeug = new BarZahlungsWerkzeug(_vorstellung.getPreisFuerPlaetze(plaetze));
+    	barZahlungswerkzeug.registriereBeobachter(this);   //Damit barZahlungswerkzeug kann melden, wenn die Zahlung erfolreich abgeschlossen wurde.
     }
 
     /**
@@ -230,5 +235,12 @@ public class PlatzVerkaufsWerkzeug
         Set<Platz> plaetze = _ui.getPlatzplan().getAusgewaehltePlaetze();
         vorstellung.stornierePlaetze(plaetze);
         aktualisierePlatzplan();
+    }
+
+    // Diese Methode wird angerufen, wenn Barzahlung erfolreich abgeschlossen wurde.
+    @Override
+    public void reagiereAufAenderung()
+    {
+        verkaufePlaetze(_vorstellung);        
     }
 }

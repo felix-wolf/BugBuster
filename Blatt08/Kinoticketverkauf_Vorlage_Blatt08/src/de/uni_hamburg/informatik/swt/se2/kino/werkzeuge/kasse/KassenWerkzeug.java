@@ -88,6 +88,7 @@ public class KassenWerkzeug
                         setzeAusgewaehlteVorstellung();
                     }
                 });
+        
     }
 
     /**

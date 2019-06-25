@@ -15,7 +15,7 @@ import javax.swing.JScrollPane;
  * @author SE2-Team
  * @version SoSe 2016
  */
-class PlatzVerkaufsWerkzeugUI
+public class PlatzVerkaufsWerkzeugUI
 {
     // Die Widgets, aus denen das UI sich zusammensetzt
     private JPanel _hauptPanel;
