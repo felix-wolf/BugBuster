@@ -83,8 +83,6 @@ public class BarZahlungsWerkzeugUI {
 		_betragLabel.setText(String.valueOf(betrag));
 	}
 
-
-
 	private void createButtons() {
 		_okButton = new JButton("OK");
 		_okButton.setEnabled(false);
