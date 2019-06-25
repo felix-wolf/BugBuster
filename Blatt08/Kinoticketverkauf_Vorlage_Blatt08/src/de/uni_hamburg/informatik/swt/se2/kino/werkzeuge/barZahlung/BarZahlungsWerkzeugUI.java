@@ -1,13 +1,13 @@
 package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung;
 
 import java.awt.GridLayout;
+import java.text.DecimalFormat;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 
 public class BarZahlungsWerkzeugUI {
-
 	private JDialog _dialog;
 	private JButton _okButton;
 	private JButton _abbrechenButton;
@@ -16,7 +16,7 @@ public class BarZahlungsWerkzeugUI {
 	private JLabel _restTextLabel;
 	private JLabel _restLabel;
 	private JLabel _bezahltLabel;
-	private JTextField _bezahltTextfield ;
+	private JFormattedTextField _bezahltTextfield ;
 	
 	private boolean _okGeklickt = false;
 
@@ -31,29 +31,36 @@ public class BarZahlungsWerkzeugUI {
 		_dialog.pack();
 	}
 
-
-	public JLabel getBetragLabel() {
-		return _betragLabel;
-	}
-
 	public JButton getOkButton() {
 		return _okButton;
 	}
-
+	
 	public JButton getAbbrechenButton() {
 		return _abbrechenButton;
 	}
 
-	public JDialog getDialog() {
-		return _dialog;
-	}
-
-	public JTextField getBezahltTextfield() {
+	public JFormattedTextField getBezahltTextfield() {
 		return _bezahltTextfield;
 	}
 
 	public JLabel getRestLabel() {
 		return _restLabel;
+	}
+	
+	public void setzeRestlabel(int betrag) {
+		_restLabel.setText(betrag + " Eurocent");
+	}
+	
+	public void aktiviereOKButton(Boolean bool) {
+		_okButton.setEnabled(bool);
+	}
+	
+	public void zeigeFenster() {
+		_dialog.setVisible(true);
+	}
+	
+	public void schliesseFenster() {
+		_dialog.dispose();
 	}
 
 	private void createFields(int betrag) {
@@ -65,17 +72,14 @@ public class BarZahlungsWerkzeugUI {
 		_restLabel.setText("0");
 
 		_bezahltLabel = new JLabel("Bezahlt:");
-		_bezahltTextfield = new JTextField();
+		_bezahltTextfield = new JFormattedTextField(new DecimalFormat());
 
 		_dialog.add(_betragTextLabel);
 		_dialog.add(_betragLabel);
-
 		_dialog.add(_bezahltLabel);
 		_dialog.add(_bezahltTextfield);
-
 		_dialog.add(_restTextLabel);
 		_dialog.add(_restLabel);
-
 		_betragLabel.setText(String.valueOf(betrag));
 	}
 
@@ -99,4 +103,9 @@ public class BarZahlungsWerkzeugUI {
 	public boolean okButtonGedrückt() {
 		return _okGeklickt;
 	}
+	
+	public long getBezahlt() {
+		return _bezahltTextfield.getValue() != null ? (long) _bezahltTextfield.getValue() : 0;
+				
+}
 }
