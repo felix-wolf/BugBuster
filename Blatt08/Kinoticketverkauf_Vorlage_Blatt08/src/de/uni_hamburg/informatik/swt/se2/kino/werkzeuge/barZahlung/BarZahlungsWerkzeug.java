@@ -2,11 +2,6 @@ package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barZahlung;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-//import java.awt.event.KeyEvent; 
-//import java.awt.event.KeyListener; 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
 import javax.swing.JOptionPane;
 
 //TODO: Kommentare
@@ -28,9 +23,10 @@ public class BarZahlungsWerkzeug
 		
 		_barZahlungsWerkzeugUI.getBetragLabel().setText(
 				_preis + " Eurocent");		
-		_barZahlungsWerkzeugUI.getOkButton().setEnabled(false);
+//		_barZahlungsWerkzeugUI.getOkButton().setEnabled(false);
 		
 		registriereUIAktionen();
+		_barZahlungsWerkzeugUI.getDialog().setVisible(true);
 	}
 
 
@@ -54,28 +50,6 @@ public class BarZahlungsWerkzeug
             		_barZahlungsWerkzeugUI.getDialog().dispose();
             }
         });
-//		System.out.println("test");
-//		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener() {
-//		
-//			
-//			@Override
-//			public void keyTyped(KeyEvent e) {
-//				System.out.println("test");
-//				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-//					System.out.println("test");
-//				}
-//			}
-//			
-//			@Override
-//			public void keyReleased(KeyEvent e) {
-//				System.out.println("test");				
-//			}
-//			
-//			@Override
-//			public void keyPressed(KeyEvent e) {
-//				System.out.println("test");				
-//			}
-//		});
 		_barZahlungsWerkzeugUI.getBezahltTextfield().addActionListener(new ActionListener()
 		{
 			@Override
@@ -91,27 +65,7 @@ public class BarZahlungsWerkzeug
 			}
 			
 		});
-		
-//		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener()
-//                {
-//					@Override
-//					public void keyPressed(KeyEvent e) {
-//						
-//					}
-//
-//					@Override
-//					public void keyReleased(KeyEvent e) {
-//						
-//					}
-//
-//					@Override
-//					public void keyTyped(KeyEvent e) {
-//						
-////						reagiereAufEinzahlung(e);
-//					}
-//                });
 	}
-	
 	
 	private void reagiereAufEinzahlung() throws Exception
 	{
