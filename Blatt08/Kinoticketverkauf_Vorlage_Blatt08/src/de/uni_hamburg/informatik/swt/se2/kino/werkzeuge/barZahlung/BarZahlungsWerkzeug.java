@@ -41,6 +41,7 @@ public class BarZahlungsWerkzeug
 		_preis = preis;
 		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI(_preis);
 		registriereUIAktionen();
+		_barZahlungsWerkzeugUI.zeigeFenster();
 
 	}
 
@@ -88,19 +89,21 @@ public class BarZahlungsWerkzeug
 				{
 					_barZahlungsWerkzeugUI.aktiviereOKButton(false);
 				}
+				else if (istBezahlenMoeglich())
+				{	
+					_okButtonGedrückt = true;
+					_barZahlungsWerkzeugUI.schliesseFenster();
+				}
+				else 
+				{
+						reagiereAufEinzahlung();
+				}
 			}
 
 			@Override
 			public void keyPressed(KeyEvent e) {
 			}
-		});
 
-		_barZahlungsWerkzeugUI.getBezahltTextfield().addActionListener(new ActionListener()
-		{
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				reagiereAufEinzahlung();
-			}
 		});
 	}
 

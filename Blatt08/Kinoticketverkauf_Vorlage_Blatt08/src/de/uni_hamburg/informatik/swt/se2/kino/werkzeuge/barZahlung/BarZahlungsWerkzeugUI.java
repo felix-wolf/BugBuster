@@ -107,7 +107,7 @@ public class BarZahlungsWerkzeugUI {
 		_betragTextLabel = new	JLabel("Gesamtbetrag:");
 		_betragLabel = new JLabel();
 
-		_restTextLabel = new JLabel("Restbetrag:");
+		_restTextLabel = new JLabel("Rückgeld:");
 		_restLabel = new JLabel();
 		_restLabel.setText("0");
 
