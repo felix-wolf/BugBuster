@@ -85,7 +85,9 @@ class DatumAuswaehlWerkzeugUI
         return _weiterButton;
     }
 
-    /**
+
+
+	/**
      * Gibt das Label zurück, in dem das derzeit ausgewählte Datum angezeigt
      * wird.
      */

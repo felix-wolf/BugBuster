@@ -5,7 +5,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-//TODO: Kommentare
 /**
  * Mit diesem Werkzeug wird die Barzahlung für die Tickets abgewickelt.
  * Dabei wird ein kleines UI-Fenster erzeugt, in dem der zu zahlende
@@ -18,6 +17,8 @@ import java.awt.event.KeyListener;
  */
 public class BarZahlungsWerkzeug 
 {
+	//ob der ok-Button gedrückt wurde
+	private boolean _okButtonGedrückt = false;
 	//der zu zahlende Preis der Tickets
 	private int _preis;
 	//der eingegebene Betrag
@@ -27,6 +28,7 @@ public class BarZahlungsWerkzeug
 
 	/**
 	 * Initialisiert das BarZahlungsWerkzeug mit einem Preis
+	 * 
 	 * @param preis der zu zahlende Preis der Tickets
 	 * 
 	 * @require preis > 0
@@ -35,12 +37,11 @@ public class BarZahlungsWerkzeug
 	public BarZahlungsWerkzeug(int preis)
 	{
 		assert preis > 0 : "Vorbedingung verletzt: preis > 0";
-		
+
 		_preis = preis;
 		_barZahlungsWerkzeugUI = new BarZahlungsWerkzeugUI(_preis);
-
 		registriereUIAktionen();
-		_barZahlungsWerkzeugUI.zeigeFenster();
+
 	}
 
 	/**
@@ -57,6 +58,7 @@ public class BarZahlungsWerkzeug
 			@Override
 			public void actionPerformed(ActionEvent e)
 			{
+				_okButtonGedrückt = true;
 				_barZahlungsWerkzeugUI.schliesseFenster();
 			}
 		});
@@ -69,9 +71,9 @@ public class BarZahlungsWerkzeug
 				_barZahlungsWerkzeugUI.schliesseFenster();
 			}
 		});
-		
+
 		_barZahlungsWerkzeugUI.getBezahltTextfield().addKeyListener(new KeyListener() {
-						
+
 			@Override
 			public void keyTyped(KeyEvent e) {
 				if (!Character.isDigit(e.getKeyChar()))
@@ -79,7 +81,7 @@ public class BarZahlungsWerkzeug
 					e.consume();            				
 				}	
 			}
-			
+
 			@Override
 			public void keyReleased(KeyEvent e) {
 				if (e.getKeyCode() != 10)
@@ -87,12 +89,12 @@ public class BarZahlungsWerkzeug
 					_barZahlungsWerkzeugUI.aktiviereOKButton(false);
 				}
 			}
-			
+
 			@Override
 			public void keyPressed(KeyEvent e) {
 			}
 		});
-		
+
 		_barZahlungsWerkzeugUI.getBezahltTextfield().addActionListener(new ActionListener()
 		{
 			@Override
@@ -144,17 +146,18 @@ public class BarZahlungsWerkzeug
 	private int berechneRestbetrag(int betrag) 
 	{
 		assert betrag >= 0 : "Vorbedingung verletzt: betrag >= 0";
+		
 		return betrag - _preis;
 	}
 
 	/**
-	 * Überprüft, ob in der UI der OK-Button gedrückt wurde,
+	 * Gibt zurück, ob der OKButton in der UI gedrückt wurde,
 	 * das Geld also bezahlt wurde
 	 * 
 	 * @return ob bezahlt wurde
 	 */
 	public boolean istBezahlt()
 	{
-		return _barZahlungsWerkzeugUI.okButtonGedrückt();
+		return _okButtonGedrückt;
 	}
 }
