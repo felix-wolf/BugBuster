@@ -24,6 +24,8 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.barzahlung.BarzahlungsWe
  */
 public class PlatzVerkaufsWerkzeug
 {
+	//TODO: _ausgewaehlterGesamtbetrag zu Geldbetrag
+	
     private int _ausgewaehlterGesamtbetrag;
     // Die aktuelle Vorstellung, deren Plätze angezeigt werden. Kann null sein.
     private Vorstellung _vorstellung;
@@ -124,6 +126,8 @@ public class PlatzVerkaufsWerkzeug
      */
     private void aktualisierePreisanzeige(Set<Platz> plaetze)
     {
+    	//TODO: preis zu Geldbetrag
+    	
         _ausgewaehlterGesamtbetrag = 0;
         if (istVerkaufenMoeglich(plaetze))
         {
@@ -134,6 +138,7 @@ public class PlatzVerkaufsWerkzeug
         }
         else if (istStornierenMoeglich(plaetze))
         {
+        	
             int preis = _vorstellung.getPreisFuerPlaetze(plaetze);
             _ui.getPreisLabel().setText(
                     "Gesamtstorno: " + preis + " Eurocent");

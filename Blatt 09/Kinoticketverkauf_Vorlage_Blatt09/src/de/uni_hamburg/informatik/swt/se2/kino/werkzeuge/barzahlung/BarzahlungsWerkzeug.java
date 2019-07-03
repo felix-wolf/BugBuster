@@ -32,6 +32,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.ObservableSubwerkzeug;
  */
 public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
 {
+	//TODO: _preis mit Geldbetrag realisieren
 
     private BarzahlungsWerkzeugUI _ui;
     private int _preis;
@@ -57,6 +58,7 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
      */
     public void fuehreBarzahlungDurch(int preis)
     {
+    	
         _preis = preis;
         _ausreichenderGeldbetrag = false;
         _barzahlungErfolgreich = false;
