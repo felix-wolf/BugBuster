@@ -26,7 +26,7 @@ public class PlatzVerkaufsWerkzeug
 {
 	//TODO: _ausgewaehlterGesamtbetrag zu Geldbetrag
 	
-    private int _ausgewaehlterGesamtbetrag;
+    private Geldbetrag _ausgewaehlterGesamtbetrag;
     // Die aktuelle Vorstellung, deren Plätze angezeigt werden. Kann null sein.
     private Vorstellung _vorstellung;
 
@@ -101,7 +101,7 @@ public class PlatzVerkaufsWerkzeug
     private void fuehreBarzahlungDurch()
     {
         // TODO für Blatt 8: Verkaufen ohne Barzahlungswerkzeug
-        _barzahlungsWerkzeug.fuehreBarzahlungDurch(_ausgewaehlterGesamtbetrag);
+        _barzahlungsWerkzeug.fuehreBarzahlungDurch(Geldbetrag _ausgewaehlterGesamtbetrag);
         if (_barzahlungsWerkzeug.barzahlungErfolgreich())
         {
             verkaufePlaetze(_vorstellung);
@@ -128,20 +128,20 @@ public class PlatzVerkaufsWerkzeug
     {
     	//TODO: preis zu Geldbetrag
     	
-        _ausgewaehlterGesamtbetrag = 0;
+        _ausgewaehlterGesamtbetrag = get("0");
         if (istVerkaufenMoeglich(plaetze))
         {
-            int preis = _vorstellung.getPreisFuerPlaetze(plaetze);
+            Geldbetrag preis = _vorstellung.getPreisFuerPlaetze(plaetze);
             _ui.getPreisLabel().setText(
-                    "Gesamtpreis: " + preis + " Eurocent");
+                    "Gesamtpreis: " + preis.toString() + " Euro");
             _ausgewaehlterGesamtbetrag = preis;
         }
         else if (istStornierenMoeglich(plaetze))
         {
         	
-            int preis = _vorstellung.getPreisFuerPlaetze(plaetze);
+            Geldbetrag preis = _vorstellung.getPreisFuerPlaetze(plaetze);
             _ui.getPreisLabel().setText(
-                    "Gesamtstorno: " + preis + " Eurocent");
+                    "Gesamtstorno: " + preis + " Euro");
         }
         else if (!plaetze.isEmpty())
         {
@@ -151,7 +151,7 @@ public class PlatzVerkaufsWerkzeug
         else
         {
             _ui.getPreisLabel().setText(
-                    "Gesamtpreis: 0 Eurocent");
+                    "Gesamtpreis: 0 Euro");
         }
     }
 
