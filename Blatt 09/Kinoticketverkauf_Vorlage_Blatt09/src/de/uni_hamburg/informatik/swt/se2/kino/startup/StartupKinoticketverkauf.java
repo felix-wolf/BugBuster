@@ -119,7 +119,6 @@ public class StartupKinoticketverkauf
                         1095),
                 new Vorstellung(saele[2], filme[4], spaet, nacht, d3,
                         995) };
-
         return new Kino(saele, vorstellungen);
     }
 

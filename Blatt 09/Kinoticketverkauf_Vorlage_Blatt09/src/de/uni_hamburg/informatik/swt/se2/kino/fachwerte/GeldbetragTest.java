@@ -74,12 +74,39 @@ public class GeldbetragTest {
 	public void testeIstGueltig()
 	{
 		assertFalse(Geldbetrag.istGueltig(1, 800));
-		assertFalse(Geldbetrag.istGueltig("1,800"));
 		assertFalse(Geldbetrag.istGueltig(1, -80));
+		assertFalse(Geldbetrag.istGueltig("1,800"));
+		assertFalse(Geldbetrag.istGueltig("1,-80"));
+		assertFalse(Geldbetrag.istGueltig("1,8asadasdasdasdds00"));
+		assertFalse(Geldbetrag.istGueltig("--1,23"));
+		assertFalse(Geldbetrag.istGueltig(1, -80));
+		
 		assertTrue(Geldbetrag.istGueltig(1, 80));
 		assertTrue(Geldbetrag.istGueltig(-1, 80));
 		assertTrue(Geldbetrag.istGueltig("-1,80"));
 	}
+	
+	   @Test
+	    public void testeIstNegativ()
+	    {
+	       Geldbetrag geld1 = Geldbetrag.get(5, 30);
+	       Geldbetrag geld2 = Geldbetrag.get(-2, 60);
+	       
+	       assertFalse(geld1.istNegativ());
+	       assertTrue(geld2.istNegativ());
+	       
+	    }
+	   
+       @Test
+       public void testetoEurocent()
+       {
+          Geldbetrag geld1 = Geldbetrag.get(5, 30);
+          Geldbetrag geld2 = Geldbetrag.get(-2, 60);
+          
+          assertTrue (geld1.toEuroCent == 530)
+          assertTrue (geld2.toEuroCent == -260)
+          
+       }
 	
 	
 }
