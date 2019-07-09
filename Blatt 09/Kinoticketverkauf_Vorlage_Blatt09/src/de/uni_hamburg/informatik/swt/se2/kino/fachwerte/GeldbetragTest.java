@@ -54,6 +54,8 @@ public class GeldbetragTest {
 	{
 		Geldbetrag geld1 = Geldbetrag.get(1, 19);
 		assertEquals("1,19", geld1.toString());
+		Geldbetrag geld2 = Geldbetrag.get(30, 9);
+		assertEquals("30,09", geld2.toString());
 	}
 	
 	@Test

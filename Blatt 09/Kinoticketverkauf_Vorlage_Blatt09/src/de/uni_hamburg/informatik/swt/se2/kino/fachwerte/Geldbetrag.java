@@ -293,5 +293,32 @@ private int toEuroCent ()
 }
 
     
-    
+	@Override
+	public String toString() {
+		String euroString = Integer.toString(_euroAnteil);
+		String centString = Integer.toString(_centAnteil);
+		if (_centAnteil < 10) {
+			centString = "0" + centString;
+		}
+		return euroString + "," + centString;
+	}
+	
+    @Override
+    public boolean equals(Object o)
+    {
+        return (o instanceof Geldbetrag) && equals((Geldbetrag) o);
+    }
+
+    private boolean equals(Geldbetrag andererGeldbetrag)
+    {
+        return (_euroAnteil == andererGeldbetrag._euroAnteil) && (_centAnteil == andererGeldbetrag._centAnteil)
+        		&& (_istNegativ == andererGeldbetrag._istNegativ);
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return !istNegativ() ? 10004 * _euroAnteil + _centAnteil : -1 * (10004 * _euroAnteil + _centAnteil) ;
+    }
+
 }
