@@ -91,6 +91,7 @@ public class Geldbetrag {
 	{
 		return _euroAnteil*100+_centAnteil;
 	}
+	
 	/**
 	 * 
 	 * @param EuroString
