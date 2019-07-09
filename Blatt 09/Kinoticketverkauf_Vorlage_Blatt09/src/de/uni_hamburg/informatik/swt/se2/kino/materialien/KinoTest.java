@@ -44,7 +44,7 @@ public class KinoTest
     private Kinosaal _saal3;
 
     @Before
-    public void setUp()
+    public void setUp() throws Exception
     {
         _saal0 = new Kinosaal("Standard", 25, 40);
         _saal1 = new Kinosaal("Gehoben", 20, 32);

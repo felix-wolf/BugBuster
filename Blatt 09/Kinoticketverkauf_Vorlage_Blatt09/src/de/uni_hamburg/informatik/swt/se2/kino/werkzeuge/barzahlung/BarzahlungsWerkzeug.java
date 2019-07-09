@@ -7,6 +7,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import javax.swing.JOptionPane;
+
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Geldbetrag;
 import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.ObservableSubwerkzeug;
 
@@ -33,7 +35,7 @@ import de.uni_hamburg.informatik.swt.se2.kino.werkzeuge.ObservableSubwerkzeug;
  */
 public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
 {
-	//TODO: _preis mit Geldbetrag realisieren
+    //TODO: _preis mit Geldbetrag realisieren
 
     private BarzahlungsWerkzeugUI _ui;
     private Geldbetrag _preis;
@@ -59,7 +61,7 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
      */
     public void fuehreBarzahlungDurch(Geldbetrag preis)
     {
-    	
+
         _preis = preis;
         _ausreichenderGeldbetrag = false;
         _barzahlungErfolgreich = false;
@@ -172,95 +174,97 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
         }
         try
         {
+
             Geldbetrag eingabeBetrag = Geldbetrag.get(eingabePreis);
             Geldbetrag differenz = eingabeBetrag.subtrahiere(_preis);
             _ausreichenderGeldbetrag = (!differenz.istNegativ());
             zeigeRestbetrag(differenz);
         }
-        catch (NumberFormatException ignore)
-        {
-            _ausreichenderGeldbetrag = false;
-            zeigeFehlertext();
+
+            catch(Exception e)
+            {
+                _ausreichenderGeldbetrag = false;
+                zeigeFehlertext();
+            }
+            zeigeAusreichenderGeldbetragStatus();
         }
-        zeigeAusreichenderGeldbetragStatus();
-    }
 
-    /**
-     * Beendet den Bezahlvorgang mit Erfolg.
-     */
-    private void bezahlenErfolgreich()
-    {
-        _barzahlungErfolgreich = true;
-        _ui.verberge();
-    }
+        /**
+         * Beendet den Bezahlvorgang mit Erfolg.
+         */
+        private void bezahlenErfolgreich()
+        {
+            _barzahlungErfolgreich = true;
+            _ui.verberge();
+        }
 
-    /**
-     * Bricht den Bezahlvorgang ohne Erfolg ab.
-     */
-    private void bezahlenNichtErfolgreich()
-    {
-        _barzahlungErfolgreich = false;
-        _ui.verberge();
-    }
+        /**
+         * Bricht den Bezahlvorgang ohne Erfolg ab.
+         */
+        private void bezahlenNichtErfolgreich()
+        {
+            _barzahlungErfolgreich = false;
+            _ui.verberge();
+        }
 
-    /**
-     * Setzt die UI in einen sinnvollen Anfangszustand.
-     */
-    private void setzeUIAnfangsstatus()
-    {
-        zeigePreis();
-        loescheGezahltenBetrag();
-        zeigeRestbetrag(_preis);
-        zeigeAusreichenderGeldbetragStatus();
-    }
+        /**
+         * Setzt die UI in einen sinnvollen Anfangszustand.
+         */
+        private void setzeUIAnfangsstatus()
+        {
+            zeigePreis();
+            loescheGezahltenBetrag();
+            zeigeRestbetrag(_preis);
+            zeigeAusreichenderGeldbetragStatus();
+        }
 
-    /**
-     * Löscht den gezahlten Betrag aus der UI.
-     */
-    private void loescheGezahltenBetrag()
-    {
-        _ui.getGezahltTextfield().setText("");
-    }
+        /**
+         * Löscht den gezahlten Betrag aus der UI.
+         */
+        private void loescheGezahltenBetrag()
+        {
+            _ui.getGezahltTextfield().setText("");
+        }
 
-    /**
-     * Setzt die Statusanzeige der Gegeben- und Rückgabe-Textfelder abhängig
-     * davon, ob ein ausreichender Geldbetrag gegeben wurde.
-     * 
-     */
-    private void zeigeAusreichenderGeldbetragStatus()
-    {
-        _ui.getGeldErhaltenButton().setEnabled(_ausreichenderGeldbetrag);
-        _ui.markiereGezahltTextfield(_ausreichenderGeldbetrag);
-        _ui.markiereRestbetragTextfield(_ausreichenderGeldbetrag);
-    }
+        /**
+         * Setzt die Statusanzeige der Gegeben- und Rückgabe-Textfelder abhängig
+         * davon, ob ein ausreichender Geldbetrag gegeben wurde.
+         * 
+         */
+        private void zeigeAusreichenderGeldbetragStatus()
+        {
+            _ui.getGeldErhaltenButton().setEnabled(_ausreichenderGeldbetrag);
+            _ui.markiereGezahltTextfield(_ausreichenderGeldbetrag);
+            _ui.markiereRestbetragTextfield(_ausreichenderGeldbetrag);
+        }
 
-    /**
-     * Setzt die Fehlerstatusanzeige der Gegeben- und Rückgabe-Textfelder.
-     * 
-     * @param fehler true, wenn die Felder als fehlerhaft markiert werden
-     *            sollen, sonst false.
-     */
-    private void zeigeFehlertext()
-    {
-        _ui.getRestbetragTextfield().setText(" Err ");
-    }
+        /**
+         * Setzt die Fehlerstatusanzeige der Gegeben- und Rückgabe-Textfelder.
+         * 
+         * @param fehler true, wenn die Felder als fehlerhaft markiert werden
+         *            sollen, sonst false.
+         */
+        private void zeigeFehlertext()
+        {
+            _ui.getRestbetragTextfield().setText(" Err ");
+        }
 
-    /**
-     * Setzt eine übergebene Differenz im Restbetrag-Textfeld
-     * 
-     * @param differenz ein eingegebener Betrag
-     */
-    private void zeigeRestbetrag(Geldbetrag differenz)
-    {
-    	String temp = differenz.toString();
-        _ui.getRestbetragTextfield().setText(temp.replace("-","") + " Euro");
-    }
+        /**
+         * Setzt eine übergebene Differenz im Restbetrag-Textfeld
+         * 
+         * @param differenz ein eingegebener Betrag
+         */
+        private void zeigeRestbetrag(Geldbetrag differenz)
+        {
+            String temp = differenz.toString();
+            _ui.getRestbetragTextfield().setText(temp.replace("-","") + " Euro");
+        }
 
-    /**
-     * Setzt den Preis in der UI.
-     */
-    private void zeigePreis()
-    {
-        _ui.getPreisTextfield().setText(_preis + " Euro");
+        /**
+         * Setzt den Preis in der UI.
+         */
+        private void zeigePreis()
+        {
+            _ui.getPreisTextfield().setText(_preis + " Euro");
+        }
     }
-}

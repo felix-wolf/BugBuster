@@ -1,6 +1,5 @@
 package de.uni_hamburg.informatik.swt.se2.kino.fachwerte;
 
-import java.io.IOException;
 import java.util.HashMap;
 
 import javax.swing.JOptionPane;
@@ -8,7 +7,6 @@ import javax.swing.JOptionPane;
 public class Geldbetrag {
 
 	private static HashMap<Integer, Geldbetrag> GELDBETRAEGE = new HashMap<Integer, Geldbetrag>();
-//	private final boolean _istNegativ;
 	private final int _eurocent;
 	
 	/**
@@ -24,16 +22,16 @@ public class Geldbetrag {
 		GELDBETRAEGE.put(eurocent, this);
 	}
 	
-	public static Geldbetrag get(long eurocent)
+	public static Geldbetrag get(long eurocent) throws Exception
 	{
-		
+	    
 		try
 		{
 			istGueltig(eurocent);
 		}
 		catch(Exception e)
 		{	
-			JOptionPane.showMessageDialog(null, e.getMessage());
+		    throw new Exception(e.getMessage());
 		}
 		
 		int betrag = (int) eurocent;
@@ -51,15 +49,14 @@ public class Geldbetrag {
 		try
 		{
 			istGueltig(euroString);
-			
+		    return Geldbetrag.get(stringToEuroCent(euroString));
+
 		}
 		catch(Exception e)
 		{	
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
-		return Geldbetrag.get(stringToEuroCent(euroString));
-//		return null;
-		
+		return null;
 	}
 	
 	public Geldbetrag addiere(Geldbetrag geldbetrag) {
@@ -71,13 +68,14 @@ public class Geldbetrag {
 		try
 		{
 			istGueltig(ergebnis);
+			return Geldbetrag.get(ergebnis);
 		}
 		catch(Exception e)
 		{
 			JOptionPane.showMessageDialog(null, e.getMessage());
 
 		}
-		return Geldbetrag.get(ergebnis);
+		return null;
 	}
 	
 	public Geldbetrag subtrahiere(Geldbetrag geldbetrag) {
@@ -88,13 +86,14 @@ public class Geldbetrag {
 		try
 		{
 			istGueltig(ergebnis);
+			return Geldbetrag.get(ergebnis);
 		}
 		catch(Exception e)
 		{
 			JOptionPane.showMessageDialog(null, e.getMessage());
 
 		}
-		return Geldbetrag.get(ergebnis);
+		return null;
 	}
 	
 	public Geldbetrag multipliziere(int zahl) {
@@ -103,13 +102,14 @@ public class Geldbetrag {
 		try
 		{
 			istGueltig(ergebnis);
+			return Geldbetrag.get(ergebnis);
 		}
 		catch(Exception e)
 		{
 			JOptionPane.showMessageDialog(null, e.getMessage());
 
 		}
-		return Geldbetrag.get(ergebnis);	
+		return null;	
 	}
 	
 	
@@ -123,9 +123,7 @@ public class Geldbetrag {
 	 * @param EuroString
 	 * @return
 	 * 
-	 * @require String euroString hat Form EE,CC
 	 */
-	
 	private static long stringToEuroCent(String euroString) {
 		if (euroString.contains(","))
 		{
@@ -153,31 +151,18 @@ public class Geldbetrag {
 		}
 	}
 	
-	
 	   /**
      * Prüfen, ob die Eingage in String gültig für Geldbetrag ist.
      * 
-     * @param geldbetragInString : ein String beschreibt Geldbetrag z.B: -12,43 oder 23.45
+     * @param geldbetragInString : ein String beschreibt Geldbetrag z.B: -12,43
      * 
      * @return true, wenn es gültig ist
      */
-	public static void istGueltig (String geldbetragInString) throws Exception
+	public static void istGueltig(String geldbetragInString) throws Exception
 	{
-	    if (pruefeObStringInFormat(geldbetragInString) && pruefeAnzahlKommaInString(geldbetragInString))
+	    if (!pruefeObStringInFormat(geldbetragInString) && pruefeAnzahlKommaInString(geldbetragInString))
 	    {
-	    	long betrag = stringToEuroCent(geldbetragInString);
-	    	try
-	    	{
-	    		istGueltig(betrag);
-	    	}
-	    	catch (Exception e)
-	    	{
-	    		throw new Exception(e.getMessage());
-	    	}
-	    }
-	    else 
-	    {
-	    	throw new Exception("Fehler: String nicht im richtigen Format");
+	        throw new Exception("Fehler: String nicht im richtigen Format");
 	    }
 	    	
 	}
@@ -214,8 +199,8 @@ public class Geldbetrag {
 	}
 	
 	   /**
-     * Prüfe, ob das eingegebene String maximal ein ',' oder '.' Symbol hat
-     * @return true, wenn das String maximal ein ',' oder '.' Symbol hat
+     * Prüfe, ob das eingegebene String maximal ein ',' Symbol hat
+     * @return true, wenn das String maximal ein ',' oder Symbol hat
      */
     private static boolean pruefeAnzahlKommaInString (String geldbetragInString)
     {

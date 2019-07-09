@@ -35,7 +35,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeKonstruktor()
+    public void testeKonstruktor() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -50,7 +50,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testHatPlatzHatPlaetze()
+    public void testHatPlatzHatPlaetze() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -73,7 +73,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeGibPreisFuerPlaetze()
+    public void testeGibPreisFuerPlaetze() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -89,7 +89,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeVerkaufen()
+    public void testeVerkaufen() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -107,7 +107,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeVerkaufenMehrere()
+    public void testeVerkaufenMehrere() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -132,7 +132,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeVerkaufbarStornierbar()
+    public void testeVerkaufbarStornierbar() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -189,7 +189,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeGibAnzahlVerkauftePlaetze()
+    public void testeGibAnzahlVerkauftePlaetze() throws Exception
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));

@@ -18,18 +18,21 @@ public class TagesplanTest
     private static final Uhrzeit _startzeit = Uhrzeit.get(0, 0);
     private static final Uhrzeit _startzeit2 = Uhrzeit.get(0, 1);
     private static final Uhrzeit _endzeit = Uhrzeit.get(1, 1);
-    private static final Vorstellung _vorstellung = new Vorstellung(_kinosaal,
-            _film, _startzeit, _endzeit, _datum, Geldbetrag.get(0));
-    private static final Vorstellung _vorstellung2 = new Vorstellung(_kinosaal,
-            _film, _startzeit2, _endzeit, _datum, Geldbetrag.get(0));
-    private static final Vorstellung _vorstellung3 = new Vorstellung(
-            _kinosaal2, _film, _startzeit2, _endzeit, _datum, Geldbetrag.get(0));
+    private static Vorstellung _vorstellung;
+    private static Vorstellung _vorstellung2;
+    private static Vorstellung _vorstellung3;
 
     private Tagesplan _t;
 
     @Before
-    public void setUp()
+    public void setUp() throws Exception
     {
+        _vorstellung = new Vorstellung(_kinosaal,
+                _film, _startzeit, _endzeit, _datum, Geldbetrag.get(0));
+        _vorstellung2 = new Vorstellung(_kinosaal,
+                _film, _startzeit2, _endzeit, _datum, Geldbetrag.get(0));
+        _vorstellung3 = new Vorstellung(
+                _kinosaal2, _film, _startzeit2, _endzeit, _datum, Geldbetrag.get(0));
         _t = new Tagesplan(_datum);
     }
 

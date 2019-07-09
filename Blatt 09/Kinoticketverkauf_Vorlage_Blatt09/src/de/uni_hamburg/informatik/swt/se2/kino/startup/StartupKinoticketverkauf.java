@@ -25,8 +25,9 @@ public class StartupKinoticketverkauf
      * KassenWerkzeug mit einem Default-Kino.
      * 
      * @param args Aufrufparameter werden ignoriert.
+     * @throws Exception 
      */
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
         if (!assertsEnabled())
         {
@@ -46,8 +47,9 @@ public class StartupKinoticketverkauf
 
     /**
      * Erzeugt ein Kino mit einigen Vorstellungen.
+     * @throws Exception 
      */
-    private static Kino erzeugeKinoMitBeispieldaten()
+    private static Kino erzeugeKinoMitBeispieldaten() throws Exception
     {
         final Kinosaal[] saele = { new Kinosaal("Saal 1", 20, 25),
                 new Kinosaal("Saal 2", 16, 20), new Kinosaal("Saal 3", 10, 16) };
@@ -73,7 +75,7 @@ public class StartupKinoticketverkauf
         final Vorstellung[] vorstellungen = {
                 // Heute
                 new Vorstellung(saele[0], filme[2], nachmittag, abend, d1,
-                        Geldbetrag.get(595)),
+                       Geldbetrag.get(595)),
                 new Vorstellung(saele[0], filme[0], abend, spaet, d1,
                 		Geldbetrag.get(795)),
                 new Vorstellung(saele[0], filme[0], spaet, nacht, d1,
