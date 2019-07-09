@@ -1,22 +1,24 @@
 package de.uni_hamburg.informatik.swt.se2.kino.fachwerte;
 
 import java.util.HashMap;
-
 import javax.swing.JOptionPane;
 
 public class Geldbetrag {
 
+	//HashMap, welche erzeugte Geldbeträge hält
 	private static HashMap<Integer, Geldbetrag> GELDBETRAEGE = new HashMap<Integer, Geldbetrag>();
+	//interne Darstellung eines Geldbetrags
 	private final int _eurocent;
 	
 	/**
-	 * wird von get aufgerufen
+	 * Privater Konstruktor, fügt "sich selbst" in die HashMap ein
 	 * 
-	 * @param euroAnteil
-	 * @param centAnteil
-	 * @param istNegativ
+	 * @param eurocent der Betrag des Geldbetrags
+	 * @throws Exception 
+	 * @require istGueltig(eurocent)
 	 */
-	private Geldbetrag(int eurocent) {
+	private Geldbetrag(int eurocent) throws Exception {
+		assert istGueltig(eurocent): "Vorbedingung verletzt: istGueltig(eurocent)";
 		_eurocent = eurocent;
 		
 		GELDBETRAEGE.put(eurocent, this);
@@ -98,7 +100,7 @@ public class Geldbetrag {
 	
 	public Geldbetrag multipliziere(int zahl) {
 		long betrag1 = getEurocent(); 
-		long ergebnis = betrag1*zahl;
+		long ergebnis = betrag1 * zahl;
 		try
 		{
 			istGueltig(ergebnis);
@@ -143,12 +145,13 @@ public class Geldbetrag {
 	 * 
 	 * @return true, wenn es gültig ist
 	 */
-	public static void istGueltig (long eurocent) throws Exception
+	public static boolean istGueltig (long eurocent) throws Exception
 	{
 		if (!(eurocent <= Integer.MAX_VALUE && eurocent >= Integer.MIN_VALUE)) 
 		{
-			throw new Exception("FEHLER! Betrag zu gross");   
+			throw new Exception("FEHLER! Betrag zu gross"); 
 		}
+		return true;
 	}
 	
 	   /**
