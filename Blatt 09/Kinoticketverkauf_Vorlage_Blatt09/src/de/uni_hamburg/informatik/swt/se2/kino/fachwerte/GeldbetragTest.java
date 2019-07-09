@@ -14,9 +14,9 @@ public class GeldbetragTest {
 	{
 		Geldbetrag geld1 = Geldbetrag.get(5, 30);
 		Geldbetrag geld2 = Geldbetrag.get(2, 60);
-		geld1.addiere(geld2);
+		geld1 = geld1.addiere(geld2);
 		assertEquals("7,90", geld1.toString());
-		geld2.addiere(geld2);
+		geld2 = geld2.addiere(geld2);
 		assertEquals("5,20", geld2.toString());
 	}
 	
@@ -25,9 +25,10 @@ public class GeldbetragTest {
 	{
 		Geldbetrag geld1 = Geldbetrag.get(5, 30);
 		Geldbetrag geld2 = Geldbetrag.get(2, 60);
-		geld1.subtrahiere(geld2);
+		geld1 = geld1.subtrahiere(geld2);
 		assertEquals("2,70", geld1.toString());
-		geld2.subtrahiere(geld1);
+		
+		geld2 = geld2.subtrahiere(geld1);
 		assertEquals("-0,10", geld2.toString());
 	}
 	
@@ -35,7 +36,7 @@ public class GeldbetragTest {
 	public void testeMultipliziere()
 	{
 		Geldbetrag geld1 = Geldbetrag.get(5, 30);
-		geld1.multipliziere(5);
+		geld1 = geld1.multipliziere(5);
 		assertEquals("26,50", geld1.toString());
 	}
 	
@@ -47,6 +48,10 @@ public class GeldbetragTest {
 		assertEquals("3,65", geld3.toString());
 		Geldbetrag geld4 = Geldbetrag.get(1, 19);
 		assertEquals("1,19", geld4.toString());
+		Geldbetrag geld5 = Geldbetrag.get(0, -18);
+        assertEquals("-0,18", geld5.toString());
+        Geldbetrag geld6 = Geldbetrag.get(0, -14);
+        assertEquals("-0,14", geld6.toString());
 	}
 	
 	@Test
@@ -80,6 +85,7 @@ public class GeldbetragTest {
 		assertFalse(Geldbetrag.istGueltig("1,8asadasdasdasdds00"));
 		assertFalse(Geldbetrag.istGueltig("--1,23"));
 		assertFalse(Geldbetrag.istGueltig(1, -80));
+		assertFalse(Geldbetrag.istGueltig(-1, -80));
 		
 		assertTrue(Geldbetrag.istGueltig(1, 80));
 		assertTrue(Geldbetrag.istGueltig(-1, 80));
@@ -103,8 +109,8 @@ public class GeldbetragTest {
           Geldbetrag geld1 = Geldbetrag.get(5, 30);
           Geldbetrag geld2 = Geldbetrag.get(-2, 60);
           
-          assertTrue (geld1.toEuroCent == 530)
-          assertTrue (geld2.toEuroCent == -260)
+          assertTrue (geld1.toEuroCent() == 530);
+          assertTrue (geld2.toEuroCent() == -260);
           
        }
 	
