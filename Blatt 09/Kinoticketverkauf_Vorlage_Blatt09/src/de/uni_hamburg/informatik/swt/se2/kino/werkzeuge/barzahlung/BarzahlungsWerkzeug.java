@@ -36,7 +36,7 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
 	//TODO: _preis mit Geldbetrag realisieren
 
     private BarzahlungsWerkzeugUI _ui;
-    private Gelbetrag _preis;
+    private Geldbetrag _preis;
     private boolean _barzahlungErfolgreich;
     private boolean _ausreichenderGeldbetrag;
 
@@ -172,7 +172,7 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
         }
         try
         {
-            Geldbetrag eingabeBetrag = get(eingabePreis);
+            Geldbetrag eingabeBetrag = Geldbetrag.get(eingabePreis);
             Geldbetrag differenz = eingabeBetrag.subtrahiere(_preis);
             _ausreichenderGeldbetrag = (!differenz.istNegativ());
             zeigeRestbetrag(differenz);
@@ -210,7 +210,7 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
     {
         zeigePreis();
         loescheGezahltenBetrag();
-        zeigeRestbetrag(_preis.toString());
+        zeigeRestbetrag(_preis);
         zeigeAusreichenderGeldbetragStatus();
     }
 
@@ -252,7 +252,8 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
      */
     private void zeigeRestbetrag(Geldbetrag differenz)
     {
-        _ui.getRestbetragTextfield().setText(differenz.replace("-","") + " Euro");
+    	String temp = differenz.toString();
+        _ui.getRestbetragTextfield().setText(temp.replace("-","") + " Euro");
     }
 
     /**

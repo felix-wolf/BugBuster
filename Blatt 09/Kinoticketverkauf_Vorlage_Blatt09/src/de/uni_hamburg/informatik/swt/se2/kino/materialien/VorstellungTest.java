@@ -14,6 +14,7 @@ import org.junit.Test;
 
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Datum;
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.FSK;
+import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Geldbetrag;
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Platz;
 import de.uni_hamburg.informatik.swt.se2.kino.fachwerte.Uhrzeit;
 
@@ -37,7 +38,7 @@ public class VorstellungTest
     public void testeKonstruktor()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
 
         assertSame(_kinoA, v.getKinosaal());
         assertSame(_hdR1, v.getFilm());
@@ -52,7 +53,7 @@ public class VorstellungTest
     public void testHatPlatzHatPlaetze()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
 
         assertTrue(v.hatPlatz(Platz.get(0, 0)));
         assertTrue(v.hatPlatz(Platz.get(19, 49)));
@@ -75,7 +76,7 @@ public class VorstellungTest
     public void testeGibPreisFuerPlaetze()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
         Set<Platz> s = new HashSet<Platz>();
 
         assertEquals(0, v.getPreisFuerPlaetze(s));
@@ -91,7 +92,7 @@ public class VorstellungTest
     public void testeVerkaufen()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
         Platz platz = Platz.get(5, 5);
         assertTrue(v.istVerkaufbar(platz));
         assertFalse(v.istStornierbar(platz));
@@ -109,7 +110,7 @@ public class VorstellungTest
     public void testeVerkaufenMehrere()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
 
         Platz platz1 = Platz.get(1, 1);
         Platz platz2 = Platz.get(1, 2);
@@ -134,7 +135,7 @@ public class VorstellungTest
     public void testeVerkaufbarStornierbar()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
 
         Platz platz1 = Platz.get(1, 1);
         Platz platz2 = Platz.get(1, 2);
@@ -191,7 +192,7 @@ public class VorstellungTest
     public void testeGibAnzahlVerkauftePlaetze()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
-                _11_07_2008, 1230);
+                _11_07_2008, Geldbetrag.get(1230));
 
         assertEquals(0, v.getAnzahlVerkauftePlaetze());
         for (int i = 1; i <= 5; i++)

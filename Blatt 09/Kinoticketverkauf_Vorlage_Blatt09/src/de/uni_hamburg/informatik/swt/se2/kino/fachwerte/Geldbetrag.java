@@ -1,13 +1,15 @@
 package de.uni_hamburg.informatik.swt.se2.kino.fachwerte;
 
+import java.io.IOException;
 import java.util.HashMap;
+
+import javax.swing.JOptionPane;
 
 public class Geldbetrag {
 
-	private static HashMap<Integer, Geldbetrag> GELDBETRAEGE;
-	private final boolean _istNegativ;
-	private final int _centAnteil;
-	private final int _euroAnteil;
+	private static HashMap<Integer, Geldbetrag> GELDBETRAEGE = new HashMap<Integer, Geldbetrag>();
+//	private final boolean _istNegativ;
+	private final int _eurocent;
 	
 	/**
 	 * wird von get aufgerufen
@@ -16,81 +18,104 @@ public class Geldbetrag {
 	 * @param centAnteil
 	 * @param istNegativ
 	 */
-	private Geldbetrag(int eurocent, boolean istNegativ) {
-		_euroAnteil = euroAnteil;
-		_centAnteil = centAnteil;
-		_istNegativ = istNegativ;
+	private Geldbetrag(int eurocent) {
+		_eurocent = eurocent;
 		
-		GELDBETRAEGE.put(key, value)
+		GELDBETRAEGE.put(eurocent, this);
 	}
 	
-	public static Geldbetrag get(int euro, int cent) {
+	public static Geldbetrag get(long eurocent)
+	{
 		
-		int eurocentKey = concatEuroCent(euro, cent);
-		
-		Geldbetrag geld; 
-		
-		if(!GELDBETRAEGE.containsKey(eurocentKey)) {
-			geld = new Geldbetrag (euro, cent, false);
+		try
+		{
+			istGueltig(eurocent);
 		}
-		else {
-			geld = GELDBETRAEGE.get(eurocentKey);
-		}
-		
-		return geld;
-	}
-	
-	public static Geldbetrag get(int eurocent) {
-		
-		int eurocentKey = eurocent;
-		
-		Geldbetrag geld; 
-		
-		
-		
-		if(!GELDBETRAEGE.containsKey(eurocentKey)) {
-			geld = new Geldbetrag (eurocent, eurocent < 0);
-		}
-		else {
-			geld = GELDBETRAEGE.get(eurocentKey);	
+		catch(Exception e)
+		{	
+			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 		
-		return geld;
+		int betrag = (int) eurocent;
+		if(!GELDBETRAEGE.containsKey(betrag)) {
+			return new Geldbetrag(betrag);
+		}
+		else
+		{
+		 return GELDBETRAEGE.get(betrag);	
+		}
 	}
 	
 	public static Geldbetrag get(String euroString) {
-		int betrag = stringToEuroCent(euroString);
-		return Geldbetrag.get(betrag);
+		
+		try
+		{
+			istGueltig(euroString);
+			
+		}
+		catch(Exception e)
+		{	
+			JOptionPane.showMessageDialog(null, e.getMessage());
+		}
+		return Geldbetrag.get(stringToEuroCent(euroString));
+//		return null;
 		
 	}
 	
 	public Geldbetrag addiere(Geldbetrag geldbetrag) {
-		int betrag1 = this.toEuroCent();
-		int betrag2 = geldbetrag.toEuroCent();
-		int ergebnis = betrag1 + betrag2;
+		
+		long betrag1 = this.getEurocent();
+		long betrag2 = geldbetrag.getEurocent();
+		long ergebnis = betrag1 + betrag2;
+		
+		try
+		{
+			istGueltig(ergebnis);
+		}
+		catch(Exception e)
+		{
+			JOptionPane.showMessageDialog(null, e.getMessage());
+
+		}
 		return Geldbetrag.get(ergebnis);
 	}
 	
-	public Geldbetrag substrahiere(Geldbetrag geldbetrag) {
-		int betrag1 = this.toEuroCent();
-		int betrag2 = geldbetrag.toEuroCent(); 
-		int ergebnis = betrag1 - betrag2;
+	public Geldbetrag subtrahiere(Geldbetrag geldbetrag) {
+		long betrag1 = getEurocent();
+		long betrag2 = geldbetrag.getEurocent(); 
+		long ergebnis = betrag1 - betrag2;
+		
+		try
+		{
+			istGueltig(ergebnis);
+		}
+		catch(Exception e)
+		{
+			JOptionPane.showMessageDialog(null, e.getMessage());
+
+		}
 		return Geldbetrag.get(ergebnis);
 	}
 	
 	public Geldbetrag multipliziere(int zahl) {
-		int betrag1 = this.toEuroCent(); 
-		int ergebnis = betrag1*zahl;
-		return Geldbetrag.get(ergebnis);	}
-	
-	private static int concatEuroCent(int euro, int cent)
-	{
-		return euro*100+cent;
+		long betrag1 = getEurocent(); 
+		long ergebnis = betrag1*zahl;
+		try
+		{
+			istGueltig(ergebnis);
+		}
+		catch(Exception e)
+		{
+			JOptionPane.showMessageDialog(null, e.getMessage());
+
+		}
+		return Geldbetrag.get(ergebnis);	
 	}
 	
-	private int toEuroCent()
+	
+	private int getEurocent()
 	{
-		return _euroAnteil*100+_centAnteil;
+		return _eurocent;
 	}
 	
 	/**
@@ -101,10 +126,10 @@ public class Geldbetrag {
 	 * @require String euroString hat Form EE,CC
 	 */
 	
-	private static int stringToEuroCent(String euroString) {
-		System.out.println(Integer.valueOf(euroString.replaceAll(",", "")));
-		return Integer.valueOf(euroString.replaceAll(",", "").toString());
+	private static long stringToEuroCent(String euroString) {
+		return Long.valueOf(euroString.replaceAll(",", "").toString());
 	}
+	
 	
 	/**
 	 * Prüfen, ob die Eingage in Interger gültig für Geldbetrag ist.
@@ -114,15 +139,12 @@ public class Geldbetrag {
 	 * 
 	 * @return true, wenn es gültig ist
 	 */
-	public static boolean istGueltig (int euroAnteil, int centAnteil)
+	public static void istGueltig (long eurocent) throws Exception
 	{
-	    // Nur euroAnteil darf negativ sein
-	    if (centAnteil < 0) return false;
-	    
-	    //höchste centAnteil ist 99 cent
-	    if (centAnteil > 99) return false;
-	    
-	    return true;
+		if (!(eurocent <= Integer.MAX_VALUE && eurocent >= Integer.MIN_VALUE)) 
+		{
+			throw new Exception("FEHLER! Betrag zu gross");   
+		}
 	}
 	
 	
@@ -133,19 +155,25 @@ public class Geldbetrag {
      * 
      * @return true, wenn es gültig ist
      */
-	public static boolean istGueltig (String geldbetragInString)
+	public static void istGueltig (String geldbetragInString) throws Exception
 	{
 	    if (pruefeObStringInFormat(geldbetragInString) && pruefeAnzahlKommaInString(geldbetragInString))
 	    {
-	        // Hier wird String zu 2 Int konvertiert, und dann ruft Methode istGueltig zum prüfen, ob 2 Int in Array rich für EuroAnteil und CentAnteil stehen
-	        int[] ArrayEuroundCentBetrag = StringTo2Int(geldbetragInString);
-	        if ( istGueltig(ArrayEuroundCentBetrag[0], ArrayEuroundCentBetrag[1]))
-	        {
-	            return  true;
-	        }
-	        else return false;
+	    	long betrag = stringToEuroCent(geldbetragInString);
+	    	try
+	    	{
+	    		istGueltig(betrag);
+	    	}
+	    	catch (Exception e)
+	    	{
+	    		throw new Exception(e.getMessage());
+	    	}
 	    }
-	    else return false;
+	    else 
+	    {
+	    	throw new Exception("Fehler: String nicht im richtigen Format");
+	    }
+	    	
 	}
 	
 	/**
@@ -170,7 +198,7 @@ public class Geldbetrag {
             char charInString = geldbetragInString.charAt(i);
             boolean istCharEinNummer = Character.isDigit(charInString);
             
-            if ( !istCharEinNummer && charInString != ',' && charInString != '.') 
+            if ( !istCharEinNummer && charInString != ',') 
             {
                 return false;
             }
@@ -191,116 +219,36 @@ public class Geldbetrag {
         {
             char charInString = geldbetragInString.charAt(i);
             
-            if (charInString == ',' || charInString == '.') 
+            if (charInString == ',') 
             {
                 AnzahlVorkommen++;
             }
         }
-        
-        if (AnzahlVorkommen > 1) 
-            {
-                return false;
-            }
-        else 
-            {
-                return true;
-            }
+        return (AnzahlVorkommen < 2); 
         
     }
-    
-  /**
-  * Konvertiere das gegebene String zu 2 int
-  * 
-  * @return Ein Array von 2 int
-  */
- private static int[] StringTo2Int (String geldbetragInString)
- {
-     boolean negativ = false;
-     int[] euroUndCentAnteil = new int[2];
-     String euroAnteil = new String();
-     String centAnteil = new String();
-     
-     if (geldbetragInString.charAt(0) == '-')
-     {
-         negativ = true;
-     }
-     
-     int EsteStelleZurParse = 0;
-     if (negativ)
-     {
-         EsteStelleZurParse = 1;
-     }
-     
-     boolean kommaHatEntscheint = false;
-     for (int i= EsteStelleZurParse ; i < geldbetragInString.length() ; i++)
-     {
-         char aktuelleChar = geldbetragInString.charAt(i);
-         if (aktuelleChar == ',' || aktuelleChar == '.')
-         {
-             kommaHatEntscheint = true;
-         }
-         
-         if (Character.isDigit(aktuelleChar) && !kommaHatEntscheint)
-         {
-             euroAnteil += aktuelleChar;
-         }
-         
-         if (Character.isDigit(aktuelleChar) && kommaHatEntscheint)
-         {
-             centAnteil += aktuelleChar;
-         }
-     }
-     
-     if (negativ) 
-         {
-         euroUndCentAnteil[0] = 0 - (Integer.parseInt(euroAnteil));
-         }
-     else 
-     {
-         euroUndCentAnteil[0] = Integer.parseInt(euroAnteil);
-     }
-     
-     euroUndCentAnteil[1] = Integer.parseInt(centAnteil);
-     
-     return euroUndCentAnteil;
-     
- }
- 
- 
- /**
-* Gib zurück, ob der Geldbetrag negativ ist
-* @return true, der Geldbetrag negativ ist
-*/
-public boolean istNegativ ()
-{
-  return _istNegativ;
-   
-}
 
-/**
-* Konvertiert Geldbetrag zu int
-* @return euroCentInInt
-*/
-private int toEuroCent ()
-{
-    int euroCentInInt;
-    if (_istNegativ)
+    public boolean istNegativ()
     {
-        return 0 - (_euroAnteil*100 + _centAnteil);
+    	return _eurocent < 0;
     }
-    else return _euroAnteil*100 + _centAnteil;
-  
-}
-
     
 	@Override
 	public String toString() {
-		String euroString = Integer.toString(_euroAnteil);
-		String centString = Integer.toString(_centAnteil);
-		if (_centAnteil < 10) {
+		
+		int euro = Math.abs(_eurocent / 100);
+		int cent = Math.abs(_eurocent % 100);
+		String centString = "" + cent;
+		if (cent < 10) {
 			centString = "0" + centString;
 		}
-		return euroString + "," + centString;
+		
+		String minus = "";
+		if (istNegativ())
+		{
+			minus = "-";
+		}
+		return minus + euro + "," + centString;
 	}
 	
     @Override
@@ -311,14 +259,13 @@ private int toEuroCent ()
 
     private boolean equals(Geldbetrag andererGeldbetrag)
     {
-        return (_euroAnteil == andererGeldbetrag._euroAnteil) && (_centAnteil == andererGeldbetrag._centAnteil)
-        		&& (_istNegativ == andererGeldbetrag._istNegativ);
+        return (_eurocent == andererGeldbetrag._eurocent);
     }
 
     @Override
     public int hashCode()
     {
-        return !istNegativ() ? 10004 * _euroAnteil + _centAnteil : -1 * (10004 * _euroAnteil + _centAnteil) ;
+        return 10004 * _eurocent;
     }
 
 }
