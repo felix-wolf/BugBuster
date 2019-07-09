@@ -16,10 +16,12 @@ public class Geldbetrag {
 	 * @param centAnteil
 	 * @param istNegativ
 	 */
-	private Geldbetrag(int euroAnteil, int centAnteil, boolean istNegativ) {
+	private Geldbetrag(int eurocent, boolean istNegativ) {
 		_euroAnteil = euroAnteil;
 		_centAnteil = centAnteil;
 		_istNegativ = istNegativ;
+		
+		GELDBETRAEGE.put(key, value)
 	}
 	
 	public static Geldbetrag get(int euro, int cent) {
@@ -44,11 +46,10 @@ public class Geldbetrag {
 		
 		Geldbetrag geld; 
 		
-		int euro = eurocent/100;
-		int cent = eurocent-(eurocent/100);
+		
 		
 		if(!GELDBETRAEGE.containsKey(eurocentKey)) {
-			geld = new Geldbetrag (euro, cent, false);
+			geld = new Geldbetrag (eurocent, eurocent < 0);
 		}
 		else {
 			geld = GELDBETRAEGE.get(eurocentKey);	
