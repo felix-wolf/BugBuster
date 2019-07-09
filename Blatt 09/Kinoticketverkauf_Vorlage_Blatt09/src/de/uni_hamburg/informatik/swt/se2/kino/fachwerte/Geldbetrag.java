@@ -127,7 +127,13 @@ public class Geldbetrag {
 	 */
 	
 	private static long stringToEuroCent(String euroString) {
-		return Long.valueOf(euroString.replaceAll(",", "").toString());
+		if (euroString.contains(","))
+		{
+			return Long.valueOf(euroString.replaceAll(",", "").toString());
+	
+		}
+		return Long.valueOf(euroString) * 100;
+
 	}
 	
 	

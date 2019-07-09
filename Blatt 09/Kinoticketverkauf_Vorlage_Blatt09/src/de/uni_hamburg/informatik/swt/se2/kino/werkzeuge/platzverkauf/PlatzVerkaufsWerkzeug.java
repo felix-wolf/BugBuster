@@ -102,7 +102,7 @@ public class PlatzVerkaufsWerkzeug
     private void fuehreBarzahlungDurch()
     {
         // TODO für Blatt 8: Verkaufen ohne Barzahlungswerkzeug
-        _barzahlungsWerkzeug.fuehreBarzahlungDurch(Geldbetrag _ausgewaehlterGesamtbetrag);
+        _barzahlungsWerkzeug.fuehreBarzahlungDurch(_ausgewaehlterGesamtbetrag);
         if (_barzahlungsWerkzeug.barzahlungErfolgreich())
         {
             verkaufePlaetze(_vorstellung);
@@ -129,7 +129,7 @@ public class PlatzVerkaufsWerkzeug
     {
     	//TODO: preis zu Geldbetrag
     	
-        _ausgewaehlterGesamtbetrag = get("0");
+        _ausgewaehlterGesamtbetrag = Geldbetrag.get("0");
         if (istVerkaufenMoeglich(plaetze))
         {
             Geldbetrag preis = _vorstellung.getPreisFuerPlaetze(plaetze);
