@@ -1,0 +1,34 @@
+Was ist ein Fachwert und wie ist dieser gemäß der SE2-Entwurfsregeln aufgebaut?
+
+Ein Fachwert bildet einen grundlegenden Typ eines Anwendungssystems.
+Fachwerte sind nach SE2-Entwurfsregeln unveränderlich.
+Fachwerte werden nicht erzeugt sondern bei Bedarf aus der Wertemenge ausgewählt.
+Fachwerte werden durch einen Werttypen realisiert.
+
+
+Welche Vorteile bietet die Verwendung eines Fachwerttyps gegenüber einem Integertyp?
+
+Fachspezifische Formatierung.
+Bietet ausgewählte, fachspezifische Methoden an.
+Vermeidung von Code-Duplikaten.
+
+
+Lässt euer Fachwert negative Beträge zu? Erläutert an konkreten Bespielen, welche Konsequen-
+zen eure Entscheidung hat.
+
+Wir lassen negative Beträge zu, um hohen Logikaufwand zu vermeiden (Rückgeld oder nicht).
+Ohne negative Beträge liefert subtrahiere() falsche Ergebnisse.
+
+
+Welche Schnittstelle hat der von euch vorgeschlagene Fachwerttyp? Denkt hierbei auch an das
+Vertragsmodell.
+
+get(int, int)
+get(String)
+addiere(Geldbetrag)
+subtrahiere(Geldbetrag)
+multipliziere(int)
+toString()
+equals()
+hashCode()
+istGueltig()
