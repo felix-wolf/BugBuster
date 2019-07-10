@@ -160,7 +160,7 @@ public class Geldbetrag {
      */
 	public static void istGueltig(String geldbetragInString) throws Exception
 	{
-	    if (!pruefeObStringInFormat(geldbetragInString) && pruefeAnzahlKommaInString(geldbetragInString))
+	    if (!pruefeObStringInFormat(geldbetragInString) && pruefeAnzahlKommaInString(geldbetragInString) &&pruefeAnzahlNummerNachKomma(geldbetragInString)) 
 	    {
 	        throw new Exception("Fehler: String nicht im richtigen Format");
 	    }
@@ -218,6 +218,22 @@ public class Geldbetrag {
         return (AnzahlVorkommen < 2); 
         
     }
+    
+    private static boolean pruefeAnzahlNummerNachKomma (String geldbetragInString)
+    {
+        int count = 0;
+        if (geldbetragInString.contains(","))
+        {
+            int indexVonKomma = geldbetragInString.indexOf(',');
+            for (int i = indexVonKomma; i < geldbetragInString.length() ;i++)
+            {
+                count++;
+            }
+        }
+        return count < 3;
+        
+    }
+    
 
     public boolean istNegativ()
     {
