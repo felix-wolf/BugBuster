@@ -127,7 +127,6 @@ public class PlatzVerkaufsWerkzeug
      */
     private void aktualisierePreisanzeige(Set<Platz> plaetze)
     {
-    	//TODO: preis zu Geldbetrag
     	
         _ausgewaehlterGesamtbetrag = Geldbetrag.get("0");
         if (istVerkaufenMoeglich(plaetze))

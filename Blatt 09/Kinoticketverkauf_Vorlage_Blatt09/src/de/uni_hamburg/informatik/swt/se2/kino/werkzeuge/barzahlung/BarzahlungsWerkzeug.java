@@ -157,7 +157,6 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
 		});
 	}
 
-	//TODO: dieser
 	/**
 	 * Setzt einen neuen Status für das Werkzeug auf Basis der gesamten Eingabe
 	 * und beendet das Bezahlen erfoglreich, sollte der Preis gedeckt und die
@@ -172,18 +171,28 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
 		{
 			eingabePreis = "0";
 		}
-		try
-        {
-            Geldbetrag eingabeBetrag = Geldbetrag.get(eingabePreis);
-            Geldbetrag differenz = eingabeBetrag.subtrahiere(_preis);
-            _ausreichenderGeldbetrag = (!differenz.istNegativ());
-            zeigeRestbetrag(differenz);
-        }
-        catch (NumberFormatException ignore)
-        {
-            _ausreichenderGeldbetrag = false;
-            zeigeFehlertext();
-}
+		
+		if (Geldbetrag.istGueltig(eingabePreis)) 
+		{
+			Geldbetrag eingabeBetrag = Geldbetrag.get(eingabePreis);
+			if (eingabeBetrag.istSubtrahierenMoeglich(_preis))
+			{
+				Geldbetrag differenz = eingabeBetrag.subtrahiere(_preis);
+				_ausreichenderGeldbetrag = (!differenz.istNegativ());
+				zeigeRestbetrag(differenz);
+			}
+			else 
+			{
+				_ausreichenderGeldbetrag = false;
+				zeigeFehlertext();
+			}
+			
+		}
+		else 
+		{
+			_ausreichenderGeldbetrag = false;
+			zeigeFehlertext();
+		}
 		zeigeAusreichenderGeldbetragStatus();
 	}
 

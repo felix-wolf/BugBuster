@@ -69,7 +69,6 @@ public class GeldbetragTest {
         assertTrue(geld1.hashCode() == geld2.hashCode());
         assertFalse(geld1.equals(geld3));
         assertFalse(geld1.equals(geld4));
-        assertTrue(geld1.hashCode() != geld4.hashCode());
     }
 
     @Test

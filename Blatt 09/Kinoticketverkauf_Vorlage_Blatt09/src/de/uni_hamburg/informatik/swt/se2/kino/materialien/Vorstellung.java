@@ -42,7 +42,6 @@ public class Vorstellung
      * @require anfangszeit != null
      * @require endzeit != null
      * @require datum != null
-     * TODO: so richtig?
      * @require !preis.istNegativ() 
      * 
      * @ensure getKinosaal() == kinosaal
@@ -192,8 +191,11 @@ public class Vorstellung
     public Geldbetrag getPreisFuerPlaetze(Set<Platz> plaetze)
     {
         assert hatPlaetze(plaetze) : "Vorbedingung verletzt: hatPlaetze(plaetze)";
+        assert _preis.istMultiplizierenMoeglich(plaetze.size()) : "Vorbedingung verletzt: "
+        		+ "_preis.istMultiplizierenMoelgich(plaetze.size())";
+        
+    	return _preis.multipliziere(plaetze.size());
 
-        return _preis.multipliziere(plaetze.size());
     }
 
     /**

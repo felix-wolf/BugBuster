@@ -2,13 +2,14 @@ package de.uni_hamburg.informatik.swt.se2.kino.fachwerte;
 
 import java.util.HashMap;
 
-public class Geldbetrag {
+final public class Geldbetrag {
 
 	//HashMap, welche erzeugte Geldbeträge hält
 	private static HashMap<Integer, Geldbetrag> GELDBETRAEGE = new HashMap<Integer, Geldbetrag>();
 	//interne Darstellung eines Geldbetrags
 	private final int _eurocent;
 
+	
 	/**
 	 * Privater Konstruktor, fügt "sich selbst" in die HashMap ein
 	 * 
@@ -53,6 +54,43 @@ public class Geldbetrag {
 
 		return Geldbetrag.get(stringToEuroCent(euroString));
 	}
+	
+	/**
+	 * Überprüft, ob das addieren möglich ist
+	 * 
+	 * @param geldbetrag der zu addierende Geldbetrag
+	 * @return ob addieren möglich ist
+	 * @require geldbetrag != null
+	 */
+	public boolean istAddierenMoeglich(Geldbetrag geldbetrag) 
+	{
+		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
+		return istGueltig((long) getEurocent() + geldbetrag.getEurocent());
+	}
+	
+	/**
+	 * Überprüft, ob das subtrahierende möglich ist
+	 * 
+	 * @param geldbetrag der zu subtrahierende Geldbetrag
+	 * @return ob subtrahieren möglich ist
+	 * @require geldbetrag != null
+	 */
+	public boolean istSubtrahierenMoeglich(Geldbetrag geldbetrag) 
+	{
+		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
+		return istGueltig((long) getEurocent() - geldbetrag.getEurocent());
+	}
+	
+	/**
+	 * Überprüft, ob das multiplizieren möglich ist
+	 * 
+	 * @param geldbetrag der zu subtrahieren Geldbetrag
+	 * @return ob multiplizieren möglich ist
+	 */
+	public boolean istMultiplizierenMoeglich(int zahl) 
+	{
+		return istGueltig((long) getEurocent() * zahl);
+	}
 
 	/**
 	 * addiert einen Geldbetrag zu einem anderen
@@ -64,8 +102,8 @@ public class Geldbetrag {
 	 */
 	public Geldbetrag addiere(Geldbetrag geldbetrag) {
 		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
-		assert istGueltig(this.getEurocent() + geldbetrag.getEurocent()) : "Vorbedingung verletzt:"
-		+ " istGueltig(this + geldbetrag)";
+		assert istAddierenMoeglich(geldbetrag) : "Vorbedingung verletzt:"
+		+ " istAddierenMoeglich(geldbetrag)";
 
 		int betrag1 = this.getEurocent();
 		int betrag2 = geldbetrag.getEurocent();
@@ -85,8 +123,8 @@ public class Geldbetrag {
 	public Geldbetrag subtrahiere(Geldbetrag geldbetrag) {
 
 		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
-		assert istGueltig(this.getEurocent() - geldbetrag.getEurocent()) : "Vorbedingung verletzt:"
-		+ " istGueltig(this - geldbetrag)";
+		assert istSubtrahierenMoeglich(geldbetrag) : "Vorbedingung verletzt:"
+		+ " istSubtrahierenMoeglich(geldbetrag)";
 
 		int betrag1 = getEurocent();
 		int betrag2 = geldbetrag.getEurocent(); 
@@ -103,8 +141,8 @@ public class Geldbetrag {
 	 */
 	public Geldbetrag multipliziere(int zahl) {
 
-		assert istGueltig(this.getEurocent() * zahl) : "Vorbedingung verletzt:"
-		+ " istGueltig(this * zahl)";
+		assert istMultiplizierenMoeglich(zahl) : "Vorbedingung verletzt:"
+		+ " istMultplizierenMoeglich(zahl)";
 
 		int ergebnis = _eurocent * zahl;
 

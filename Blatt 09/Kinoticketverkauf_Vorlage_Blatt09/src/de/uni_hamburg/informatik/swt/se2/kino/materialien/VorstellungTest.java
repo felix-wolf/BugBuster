@@ -35,7 +35,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeKonstruktor() throws Exception
+    public void testeKonstruktor()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -45,12 +45,12 @@ public class VorstellungTest
         assertEquals(_16_45, v.getAnfangszeit());
         assertEquals(_20_15, v.getEndzeit());
         assertEquals(_11_07_2008, v.getDatum());
-        assertEquals(1230, v.getPreis());
+        assertEquals(Geldbetrag.get(1230), v.getPreis());
         assertNotNull(v.toString());
     }
 
     @Test
-    public void testHatPlatzHatPlaetze() throws Exception
+    public void testHatPlatzHatPlaetze()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -73,23 +73,23 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeGibPreisFuerPlaetze() throws Exception
+    public void testeGibPreisFuerPlaetze()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
         Set<Platz> s = new HashSet<Platz>();
 
-        assertEquals(0, v.getPreisFuerPlaetze(s));
+        assertEquals(Geldbetrag.get(0), v.getPreisFuerPlaetze(s));
 
         s.add(Platz.get(5, 5));
         s.add(Platz.get(5, 6));
         s.add(Platz.get(5, 7));
 
-        assertEquals(3690, v.getPreisFuerPlaetze(s));
+        assertEquals(Geldbetrag.get(3690), v.getPreisFuerPlaetze(s));
     }
 
     @Test
-    public void testeVerkaufen() throws Exception
+    public void testeVerkaufen()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -107,7 +107,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeVerkaufenMehrere() throws Exception
+    public void testeVerkaufenMehrere()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -132,7 +132,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeVerkaufbarStornierbar() throws Exception
+    public void testeVerkaufbarStornierbar()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
@@ -189,7 +189,7 @@ public class VorstellungTest
     }
 
     @Test
-    public void testeGibAnzahlVerkauftePlaetze() throws Exception
+    public void testeGibAnzahlVerkauftePlaetze()
     {
         Vorstellung v = new Vorstellung(_kinoA, _hdR1, _16_45, _20_15,
                 _11_07_2008, Geldbetrag.get(1230));
