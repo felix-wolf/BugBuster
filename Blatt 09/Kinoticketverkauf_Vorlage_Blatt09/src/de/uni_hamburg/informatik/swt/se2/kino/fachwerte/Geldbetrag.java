@@ -24,6 +24,12 @@ public class Geldbetrag {
 		GELDBETRAEGE.put(eurocent, this);
 	}
 	
+	/**
+	 * 
+	 * @param eurocent
+	 * @return
+	 * @throws Exception
+	 */
 	public static Geldbetrag get(long eurocent) throws Exception
 	{
 	    
@@ -163,7 +169,8 @@ public class Geldbetrag {
      */
 	public static void istGueltig(String geldbetragInString) throws Exception
 	{
-	    if (!pruefeObStringInFormat(geldbetragInString) && pruefeAnzahlKommaInString(geldbetragInString) &&pruefeAnzahlNummerNachKomma(geldbetragInString)) 
+	    if (!gueltigesStringformat(geldbetragInString) || !gueltigeKommaAnzahl(geldbetragInString)
+	    		|| !gueltigeNachkommastellen(geldbetragInString))
 	    {
 	        throw new Exception("Fehler: String nicht im richtigen Format");
 	    }
@@ -174,9 +181,8 @@ public class Geldbetrag {
 	 * Prüfe, ob das eingegebene String in Format:  wenn es '-' gibt, dann muss '-' am Anfang steht. Die nächsten Symbole sind aus Nummer oder ',' oder '.'
 	 * @return true, wenn es den Format hat.
 	 */
-	private static boolean pruefeObStringInFormat (String geldbetragInString)
+	private static boolean gueltigesStringformat (String geldbetragInString)
 	{
-	    boolean returnWert = true;
 	    char ersteBuchstabe = geldbetragInString.charAt(0);
         int anfangPositionZumParse;
         
@@ -197,7 +203,7 @@ public class Geldbetrag {
                 return false;
             }
         }
-        return returnWert;
+        return true;
 	    
 	}
 	
@@ -205,7 +211,7 @@ public class Geldbetrag {
      * Prüfe, ob das eingegebene String maximal ein ',' Symbol hat
      * @return true, wenn das String maximal ein ',' oder Symbol hat
      */
-    private static boolean pruefeAnzahlKommaInString (String geldbetragInString)
+    private static boolean gueltigeKommaAnzahl (String geldbetragInString)
     {
         int AnzahlVorkommen = 0;
         
@@ -222,7 +228,7 @@ public class Geldbetrag {
         
     }
     
-    private static boolean pruefeAnzahlNummerNachKomma (String geldbetragInString)
+    private static boolean gueltigeNachkommastellen (String geldbetragInString)
     {
         int count = 0;
         if (geldbetragInString.contains(","))
@@ -233,8 +239,7 @@ public class Geldbetrag {
                 count++;
             }
         }
-        return count < 3;
-        
+        return count < 4;
     }
     
 
