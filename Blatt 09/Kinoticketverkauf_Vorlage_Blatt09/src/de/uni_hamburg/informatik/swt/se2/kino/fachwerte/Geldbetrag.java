@@ -104,7 +104,13 @@ public class Geldbetrag {
 		return null;
 	}
 	
+	/**
+	 * Multipliziert Geldbetrag mit einem int zu einem Geldbetrag
+	 * @param zahl, mit der dieser Geldbetrag multipliziert wird
+	 * @return der neue Geldbetrag
+	 */
 	public Geldbetrag multipliziere(int zahl) {
+
 		long betrag1 = getEurocent(); 
 		long ergebnis = betrag1 * zahl;
 		try
@@ -120,6 +126,10 @@ public class Geldbetrag {
 		return null;	
 	}
 	
+	/**
+	 * Getter für Feld mit int Betrag
+	 * @return den int-Wert des Geldbetrags
+	 */
 	
 	private int getEurocent()
 	{
@@ -144,7 +154,7 @@ public class Geldbetrag {
 	
 	
 	/**
-	 * Prüfen, ob die Eingage in Interger gültig für Geldbetrag ist.
+	 * Prüft, ob die Eingage in Interger gültig für Geldbetrag ist.
 	 * 
 	 * @param euroAnteil : Euro Anteil in int
 	 * @param centAnteil : Cent Anteil in int
@@ -228,6 +238,12 @@ public class Geldbetrag {
         
     }
     
+    /**
+     * Prüft ob, wenn es Komma gibt, nach dem Komma maximal zwei Stellen kommen
+     * 
+     * @param geldbetragInString
+     * @return True, wenn Nachkommabereich gültig ist
+     */
     private static boolean gueltigeNachkommastellen (String geldbetragInString)
     {
         int count = 0;
@@ -248,6 +264,11 @@ public class Geldbetrag {
     	return _eurocent < 0;
     }
     
+    /**
+     * Wandelt diesen Geldbetrag in einen Strin um
+     * 
+     * @return String des Geldbetrags
+     */
 	@Override
 	public String toString() {
 		
@@ -265,6 +286,10 @@ public class Geldbetrag {
 		}
 		return minus + euro + "," + centString;
 	}
+	
+	/**
+	 * Prüft ob zwei Geldbeträge den gleichen Wert haben
+	 */
 	
     @Override
     public boolean equals(Object o)
