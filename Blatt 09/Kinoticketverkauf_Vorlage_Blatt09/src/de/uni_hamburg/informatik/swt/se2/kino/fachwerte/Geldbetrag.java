@@ -46,7 +46,7 @@ public class Geldbetrag {
 			throw new Exception(e.getMessage());
 		}
 		int betrag = (int) eurocent;
-		
+
 		return (!GELDBETRAEGE.containsKey(betrag) ? new Geldbetrag(betrag) : GELDBETRAEGE.get(betrag));
 
 	}
@@ -60,9 +60,9 @@ public class Geldbetrag {
 	 * @throws Exception wenn euroString ungültig ist
 	 */
 	public static Geldbetrag get(String euroString) {
-		
+
 		assert euroString != null : "Vorbedingung verletzt: euroString != null";
-		
+
 		try
 		{
 			istGueltig(euroString);
@@ -86,7 +86,7 @@ public class Geldbetrag {
 	public Geldbetrag addiere(Geldbetrag geldbetrag) {
 
 		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
-		
+
 		long betrag1 = this.getEurocent();
 		long betrag2 = geldbetrag.getEurocent();
 		long ergebnis = betrag1 + betrag2;
@@ -112,9 +112,9 @@ public class Geldbetrag {
 	 * @require geldbetrag != null
 	 */
 	public Geldbetrag subtrahiere(Geldbetrag geldbetrag) {
-		
+
 		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
-		
+
 		long betrag1 = getEurocent();
 		long betrag2 = geldbetrag.getEurocent(); 
 		long ergebnis = betrag1 - betrag2;
@@ -132,7 +132,13 @@ public class Geldbetrag {
 		return null;
 	}
 
+	/**
+	 * Multipliziert Geldbetrag mit einem int zu einem Geldbetrag
+	 * @param zahl, mit der dieser Geldbetrag multipliziert wird
+	 * @return der neue Geldbetrag
+	 */
 	public Geldbetrag multipliziere(int zahl) {
+
 		long betrag1 = getEurocent(); 
 		long ergebnis = betrag1 * zahl;
 		try
@@ -148,7 +154,10 @@ public class Geldbetrag {
 		return null;	
 	}
 
-
+	/**
+	 * Getter für Feld mit int Betrag
+	 * @return den int-Wert des Geldbetrags
+	 */
 	private int getEurocent()
 	{
 		return _eurocent;
@@ -172,7 +181,7 @@ public class Geldbetrag {
 
 
 	/**
-	 * Prüfen, ob die Eingage in Interger gültig für Geldbetrag ist.
+	 * Prüft, ob die Eingage in Interger gültig für Geldbetrag ist.
 	 * 
 	 * @param euroAnteil : Euro Anteil in int
 	 * @param centAnteil : Cent Anteil in int
@@ -256,6 +265,12 @@ public class Geldbetrag {
 
 	}
 
+	/**
+	 * Prüft ob, wenn es Komma gibt, nach dem Komma maximal zwei Stellen kommen
+	 * 
+	 * @param geldbetragInString
+	 * @return True, wenn Nachkommabereich gültig ist
+	 */
 	private static boolean gueltigeNachkommastellen (String geldbetragInString)
 	{
 		int count = 0;
@@ -275,6 +290,12 @@ public class Geldbetrag {
 	{
 		return _eurocent < 0;
 	}
+
+	/**
+	 * Wandelt diesen Geldbetrag in einen Strin um
+	 * 
+	 * @return String des Geldbetrags
+	 */
 
 	@Override
 	public String toString() {
