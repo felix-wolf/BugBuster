@@ -173,18 +173,17 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
 			eingabePreis = "0";
 		}
 		try
-		{
-			Geldbetrag eingabeBetrag = Geldbetrag.get(eingabePreis);
-			Geldbetrag differenz = eingabeBetrag.subtrahiere(_preis);
-			_ausreichenderGeldbetrag = (!differenz.istNegativ());
-			zeigeRestbetrag(differenz);
-		}
-
-		catch(Exception e)
-		{
-			_ausreichenderGeldbetrag = false;
-			zeigeFehlertext();
-		}
+        {
+            Geldbetrag eingabeBetrag = Geldbetrag.get(eingabePreis);
+            Geldbetrag differenz = eingabeBetrag.subtrahiere(_preis);
+            _ausreichenderGeldbetrag = (!differenz.istNegativ());
+            zeigeRestbetrag(differenz);
+        }
+        catch (NumberFormatException ignore)
+        {
+            _ausreichenderGeldbetrag = false;
+            zeigeFehlertext();
+}
 		zeigeAusreichenderGeldbetragStatus();
 	}
 

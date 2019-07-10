@@ -1,7 +1,6 @@
 package de.uni_hamburg.informatik.swt.se2.kino.fachwerte;
 
 import java.util.HashMap;
-import javax.swing.JOptionPane;
 
 public class Geldbetrag {
 
@@ -14,10 +13,11 @@ public class Geldbetrag {
 	 * Privater Konstruktor, fügt "sich selbst" in die HashMap ein
 	 * 
 	 * @param eurocent der Betrag des Geldbetrags
-	 * @throws Exception 
 	 * @require istGueltig(eurocent)
+	 * @ensure GELDBETRAEGE.contains(eurocent)
 	 */
-	private Geldbetrag(int eurocent) throws Exception {
+	private Geldbetrag(int eurocent) {
+
 		assert istGueltig(eurocent): "Vorbedingung verletzt: istGueltig(eurocent)";
 		_eurocent = eurocent;
 
@@ -25,30 +25,17 @@ public class Geldbetrag {
 	}
 
 	/**
-	 * Liefert Geldbetrag aus einem long
+	 * Liefert Geldbetrag aus einem int
 	 * 
 	 * @param eurocent die Höhe des Geldbetrags
 	 * @return der Geldbetrag
 	 * @require istGueltig(eurocent)
-	 * @throws Exception wenn eurocent ungültig ist (außerhalb Wertebereich int)
 	 */
-	public static Geldbetrag get(long eurocent) throws Exception
+	public static Geldbetrag get(int eurocent)
 	{
-
 		assert istGueltig(eurocent) : "Vorbedingung verletzt: istGueltig(eurocent)";
 
-		try
-		{
-			istGueltig(eurocent);
-		}
-		catch(Exception e)
-		{	
-			throw new Exception(e.getMessage());
-		}
-		int betrag = (int) eurocent;
-
-		return (!GELDBETRAEGE.containsKey(betrag) ? new Geldbetrag(betrag) : GELDBETRAEGE.get(betrag));
-
+		return (!GELDBETRAEGE.containsKey(eurocent) ? new Geldbetrag(eurocent) : GELDBETRAEGE.get(eurocent));
 	}
 
 	/**
@@ -57,23 +44,14 @@ public class Geldbetrag {
 	 * @param euroString die Höhe des Geldbetrags
 	 * @return der Geldbetrag
 	 * @require euroString != null
-	 * @throws Exception wenn euroString ungültig ist
+	 * @require istGueltig(euroString)
 	 */
 	public static Geldbetrag get(String euroString) {
 
 		assert euroString != null : "Vorbedingung verletzt: euroString != null";
+		assert istGueltig(euroString) : "Vorbedingung verletzt: istGueltig(euroString)";
 
-		try
-		{
-			istGueltig(euroString);
-			return Geldbetrag.get(stringToEuroCent(euroString));
-
-		}
-		catch(Exception e)
-		{	
-			JOptionPane.showMessageDialog(null, e.getMessage());
-		}
-		return null;
+		return Geldbetrag.get(stringToEuroCent(euroString));
 	}
 
 	/**
@@ -82,26 +60,18 @@ public class Geldbetrag {
 	 * @param geldbetrag der zu addierende Geldbetrag
 	 * @return den neuen Geldbetrag
 	 * @require geldbetrag != null
+	 * @require istGueltig(this.getEurocent() + geldbetrag.getEurocent())
 	 */
 	public Geldbetrag addiere(Geldbetrag geldbetrag) {
-
 		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
+		assert istGueltig(this.getEurocent() + geldbetrag.getEurocent()) : "Vorbedingung verletzt:"
+		+ " istGueltig(this + geldbetrag)";
 
-		long betrag1 = this.getEurocent();
-		long betrag2 = geldbetrag.getEurocent();
-		long ergebnis = betrag1 + betrag2;
+		int betrag1 = this.getEurocent();
+		int betrag2 = geldbetrag.getEurocent();
+		int ergebnis = betrag1 + betrag2;
 
-		try
-		{
-			istGueltig(ergebnis);
-			return Geldbetrag.get(ergebnis);
-		}
-		catch(Exception e)
-		{
-			JOptionPane.showMessageDialog(null, e.getMessage());
-
-		}
-		return null;
+		return Geldbetrag.get(ergebnis);
 	}
 
 	/**
@@ -110,52 +80,40 @@ public class Geldbetrag {
 	 * @param geldbetrag der Geldbetrag, der abgezogen werden soll
 	 * @return der neue Geldbetrag
 	 * @require geldbetrag != null
+	 * @require istGueltig(this.getEurocent() - geldbetrag.getEurocent())
 	 */
 	public Geldbetrag subtrahiere(Geldbetrag geldbetrag) {
 
 		assert geldbetrag != null : "Vorbedingung verletzt: geldbetrag != null";
+		assert istGueltig(this.getEurocent() - geldbetrag.getEurocent()) : "Vorbedingung verletzt:"
+		+ " istGueltig(this - geldbetrag)";
 
-		long betrag1 = getEurocent();
-		long betrag2 = geldbetrag.getEurocent(); 
-		long ergebnis = betrag1 - betrag2;
-
-		try
-		{
-			istGueltig(ergebnis);
-			return Geldbetrag.get(ergebnis);
-		}
-		catch(Exception e)
-		{
-			JOptionPane.showMessageDialog(null, e.getMessage());
-
-		}
-		return null;
+		int betrag1 = getEurocent();
+		int betrag2 = geldbetrag.getEurocent(); 
+		int ergebnis = betrag1 - betrag2;
+		return Geldbetrag.get(ergebnis);
 	}
 
 	/**
 	 * Multipliziert Geldbetrag mit einem int zu einem Geldbetrag
+	 * 
 	 * @param zahl, mit der dieser Geldbetrag multipliziert wird
 	 * @return der neue Geldbetrag
+	 * @require istGueltig(this.getEurocent() * zahl)
 	 */
 	public Geldbetrag multipliziere(int zahl) {
 
-		long betrag1 = getEurocent(); 
-		long ergebnis = betrag1 * zahl;
-		try
-		{
-			istGueltig(ergebnis);
-			return Geldbetrag.get(ergebnis);
-		}
-		catch(Exception e)
-		{
-			JOptionPane.showMessageDialog(null, e.getMessage());
+		assert istGueltig(this.getEurocent() * zahl) : "Vorbedingung verletzt:"
+		+ " istGueltig(this * zahl)";
 
-		}
-		return null;	
+		int ergebnis = _eurocent * zahl;
+
+		return Geldbetrag.get(ergebnis);	
 	}
 
 	/**
 	 * Getter für Feld mit int Betrag
+	 * 
 	 * @return den int-Wert des Geldbetrags
 	 */
 	private int getEurocent()
@@ -164,54 +122,49 @@ public class Geldbetrag {
 	}
 
 	/**
+	 * Wandelt String zu Eurocent um, entfernt ggf. Komma
 	 * 
-	 * @param EuroString
-	 * @return
-	 * 
+	 * @param euroString der String
+	 * @return den eurocentbetrag
+	 * @require euroString != null
 	 */
-	private static long stringToEuroCent(String euroString) {
+	private static int stringToEuroCent(String euroString) {
+
+		assert euroString != null : "Vorbedingung verletzt: euroString != null";
+
 		if (euroString.contains(","))
 		{
-			return Long.valueOf(euroString.replaceAll(",", "").toString());
+			return Integer.valueOf(euroString.replaceAll(",", "").toString());
 
 		}
-		return Long.valueOf(euroString) * 100;
-
+		return Integer.valueOf(euroString) * 100;
 	}
 
 
+
 	/**
-	 * Prüft, ob die Eingage in Interger gültig für Geldbetrag ist.
-	 * 
-	 * @param euroAnteil : Euro Anteil in int
-	 * @param centAnteil : Cent Anteil in int
+	 * Prüft, ob die Eingabe im Int-Wertbereich liegt
 	 * 
 	 * @return true, wenn es gültig ist
 	 */
-	public static boolean istGueltig (long eurocent) throws Exception
+	public static boolean istGueltig (long eurocent)
 	{
-		if (!(eurocent <= Integer.MAX_VALUE && eurocent >= Integer.MIN_VALUE)) 
-		{
-			throw new Exception("FEHLER! Betrag zu gross"); 
-		}
-		return true;
+		return (eurocent <= Integer.MAX_VALUE && eurocent >= Integer.MIN_VALUE);
 	}
 
 	/**
-	 * Prüfen, ob die Eingage in String gültig für Geldbetrag ist.
+	 * Prüfen, ob die Eingabe ein gültiger String ist
 	 * 
 	 * @param geldbetragInString : ein String beschreibt Geldbetrag z.B: -12,43
 	 * 
 	 * @return true, wenn es gültig ist
 	 */
-	public static void istGueltig(String geldbetragInString) throws Exception
+	public static boolean istGueltig(String geldbetragInString)
 	{
-		if (!gueltigesStringformat(geldbetragInString) || !gueltigeKommaAnzahl(geldbetragInString)
-				|| !gueltigeNachkommastellen(geldbetragInString))
-		{
-			throw new Exception("Fehler: String nicht im richtigen Format");
-		}
+		assert geldbetragInString != null : "Vorbedingung verletzt: geldbetragInString != null";
 
+		return (gueltigesStringformat(geldbetragInString) && gueltigeKommaAnzahl(geldbetragInString)
+				&& gueltigeNachkommastellen(geldbetragInString) && istGueltig(Long.valueOf(geldbetragInString.replace(",", ""))));
 	}
 
 	/**
@@ -230,7 +183,7 @@ public class Geldbetrag {
 		}
 		else anfangPositionZumParse = 0;
 
-		for (int i=anfangPositionZumParse; i<geldbetragInString.length(); i++)
+		for (int i = anfangPositionZumParse; i < geldbetragInString.length(); i++)
 		{
 			char charInString = geldbetragInString.charAt(i);
 			boolean istCharEinNummer = Character.isDigit(charInString);
@@ -246,13 +199,17 @@ public class Geldbetrag {
 
 	/**
 	 * Prüfe, ob das eingegebene String maximal ein ',' Symbol hat
+	 * 
+	 * @param geldbetragInString
+	 * @require geldbetragInString != null
 	 * @return true, wenn das String maximal ein ',' oder Symbol hat
 	 */
 	private static boolean gueltigeKommaAnzahl (String geldbetragInString)
 	{
+		assert geldbetragInString != null : "Vorbedingung verletzt: geldbetragInString != null";
+		
 		int AnzahlVorkommen = 0;
-
-		for (int i=0; i<geldbetragInString.length(); i++)
+		for (int i = 0; i < geldbetragInString.length(); i++)
 		{
 			char charInString = geldbetragInString.charAt(i);
 
@@ -268,11 +225,14 @@ public class Geldbetrag {
 	/**
 	 * Prüft ob, wenn es Komma gibt, nach dem Komma maximal zwei Stellen kommen
 	 * 
-	 * @param geldbetragInString
-	 * @return True, wenn Nachkommabereich gültig ist
+	 * @param geldbetragInString Geldbetrag als Sting
+	 * @require geldbetragInString != null
+	 * @return True, wenn maximal 2 Nachkommastellen
 	 */
 	private static boolean gueltigeNachkommastellen (String geldbetragInString)
 	{
+		assert geldbetragInString != null : "Vorbedingung verletzt: geldbetragInString != null";
+		
 		int count = 0;
 		if (geldbetragInString.contains(","))
 		{
@@ -286,16 +246,15 @@ public class Geldbetrag {
 	}
 
 
+	/**
+	 * gibt zurück, ob der Geldbetrag negativ ist
+	 * 
+	 * @return ob negativ 
+	 */
 	public boolean istNegativ()
 	{
 		return _eurocent < 0;
 	}
-
-	/**
-	 * Wandelt diesen Geldbetrag in einen Strin um
-	 * 
-	 * @return String des Geldbetrags
-	 */
 
 	@Override
 	public String toString() {

@@ -27,7 +27,7 @@ public class StartupKinoticketverkauf
      * @param args Aufrufparameter werden ignoriert.
      * @throws Exception 
      */
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
         if (!assertsEnabled())
         {
@@ -49,7 +49,7 @@ public class StartupKinoticketverkauf
      * Erzeugt ein Kino mit einigen Vorstellungen.
      * @throws Exception 
      */
-    private static Kino erzeugeKinoMitBeispieldaten() throws Exception
+    private static Kino erzeugeKinoMitBeispieldaten()
     {
         final Kinosaal[] saele = { new Kinosaal("Saal 1", 20, 25),
                 new Kinosaal("Saal 2", 16, 20), new Kinosaal("Saal 3", 10, 16) };

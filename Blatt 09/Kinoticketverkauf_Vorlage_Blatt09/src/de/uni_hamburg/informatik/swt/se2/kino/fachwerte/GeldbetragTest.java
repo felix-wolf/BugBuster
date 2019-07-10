@@ -10,7 +10,7 @@ import org.junit.Test;
 public class GeldbetragTest {
 
     @Test
-    public void testeAddiere() throws Exception
+    public void testeAddiere()
     {
         Geldbetrag geld1 = Geldbetrag.get(530);
         Geldbetrag geld2 = Geldbetrag.get(260);
@@ -21,7 +21,7 @@ public class GeldbetragTest {
     }
 
     @Test
-    public void testeSubtrahiere() throws Exception
+    public void testeSubtrahiere()
     {
         Geldbetrag geld1 = Geldbetrag.get(530);
         Geldbetrag geld2 = Geldbetrag.get(260);
@@ -32,7 +32,7 @@ public class GeldbetragTest {
     }
 
     @Test
-    public void testeMultipliziere() throws Exception
+    public void testeMultipliziere()
     {
         Geldbetrag geld1 = Geldbetrag.get(530);
         geld1 = geld1.multipliziere(5);
@@ -40,7 +40,7 @@ public class GeldbetragTest {
     }
 
     @Test
-    public void testeGet() throws Exception
+    public void testeGet()
     {
         String string = "3,65";
         Geldbetrag geld3 = Geldbetrag.get(string);
@@ -50,7 +50,7 @@ public class GeldbetragTest {
     }
 
     @Test
-    public void testeToString() throws Exception
+    public void testeToString()
     {
         Geldbetrag geld1 = Geldbetrag.get(119);
         assertEquals("1,19", geld1.toString());
@@ -59,7 +59,7 @@ public class GeldbetragTest {
     }
 
     @Test
-    public void testeEqualsUndHashCode() throws Exception
+    public void testeEqualsUndHashCode()
     {
         Geldbetrag geld1 = Geldbetrag.get(190);
         Geldbetrag geld2 = Geldbetrag.get(190);
@@ -73,7 +73,7 @@ public class GeldbetragTest {
     }
 
     @Test
-    public void testeIstNegativ() throws Exception
+    public void testeIstNegativ()
     {
         Geldbetrag geld1 = Geldbetrag.get(530);
         Geldbetrag geld2 = Geldbetrag.get(-260);
